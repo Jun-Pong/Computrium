@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Status](https://img.shields.io/badge/Status-Patent%20Pending-red)]()
 [![Architecture](https://img.shields.io/badge/Architecture-PIM%20%2F%20In--Situ-orange)]()
+[![DOI](https://zenodo.org/badge/1126976453.svg)](https://doi.org/10.5281/zenodo.18135945)
 
 > **"Data is Logic. Loading is Linkage."**
 > **"数据即逻辑，加载即链接。"**
