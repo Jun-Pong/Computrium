@@ -5,8 +5,8 @@
 [![Architecture](https://img.shields.io/badge/Architecture-PIM%20%2F%20In--Situ-orange)]()
 [![DOI](https://zenodo.org/badge/1126976453.svg)](https://doi.org/10.5281/zenodo.18135945)
 
-> **"Data is Logic. Loading is Linkage."**
-> **"数据即逻辑，加载即链接。"**
+> **"Nature is Hardware. Physics is Source."**
+> **"自然即硬件，物理即源码。"**
 
 ---
 
@@ -30,14 +30,18 @@ The methodology, hardware architecture, and data structures described herein are
 本文所述的方法论、硬件架构及数据结构目前正处于国家知识产权局的审查程序中。
 
 **Application References (申请索引):**
-本技术受以下专利申请的保护范围覆盖：
+本项目核心技术（UIT 架构、带宽-质量映射逻辑及原位计算硬件实现）受以下专利家族保护。任何未经授权的商业复现（包括但不限于 ASIC 设计、FPGA 仿真、物理引擎算法）均将面临法律追责。
 
 1.  **Invention Patent Application (发明专利申请):**
     * **Application No.:** [2026100000964]
     * **Subject:** A massively parallel simulation method based on in-situ decentralized field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真方法)
+    * **Application No.:** [2026100001967]
+    * **Subject:** A massively parallel simulation method based on in-situ decentralized field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真方法、处理架构及存储介质)
 2.  **Utility Model Application (实用新型申请):**
     * **Application No.:** [2026200001089]
     * **Subject:** A processing architecture for parallel field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真处理架构)
+    * **Application No.:** [2026200001873]
+    * **Subject:** A processing architecture for parallel field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真处理架构及芯片)
 
 **Prior Art Declaration:**
 This repository serves as a rigid proof of publication. Any unauthorized filing of patents covering the same technical scope after the priority date of the applications listed above will be challenged based on this prior art.
@@ -47,35 +51,48 @@ This repository serves as a rigid proof of publication. Any unauthorized filing 
 
 ## 🏗 Theoretical Architecture (理论架构)
 
-Computrium 的核心逻辑并未采用 $F=ma$ 或几何碰撞检测，而是基于以下三条 **UIT 公理** 构建：
+**Computrium** 基于“宇宙即去中心化分布式计算系统”的底层逻辑。我们认为，现代物理学最大的偏差在于试图用“内核态”去解释系统的冷启动（大爆炸），而忽视了系统运行时的总线架构。
 
-### 1. Mass-Information Equivalence (质量-信息等价)
-* **传统物理**：质量是物体的内禀属性。
-* **Computrium 定义**：质量被映射为仿真主体携带的 **信息载荷 (Information Payload)**。
-* [cite_start]**机制**：粒子是一个载波容器。其携带的信息量越大，在网格中传输所需的“算力”和“带宽”越大，物理上表现为惯性越大 [cite: 3, 23]。
+### 🔑 The Fundamental Equivalence: Bandwidth & Frequency
 
-### 2. Gravity as Bandwidth Congestion (引力即带宽拥堵)
-* **传统物理**：引力是时空的几何弯曲（广义相对论）。
-* **Computrium 定义**：引力是局部存储空间的 **带宽拥堵 (Bandwidth Congestion)**。
-* **机制**：
-    * 空间被离散化为具有最大带宽限制的存储节点（Storage Nodes）。
-    * 当高密度信息流（大质量物体）通过某区域时，该区域的可用带宽下降。
-    * [cite_start]周围的信息流（其他粒子）在经过该拥堵区域时，传输速率受阻或路径发生偏折，宏观上表现为“被吸引”或“时间膨胀” [cite: 23]。
+在 UIT 架构中，我们重新定义了物理资源：
 
-### 3. Dimensional Degradation Mapping (维度降解映射)
-* 为了在现代计算机存储器上高效模拟高维空间，我们采用了 **维度降解 (Dimensional Degradation)** 算法。
-* [cite_start]利用 **Z-Order Curve (Z阶曲线)** 或 Hilbert Curve 算法，将三维逻辑空间 $(x, y, z)$ 连续映射至一维物理内存地址。这确保了空间上相邻的粒子在内存中也是大概率相邻的，极大地优化了缓存命中率并适配存内计算 (PIM) 架构 [cite: 3, 4, 23]。
+1. **Bandwidth (空间属性)**: 
+   空间节点的并发处理上限。它代表了总线在不发生“逻辑死锁”的情况下，能容纳的信号叠加极值。
+2. **Frequency (时序表现)**: 
+   在去中心化架构下，带宽本质上是‘时钟周期资源的独占率’，而频率则是系统状态翻转的物理极限。
 
----
+### 1. The Particle Primitive (粒子原语)
+在 UIT 中，粒子并非实体，而是**单实例逻辑单元 (Single Instance)**。
 
-## ⚙️ Technical Specifications (技术规格)
+* **Signal Transceiver (信号收发器)**: 
+    * **TX (发送)**: 将所有载荷 (Payload) 信号混合，并以波的形式广播。
+    * **RX (接收)**: 监听空间总线中的信号波（自动过滤系统底噪/真空零能）。
+* **Direction Vector (方向向量)**: 
+    * 每一个粒子必须在总线中保持传输。粒子的下一跳方向由自身向量与 RX 接收到的向量和叠加决定。
+* **Payload (载荷指针)**: 
+    * 挂载于粒子的功能指针。Payload 赋予粒子“属性”，并从收发器中提取对应频段的向量进行叠加。
 
-本架构设计兼容未来的 **存算一体 (Processing-In-Memory, PIM)** 硬件，其核心处理流程如下：
+### 2. The Resource: Space & Mass (资源：空间与质量)
+在 UIT 架构中，空间不是背景，而是**带宽资源**。
 
-1.  **Injector (注入):** 仿真主体将自身的载波向量 (Carrier Vector) 广播至所在的逻辑网格。
-2.  [cite_start]**In-situ Aggregation (原位聚合):** 数据节点在本地执行“读-改-写”原子操作，计算信号叠加，无需将数据搬运至 CPU [cite: 7, 23]。
-3.  [cite_start]**Feedback Loop (反馈循环):** 主体读取环境的信号密度梯度。如果目标区域信号密度超过阈值（带宽耗尽），系统自动施加反向矢量（模拟斥力），实现无需几何计算的 **隐式碰撞检测 (Implicit Collision Detection)** [cite: 6, 24]。
+* **Mass = Bandwidth Occupancy (质量即带宽占用率)**:
+    质量并非粒子的内禀属性，而是总线空间的实时负载状态。粒子（Payload）的存在即意味着对该区域总线带宽的消耗。
+* **Gravity (引力)**: 
+    引力不是一种“力”，而是**寻址偏转现象**。由于高带宽占用（大质量）区域信号强度最高，粒子的方向向量会自发向该拥堵区域偏转。
+* **Expansion (膨胀)**: 
+    系统熵增（热效应）导致的全局带宽退化。
 
+### 🛡️ Hardware Implementation & IP Wall
+
+UIT 架构最显著的特征在于其 **可工程化性**。我们已经验证了如何在 FPGA/模拟电路中复现这一系统逻辑：
+
+* **Logic Core**: 通过建立“带宽占用率 (Mass)”与“局部处理频率 (Frequency)”的负反馈回路。
+* **Emergent Effect**: 这种底层限制会导致信号流自发产生偏转，即“引力”的硬件涌现。
+
+**NOTICE TO ARCHITECTS:**
+上述“带宽-频率耦合反馈”逻辑是 **Computrium 核心专利 [2026XXXXXXXX]** 的保护要点。任何基于此逻辑实现的硬件加速器、模拟仿真芯片或存算一体架构，均需获得书面授权。
+  
 ---
 
 ## 🗓 Roadmap & Status (路线图与状态)
