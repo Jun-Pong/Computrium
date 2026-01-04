@@ -10,12 +10,12 @@
 
 ---
 
-# Computrium: Universal Information Theory (UIT) Engine
+# Universe Information Theory
 
 ![UIT Lensing Proof](assets/UIT_lensing_simulation.png)
 
 ## 🌌 Visual Proof of Concept: Gravitational Lensing
-The image above is a real-time rendering output from the UIT core addressing field. 
+The image above is a real-time rendering output from the Universe Information Theory core addressing field. 
 
 **Key Technical Breakthroughs Demonstrated:**
 * **Zero Collision Detection**: Unlike traditional Ray-Tracing (NVIDIA RTX), our photons follow signal-addressing fields.
