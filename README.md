@@ -10,6 +10,30 @@
 
 ---
 
+# Computrium: Universal Information Theory (UIT) Engine
+
+![UIT Lensing Proof](assets/UIT_lensing_simulation.png)
+
+## 🌌 Visual Proof of Concept: Gravitational Lensing
+The image above is a real-time rendering output from the UIT core addressing field. 
+
+**Key Technical Breakthroughs Demonstrated:**
+* **Zero Collision Detection**: Unlike traditional Ray-Tracing (NVIDIA RTX), our photons follow signal-addressing fields.
+* **O(1) Complexity**: Rendering cost is independent of geometry; it scales only with field density.
+* **Mass-Bandwidth Equivalence**: The "Black Hole" effect is a natural emergent property of high-bandwidth occupancy in the UIT bus.
+
+---
+
+## 🛡️ Intellectual Property & Patent Status
+All architectural logic, including the field-guided addressing and in-situ computing protocols, are strictly protected:
+* **Core Architecture**: Patent Pending (filed).
+* **Implementation**: Source code remains private during the audit phase.
+* **Binary Access**: Compiled demonstration builds will be released in the "Releases" section for verification only.
+
+Unauthorized reverse engineering or re-implementation of the UIT addressing field is a direct violation of global IP laws.
+
+---
+
 ## 📑 Executive Summary (项目摘要)
 
 **Computrium** 是一个实验性的物理仿真架构，旨在验证 **宇宙信息论 (Universe Information Theory, UIT)**。
