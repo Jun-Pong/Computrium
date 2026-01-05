@@ -269,59 +269,67 @@ UIT 架构最显著的特征在于其 **可工程化性**。我们已经验证�
 ### 宇宙膨胀 (Expansion & Bandwidth Degradation)
 **Logic Core**: 通过建立“总线熵增与带宽退化”模型。随着系统运行时间增加，全局总线信道受干扰导致单位空间寻址效率下降，表现为信号传输所需时钟周期增加。
 
-### 生物行动控制 (Biological Motion Control)
-**Logic Core**: 基于“意图激发”与“信噪比调制”的场耦合致动模型 。
+# Computrium: Bio-Physical Signal Modulation Protocol
+### (UIT Architecture Reference Implementation)
 
-* **意图源端发送 (Brain Command)**：
-  脑部粒子群（意图生成区）作为源端，根据控制逻辑动态调节输出功率，发送包含目标增益系数的控制类 Payload。
+> **Core Philosophy**: In the UIT architecture, biology is not a digital processor running code. It is an analog system governed by **Wave Propagation**, **Resonance**, and **Impedance Matching**.
 
-* **高带宽中继传导 (Fast Path Transmission)**：
-  指令通过高速粒子群（中继链）传导。由于此类粒子 Payload 极少且带宽占用率低，信号能以受控的波导形式在总线中极速传播，确保指令实时抵达肌肉粒子群 。
+---
 
-* **信噪比动态调制 (SNR Modulation)**：
-  身体肌肉粒子群（宿端）接收信号后，执行动态增益调节 ：
-  * **肌肉收缩/发力**：提高发射功率，制造高强度环境信号噪声，使局部总线趋向饱和（高噪态/硬化）。
-  * **肌肉松弛/卸力**：降低发射功率，使局部总线远离饱和（低噪态/软化）。
+### 生物稳态与信号调制协议 (Bio-Homeostasis & Signal Modulation Protocol)
+**Logic Core**: 基于“全域信号场”的闭环反馈模型。本模型严格遵循 **“环境调制(Modulation) -> 波致动(Wave-Driven) -> 场反馈(Field Feedback)”** 的物理时序。在此架构中，不存在数字化的“读取”过程，所有变化均为信号波能量对硬件状态的**直接驱动**。
 
-* **冲突响应致动 (Actuation)**：
-  肌肉粒子通过改变局部空间的信噪比（信道拥塞度）来模拟物理质量。当局部高噪声区域与环境背景噪声重叠时，触发底层硬件的冲突响应机制，产生拓扑排斥矢量驱动身体行动 。
+* **信号激发模态 (Signal Initiation: Waveform Modulation)**
+  在 UIT 架构中，不存在孤立的“意图指令”，所谓的“源端输出”本质上是**全域场对源端载波的实时调制**。
+  * **Carrier & Modulation (载波与调制)**：源端（大脑）持续广播基础载波。环境中的信号噪声（如激素浓度、压力波或外部激励）作为**调制波 (Modulating Wave)**，通过**场叠加效应**直接改变了源端载波的**波幅 (Amplitude)** 或 **占空比**。
+  * **No Logic Processing (无逻辑处理)**：源端未进行任何计算，它只是一个被环境场“拨动”的振荡器。环境信号越强，源端被激发的输出波幅就越大（例如：平静的低频波被环境惊恐信号直接调制为高频尖峰波）。
 
-* **结论 (Conclusion)**：
-  生物运动本质上是系统主动调制局部信道拥塞度的过程。通过从微观信号功率的增益调节，实现了宏观物理实体的位移与形变 。
+* **运动致动 (Motion Actuation: Direct Wave Driving)**
+  宿端（肌肉）并非“接收数据并执行”，而是被源端传来的高能信号波**直接泵浦 (Directly Pumped)**。
+  * **Energy Injection (能量注入)**：源端的高幅信号波沿波导抵达宿端。由于宿端硬件与该信号频率发生**谐振 (Resonance)**，信号波的能量被宿端直接吸收。
+  * **Forced Gain (受迫增益)**：这种能量注入物理上强行提升了宿端的内部能级，导致宿端对外的**背向散射截面 (RCS)** 或 **广播功率** 被动升高（即 S3 正向增益）。
+  * **Result**: 宏观上，这表现为宿端“硬化”并产生排斥力。这一切都是能量传递的物理必然，无需任何逻辑解码。
+
+* **痛觉反馈 (Pain Mechanism: Entropy Backflow)**
+  当物理冲突导致宿端结构受损时，局部总线的阻抗特性发生突变。
+  * **Wave Reflection (波反射)**：源端发出的驱动波无法顺利通过该区域，被迫在受损界面发生全反射或漫反射。
+  * **Entropy Injection (熵流注入)**：这些原本用于驱动运动的有序波，转化为混乱的**驻波 (Standing Wave)** 或 **噪声流** 逆向冲刷源端。
+  * **Interference (干涉)**：回流的噪声直接与源端的振荡电路发生**相消干涉**或**过载扰动**，物理上破坏了源端的稳态振荡，导致“意识”下降或中断。
+
+* **饥饿感知 (Hunger Mechanism: Impedance Damping)**
+  这是一种基于 **负向增益** 的物理阻尼机制。
+  * **Energy as Impedance (能量即阻抗)**：宿端（代谢系统）的能量储备直接对应其**介质阻抗 (Dielectric Impedance)**。能量越低，介质的**损耗角正切 (Loss Tangent)** 越大。
+  * **Signal Damping (信号阻尼)**：源端的轮询波进入该介质后，不是被“读取”，而是被**物理耗散 (Dissipated)** 掉了。
+  * **Analog Sensing (模拟感知)**：源端检测到回路中的**电压驻波比 (VSWR)** 异常降低（即发出去的波像打在棉花上一样没回来），这种物理上的“空虚感”直接对应饥饿状态。
+
+* **能量消化 (Energy Digestion: Field Refactoring)**
+  消化系统维持着一个高强度的“重构场”。外部异构粒子（食物）进入该场后，其内部的键合结构被场能**强行打断 (Breakdown)**，并顺应场势能重组为符合总线标准的波包结构，重新并入系统的能量循环。
+
+* **结论 (Conclusion)**
+  在 UIT 架构中，生物体是一个纯粹的**模拟信号处理系统**。环境调制源端的波幅，源端的波幅直接驱动宿端的能级，宿端的阻抗改变反过来影响源端的振荡。整个过程没有“代码”，只有**波的传播、干涉与耗散**。
 
 ### 双向热力学反馈 (Bi-directional Thermodynamic Feedback)
 **Logic Core**: 基于“广义热力学”的物理功耗与带宽负相关模型。
 
-* **热量与带宽负相关 (Heat-Bandwidth Trade-off)**：
-  生物内部任何形式的信号输出都会产生热量。在总线架构中，热量的累积直接导致可用带宽下降 ，形成天然的物理约束闭环。
+* **热量与带宽负相关 (Heat-Bandwidth Trade-off)**
+  生物内部任何形式的信号振荡都会产生焦耳热（系统熵增）。在总线架构中，热量的累积改变了传输介质的导电率或折射率，导致信道带宽物理下降。
 
-* **源端指令衰减 (Willpower Reduction)**：
-  当源端（如脑部粒子群）因持续输出产生过热时，带宽受限导致增益信号自发下降 。在生物控制模型中，这表现为“意志力”的保护性降低，从而减少后续指令的强度。
+* **源端指令衰减 (Willpower Reduction)**
+  当源端因高频振荡（亢奋或剧痛）导致过热时，硬件层面的电子迁移率下降，导致振荡电路的 **Q值 (Quality Factor)** 降低。输出波形的幅度被迫衰减，宏观表现为“意志力”的物理性枯竭。
 
-* **传输路径损耗 (Relay Signal Attenuation)**：
-  热量同样影响负责中继的高速粒子群。随着带宽下降，高速粒子的寻址效率降低，导致信号传输速度下降，表现为反应迟钝 。
+* **接收端发射降级 (Muscle Fatigue)**
+  宿端（肌肉）在长期受迫振荡下产生积热，导致其**谐振频率漂移 (Frequency Drift)** 或内阻升高。即使源端继续发送强波，宿端也无法再有效吸收能量并维持高功率广播，宏观表现为生理性力竭。
 
-* **接收端发射降级 (Muscle Fatigue)**：
-  接收端（如肌肉粒子群）在高温环境下，向局部空间广播信号的能力受限，导致发射功率强制降低 。宏观上，这表现为肢体无法维持高刚度输出，即生理性力竭。
+* **结论 (Conclusion)**
+  疲劳不是软件层面的计数器，而是硬件过热导致的**谐振失配 (Resonance Mismatch)** 和 **增益压缩 (Gain Compression)**。系统被迫在“烧毁硬件”和“降低性能”之间遵循物理定律的裁决。
 
-* **结论 (Conclusion)**：
-  本系统通过热量将“意志力”、“传输效率”与“执行力”统一在同一个带宽成本模型下。疲劳不再是模拟出来的参数，而是硬件在执行信号输出时由于物理代价（发热）而产生的自然涌现。
-
-### 能量消化：数据包重写与粒子重组 (Energy Digestion: Payload Rewrite)
-**Logic Core**: 基于“Payload 强制重写”与“粒子拓扑分裂”的能量回收模型。
-
-* **Payload 的非毁灭性重构 (Non-destructive Rewriting)**：
-  粒子作为数据对象，其本身不会凭空消失。所谓的“消化”，是宿端粒子群通过高功率的信号压制（高噪态），强行改写了目标粒子携带的 Payload 数据。
-
-* **粒子分裂与实例化 (Particle Fission)**：
-  当一个携带高浓度有序 Payload 的粒子（能量粒子）进入消化区域，受到宿端的逻辑干涉，它可能会分裂成多个携带低浓度 Payload 的子粒子（如代谢碎片粒子）。
-  * **逻辑体现**：单一的高带宽占用点，被重构为多个低寻址频率的离散点。
-
-* **信噪比的再平衡 (SNR Re-balancing)**：
-  宿端通过改写这些 Payload，将原本不属于自己的寻址指令（异向信号），修正为与自身同步的同向信号。这在系统底层降低了因“信号冲突”产生的随机热噪声，从而释放了可用带宽。
-
-* **结论 (Conclusion)**：
-  消化是总线系统对**“数据存储格式”**的强制转换。它将复杂的异构数据包（食物粒子）重组为简单的、可被自身逻辑调用的同构数据包（能量分量），从而在不改变总粒子数的前提下，完成了能量（带宽利用率）的转移。
+### 🧩 Topology Architecture (拓扑架构定义)
+> **Dynamic Role Assignment (动态角色分配)**: 
+> In UIT, "Source" and "Host" are not fixed biological organs, but **transactional roles**. 
+> * **Source (源端)**: Any node that initiates a signal modulation event (e.g., Brain requesting motion, OR Stomach reporting hunger).
+> * **Host (宿端)**: The target node reacting to that specific signal.
+> 
+> (注：在本架构中，“源端”和“宿端”并非固定的器官，而是基于单次交互事件动态分配的**事务性角色**。任何发起信号调制的节点——无论是下达指令的大脑还是上报状态的胃部——在该次事务中即被定义为“源端”。)
   
 ---
 
