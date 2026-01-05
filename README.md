@@ -65,9 +65,9 @@ The methodology, hardware architecture, and data structures described herein are
     * **Subject:** 一种基于全域离散信号场的分布式场耦合计算系统及方法
 2.  **Utility Model Application (实用新型申请):**
     * **Application No.:** [2026200001089]
-    * **Subject:** A processing architecture for parallel field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真处理架构)
+    * **Subject:** 一种基于原位去中心化场数据聚合的大规模并行仿真处理架构
     * **Application No.:** [2026200001873]
-    * **Subject:** A processing architecture for parallel field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真处理架构及芯片)
+    * **Subject:** 一种基于原位去中心化场数据聚合的大规模并行仿真处理架构及芯片
 
 **Prior Art Declaration:**
 This repository serves as a rigid proof of publication. Any unauthorized filing of patents covering the same technical scope after the priority date of the applications listed above will be challenged based on this prior art.
