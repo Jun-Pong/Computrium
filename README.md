@@ -269,13 +269,6 @@ UIT 架构最显著的特征在于其 **可工程化性**。我们已经验证�
 ### 宇宙膨胀 (Expansion & Bandwidth Degradation)
 **Logic Core**: 通过建立“总线熵增与带宽退化”模型。随着系统运行时间增加，全局总线信道受干扰导致单位空间寻址效率下降，表现为信号传输所需时钟周期增加。
 
-# Computrium: Bio-Physical Signal Modulation Protocol
-### (UIT Architecture Reference Implementation)
-
-> **Core Philosophy**: In the UIT architecture, biology is not a digital processor running code. It is an analog system governed by **Wave Propagation**, **Resonance**, and **Impedance Matching**.
-
----
-
 ### 生物稳态与信号调制协议 (Bio-Homeostasis & Signal Modulation Protocol)
 **Logic Core**: 基于“全域信号场”的闭环反馈模型。本模型严格遵循 **“环境调制(Modulation) -> 波致动(Wave-Driven) -> 场反馈(Field Feedback)”** 的物理时序。在此架构中，不存在数字化的“读取”过程，所有变化均为信号波能量对硬件状态的**直接驱动**。
 
