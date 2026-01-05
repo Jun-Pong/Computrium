@@ -58,11 +58,11 @@ The methodology, hardware architecture, and data structures described herein are
 
 1.  **Invention Patent Application (发明专利申请):**
     * **Application No.:** [2026100000964]
-    * **Subject:** A massively parallel simulation method based on in-situ decentralized field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真方法)
+    * **Subject:** 一种基于原位去中心化场数据聚合的大规模并行仿真方法
     * **Application No.:** [2026100001967]
-    * **Subject:** A massively parallel simulation method based on in-situ decentralized field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真方法、处理架构及存储介质)
+    * **Subject:** 一种基于原位去中心化场数据聚合的大规模并行仿真方法、处理架构及存储介质
     * **Application No.:** [2026100036788]
-    * **Subject:** A massively parallel simulation method based on in-situ decentralized field data aggregation. (一种基于全域离散信号场的分布式场耦合计算系统及方法)
+    * **Subject:** 一种基于全域离散信号场的分布式场耦合计算系统及方法
 2.  **Utility Model Application (实用新型申请):**
     * **Application No.:** [2026200001089]
     * **Subject:** A processing architecture for parallel field data aggregation. (一种基于原位去中心化场数据聚合的大规模并行仿真处理架构)
