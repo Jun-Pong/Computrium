@@ -138,6 +138,29 @@ UIT 架构最显著的特征在于其 **可工程化性**。我们已经验证�
   
 ---
 
+# 🔬 Phenomena Mapping: Physics Reinterpreted (Experimental)
+## 物理现象映射：重新定义宇宙法则 (实验性)
+
+> **核心声明**：本章节旨在证明 UIT 架构的“底层普适性”。我们不通过预设公式来“模拟”物理，而是通过总线逻辑的运行，让宏观物理现象作为逻辑副产物自然涌现。
+
+### 1. 物质实体感与不可穿透性 (Solidity & Address Locking)
+**Logic Core**: 通过建立“地址排他锁定”机制。当基本粒子占据一个总线单元时，该单元的带宽占用率达到 100% 饱和态，系统禁止任何次级 Payload 写入相同地址。
+
+### 2. 引力偏转与动态加速 (Gravitational Deflection & Dynamic Acceleration)
+**Logic Core**: 通过建立“方向矢量 (Direction Vector)”受高信号强度场 (Signal Intensity Field) 强制偏转的逻辑。
+
+* **偏转机制**：粒子的下一跳方向并非固定，而是受局部总线信号强度的加权影响。当粒子进入高信号区域，其自身的运动方向矢量会发生自发偏转。
+* **垂直涌现**：随着粒子与信号源距离缩短，偏转角度逐渐增大并趋于垂直于信号梯度。这种物理逻辑导致了粒子在寻址空间内的位移增量加大。
+* **结论**：引力并非一种吸力，而是**矢量场对寻址路径的纠偏**。速度的增加本质上是矢量偏转角度趋近于最优寻址路径时的逻辑副产物。
+
+### 3. 奇点与数据流喷射 (Singularity & Buffer Flush)
+**Logic Core**: 通过建立“缓存溢出重置”机制。当 Payload 堆积强行突破总线承载极限，系统触发强制复位指令，将压缩数据降解为原始比特流高速弹出。
+
+### 4. 宇宙膨胀 (Expansion & Bandwidth Degradation)
+**Logic Core**: 通过建立“总线熵增与带宽退化”模型。随着系统运行时间增加，全局总线信道受干扰导致单位空间寻址效率下降，表现为信号传输所需时钟周期增加。
+
+---
+
 ## 🗓 Roadmap & Status (路线图与状态)
 
 * **Phase I: Architecture Definition (Current)**
