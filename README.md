@@ -98,6 +98,9 @@ This repository serves as a rigid proof of publication. Any unauthorized filing 
     * 每一个粒子必须在总线中保持传输。粒子的下一跳方向由自身向量与 RX 接收到的向量和叠加决定。
 * **Payload (载荷指针)**: 
     * 挂载于粒子的功能指针。Payload 赋予粒子“属性”，并从收发器中提取对应频段的向量进行叠加。
+* **微观结构 (Micro-Structure): 比特流**
+    * 粒子由 **头文件 (Header)**（包含寻址向量信息）和 **数据体 (Body)**（载荷数据）组成。
+    * 在最底层的微观视角下，粒子本质上是一串比特序列：`10110...01`。
 
 ### 2. The Resource: Space & Mass (资源：空间与质量)
 在 UIT 架构中，空间不是背景，而是**带宽资源**。
