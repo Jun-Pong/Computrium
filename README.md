@@ -539,6 +539,8 @@ UIT 架构最显著的特征在于其 **可工程化性**。我们已经验证�
 
 **Logic Core**: 基于“寻址纠偏”模型与“微观矢量叠加”的拓扑计算。在 UIT 架构中，引力不再是外部力或单纯的几何弯曲，而是总线偏置信号对 $c$ 速寻址矢量的**强制改写率**。
 
+![UIT Lensing Proof](assets/uit-gravity-drift-by-dimension.png.png)
+
 ### 1. 核心数学模型 (Core Mathematical Model)
 在普朗克锁步 (Tick) 下，粒子的位移由内部 $N$ 个以光速 $c$ 运动的原始信号矢量 $\vec{v}$ 决定。
 * **总线偏置 (Gravity)**: 定义为局部总线信号场提供的偏置矢量 $\vec{g}$。
