@@ -93,7 +93,8 @@ This repository serves as a rigid proof of publication. Any unauthorized filing 
     * **锁死机制**: 这种自平衡态产生了一种“逻辑锚定”，使数据包能够持续占据局部总线带宽，从而产生“物质实体感”。
 * **无指针实体 (Pointer-free Entity)**: 
     * 粒子即数据本身。不存在“指向载荷的指针”，只有由于内部矢量旋转而产生的**带宽占用 (Mass)**。
-
+* **波（信号）的模型构建
+   *波（信号）是[基本粒子]在空间抖动时产生的涟漪 
 ### 基本数据单元 (Basic Data Unit: BDU)
 
 **核心机制：同步收发寻址 (Synchronous Transceiver Addressing)**
