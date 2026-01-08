@@ -95,7 +95,7 @@ This repository serves as a rigid proof of publication. Any unauthorized filing 
     * 粒子即数据本身。不存在“指向载荷的指针”，只有由于内部矢量旋转而产生的**带宽占用 (Mass)**。
 * **波（信号）的模型构建
    *波（信号）是[基本粒子]在空间抖动时产生的涟漪
-   *（2060.1.8 更正）[基本粒子]没有读取周围信号的能力，它通过感应自身当前位置的“空间涟漪”来决定下一跳方向
+   *（2060.1.8 更正）[基本粒子]没有读取周围信号的能力，它通过感应自身当前位置的“空间涟漪”来决定下一跳方向，[基本粒子]读取脚下格点的合相位（指向性信号），并将其叠加到自身的 Vector 上。
 ### 基本数据单元 (Basic Data Unit: BDU)
 
 **核心机制：同步收发寻址 (Synchronous Transceiver Addressing)**
