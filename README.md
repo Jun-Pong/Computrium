@@ -359,6 +359,7 @@ This repository serves as a rigid proof of publication. Any unauthorized filing 
 * **结论**：
     * **数学是现实的低保真压缩**。并不是物理世界在模仿数学的连续性，而是数学家发明了“连续性”来模拟物理世界中那些**多到数不清的离散颗粒**。
     * “无穷”是逻辑上的**哈夫曼编码（Huffman Coding）**，它用一个简单的符号 $\infty$ 代替了宇宙中那串长得无法记录的离散数据流。
+    * 本理论解释了为什么数学能描述物理，但为什么数学到了极端（奇点、无限细分）时会失效——因为那是压缩算法在解压时出现的“失真（Artifacts）”
 
 ### The Resource: Space & Mass (资源：空间与质量)
 在 UIT 架构中，空间不是背景，而是**带宽资源**。
