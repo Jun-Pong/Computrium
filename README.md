@@ -77,79 +77,99 @@ This repository serves as a rigid proof of publication. Any unauthorized filing 
 
 # 有限步骤构造概率论 (Step-Finite Constructive Probability)
 
-**一种基于算法停机性与有限构造主义的概率学新框架**
-**A New Framework for Probability Based on Algorithmic Halting and Finite Constructivism**
+**一种基于算法停机性、死锁判定与几何区间的概率学新框架**
+**A New Framework for Probability Based on Algorithmic Halting, Deadlock Determination, and Geometric Intervals**
 
 ---
 
 ## 1. 核心理论体系 (Core Theoretical Framework)
 
-本理论将概率的定义从传统的“测度论”转向“算法构造论”，建立了事件存在性与计算步骤有限性之间的等价关系。
-This theory shifts the definition of probability from traditional "Measure Theory" to "Algorithmic Constructivism," establishing an equivalence between the existence of an event and the finiteness of computational steps.
+本理论将概率的定义从传统的“测度论”转向“算法构造论”，建立了事件存在性与计算步骤有限性之间的等价关系，并指出概率的本质是非原子事件在状态空间中的**几何区间覆盖**。
+This theory shifts the definition of probability from traditional "Measure Theory" to "Algorithmic Constructivism," establishing an equivalence between the existence of an event and the finiteness of computational steps, identifying probability as the **geometric interval coverage** of non-atomic events in state space.
 
 ### 1.1 存在性公理 (The Existence Axiom)
 * **中文描述**：
-    一个事件 $E$ “存在”的充要条件是，生成 $E$ 的算法 $A(E)$ 能够在 $N < \infty$ 的步骤内停机。
-    这意味着物理世界中不存在非构造性的实体；凡是无法通过有限逻辑步骤生成的对象，在物理上均视为“不存在”。
+    一个事件 $E$ “存在”的充要条件是，生成 $E$ 的算法 $A(E)$ 能够在 $N < \infty$ 的步骤内停机。物理世界中不存在非构造性的实体。
 * **English Description**:
-    An event $E$ "exists" if and only if the algorithm $A(E)$ generating $E$ halts within $N < \infty$ steps.
-    This implies that there are no non-constructive entities in the physical world; any object that cannot be generated through finite logical steps is considered "non-existent" physically.
+    An event $E$ "exists" if and only if the algorithm $A(E)$ generating $E$ halts within $N < \infty$ steps. There are no non-constructive entities in the physical world.
 
-### 1.2 二值概率公理 (The Binary Probability Axiom)
-* **中文描述**：
-    * **有限即可能**：若生成事件的步骤 $N$ 是有限的，则该事件发生的概率 $P(E) > 0$。
-    * **无限即死锁**：若生成事件的步骤 $N$ 是无限的（即进入 `while(true)`），则该事件发生的概率 $P(E) \equiv 0$。这代表逻辑上的不存在（死锁）。
-* **English Description**:
-    * **Finite implies Possible**: If the step count $N$ is finite, then $P(E) > 0$.
-    * **Infinite implies Deadlock**: If the step count $N$ is infinite, then $P(E) \equiv 0$. This represents a logical non-existence (Deadlock).
+### 1.2 双重死锁公理 (The Dual Deadlock Axiom)
+> **Ref**: ![UIT Lensing Proof](assets/2026-01-19%20215219.png)
+
+基于系统无法处理无穷的逻辑，定义两种导致概率为 0 的物理非法状态（死锁）：
+Based on the system's inability to process infinity, we define two physically illegal states (deadlocks) resulting in zero probability:
+
+* **类型 A：集合无限死锁 (Infinite Set Deadlock)**
+    * **描述**：当非原子事件 $P$ 试图从一个包含无穷多元素的集合中选取一个特定事件 $P_i$ 时（即 $P \in \{P_1, ... P_n \mid n=\infty\}$），由于集合中每个事件的“逻辑宽度”无穷小，系统无法定位，触发 `while(true)`。
+    * **Description**: When a non-atomic event $P$ attempts to select a specific event $P_i$ from a set containing infinite elements, the system triggers a `while(true)` loop because it cannot locate any single event of infinitesimal logical width.
+
+* **类型 B：步骤无限死锁 (Infinite Step Deadlock)**
+    * **描述**：当非原子事件 $P$ 的执行流程需要经过无穷多个串行步骤时（即 $P_1 \to \dots \to P_n \mid n=\infty$），系统因无法跑完流程而卡死。
+    * **Description**: When the execution flow of a non-atomic event $P$ requires infinite serial steps, the system hangs due to the inability to complete the process.
 
 ---
 
-## 2. 最小计算代价原理 (The Principle of Minimal Computational Cost)
+## 2. 几何区间概率原理 (The Principle of Geometric Interval Probability)
 
-### 2.1 逻辑深度函数 (The Logical Depth Function)
-定义函数 $N(E)$ 为系统生成事件 $E$ 所需的最少逻辑运算步骤数。
-Let $N(E)$ be the minimum number of logical steps required to generate event $E$.
+### 2.1 逻辑区间函数 (The Logical Interval Function)
+> **Ref**: ![UIT Lensing Proof](assets/2026-01-19%20220721.png)
 
-$$
-N(E) = \text{Steps}(\text{Algorithm}_{E})
-$$
-
-### 2.2 物理权重 (Physical Weight)
-**逻辑上最短的路径，在物理竞速中必然最先到达终点。**
-一件事情发生了某个结果，说明这个结果在当时的环境下最先跑到了终点。因此，所谓的“高概率”本质上是“低延迟”的体现。事件的物理权重 $W$ 与其计算代价 $N$ 成反比。
-
-**The logically shortest path inevitably reaches the termination point first in a physical race.**
-The occurrence of a specific result implies that this result reached the finish line first in the given environment. Therefore, so-called "high probability" is essentially a manifestation of "low latency." The physical weight $W$ of an event is inversely proportional to its computational cost $N$.
-
-$$
-W(E) = \frac{1}{N(E)}
-$$
-
-### 2.3 竞速决定论基石 (The Cornerstone of Deterministic Racing)
 * **中文描述**：
-    世界不存在概率，只存在由于我们无法观测微观竞速过程而产生的“宏观不确定性”。实际上，每一次结果的出现，都是因为它在那一瞬间，在那条具体的物理路径上，计算步骤最少，跑得最快。
-    **最短路径 = 最先到达 = 必然发生。**
+    概率不是随机的数字，而是非原子事件在状态空间中分裂出的**逻辑窗口（区间）大小**。
+    非原子事件 $P$ 由子事件 $\{P_1, P_2, \dots, P_k\}$ 构成，它们分别占据不同的区间长度。
+    
+    $$P(P_i) = \frac{\text{Length}(\text{Interval}_i)}{\text{Total Length}}$$
+    
+    *例如：若 $P_1$ 占据区间 $(0, 0.35]$，则其被选中的概率为 $0.35$。*
 
 * **English Description**:
-    There is no probability in the world, only "macroscopic uncertainty" arising from our inability to observe the microscopic racing process. In reality, every occurrence of a result is because, at that instant, on that specific physical path, it had the fewest computational steps and ran the fastest.
-    **Shortest Path = First Arrival = Inevitable Occurrence.**
+    Probability is not a random number, but the size of the **logical window (interval)** that a non-atomic event splits into within the state space.
+    The non-atomic event $P$ is composed of sub-events $\{P_1, P_2, \dots, P_k\}$, each occupying a distinct interval length.
+    *Example: If $P_1$ occupies the interval $(0, 0.35]$, its probability of selection is $0.35$.*
 
-### 2.4 归一化概率公式 (Normalized Probability Formula)
-对于一组互斥的可行结果 $\{O_1, O_2, ..., O_k\}$，结果 $O_i$ 被观测到的概率（实际上是其在竞速中获胜的频率统计）为：
-For a set of mutually exclusive outcomes $\{O_1, O_2, ..., O_k\}$, the observed probability (which is effectively the statistical frequency of winning the race) is:
+### 2.2 路径路由机制 (Path Routing Mechanism)
+> **Ref**: ![UIT Lensing Proof](assets/2026-01-19%20221045.png)
 
-$$
-P(O_i) = \frac{W(O_i)}{\sum_{j=1}^{k} W(O_j)} = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
-$$
+* **中文描述**：
+    系统的运行不再被描述为“竞速”，而是**“路由选择”**。
+    1.  非原子事件 $P$ 展开为多条可能的逻辑路径 $P_1 \dots P_N$。
+    2.  系统根据当前的宇宙状态输入，落入某个特定的逻辑区间。
+    3.  **路由法则**：系统通过第 $i$ 条路径跑到终点，则输出对应事件 $P_i$。
+    4.  概率的大小完全取决于该路径对应的**区间窗口宽度**。
+
+* **English Description**:
+    System operation is no longer described as "racing," but as **"Path Routing."**
+    1.  Non-atomic event $P$ unfolds into multiple possible logical paths $P_1 \dots P_N$.
+    2.  The system falls into a specific logical interval based on the current universal state input.
+    3.  **Routing Rule**: If the system traverses through the $i$-th path to the finish line, it outputs the corresponding event $P_i$.
+    4.  The magnitude of probability depends entirely on the **interval window width** of that path.
 
 ---
 
-## 3. 事件生成逻辑图 (Event Generation Logic Diagram)
+## 3. 逻辑架构图示 (Logical Architecture Diagrams)
 
-![UIT Lensing Proof](assets/Step-Finite%20Constructive%20Probability.png)
-本图展示了物理系统如何通过“计算竞速”来决定宏观事件的输出，以及原子事件的确定性本质。
-This diagram illustrates how the physical system determines macroscopic outcomes via "Computational Racing" and the deterministic nature of atomic events.
+本理论由以下三个关键逻辑图支撑：
+This theory is supported by the following three key logical diagrams:
+
+### 3.1 死锁判定 (Deadlock Determination)
+* **输入**：包含无穷元素的集合 或 无穷步骤的流程。
+* **结果**：系统挂起 (`while(true)`)，概率 $\equiv 0$。
+* **Input**: A set with infinite elements OR a process with infinite steps.
+* **Result**: System hangs (`while(true)`), Probability $\equiv 0$.
+
+### 3.2 区间分配 (Interval Allocation)
+* **机制**：非原子事件 $P$ $\to$ 分裂为 $\{P_1, P_2\}$。
+* **定义**：$P_1$ 覆盖 $[0, 0.35]$，$P_2$ 覆盖 $(0.35, 1]$。
+* **结论**：概率即区间长度。
+* **Mechanism**: Non-atomic event $P$ $\to$ splits into $\{P_1, P_2\}$.
+* **Definition**: $P_1$ covers $[0, 0.35]$, $P_2$ covers $(0.35, 1]$.
+* **Conclusion**: Probability is Interval Length.
+
+### 3.3 事件路由流程 (Event Routing Flow)
+* **流程**：非原子事件 $\to$ 路径分发 $\to$ 路径穿越 $\to$ 终点输出。
+* **判定**：假如系统通过第 $i$ 条路径 ($P_i$) 跑到了终点，则 $return\ P_i$。
+* **Flow**: Non-atomic Event $\to$ Path Distribution $\to$ Path Traversal $\to$ Endpoint Output.
+* **Determination**: Suppose the system runs through the $i$-th path ($P_i$) to the finish line, then $return\ P_i$.
 
 ---
 
