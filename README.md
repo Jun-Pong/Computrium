@@ -118,7 +118,7 @@ Based on the system's inability to process infinity, we define two physically il
 ## 2. 几何区间概率原理 (The Principle of Geometric Interval Probability)
 
 ### 2.1 逻辑区间函数 (The Logical Interval Function)
-> **Ref**: ![UIT Lensing Proof](assets/2026-01-19%20220721.png)
+> **Ref**: ![UIT Lensing Proof](assets/2026-01-20%20014748.png)
 
 * **中文描述**：
     概率不是随机的数字，而是非原子事件在状态空间中分裂出的**逻辑窗口（区间）大小**。
