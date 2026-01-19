@@ -840,7 +840,7 @@ This theory shifts the definition of probability from traditional "Measure Theor
     An event $E$ "exists" if and only if the algorithm $A(E)$ generating $E$ halts within $N < \infty$ steps.
     This implies that there are no non-constructive entities in the physical world; any object that cannot be generated through finite logical steps is considered "non-existent" physically.
 
-### 2. 概率公理 (The Probability Axiom)
+### 2. 二值概率公理 (The Binary Probability Axiom)
 
 * **中文描述**：
     * **有限即可能**：若生成事件的步骤 $N$ 是有限的，则该事件发生的概率 $P(E) > 0$。无论 $N$ 有多大（例如 $10^{100}$），只要不是无穷大，该事件在理论上都是可达的。
@@ -850,22 +850,45 @@ This theory shifts the definition of probability from traditional "Measure Theor
     * **Finite implies Possible**: If the step count $N$ to generate an event is finite, then the probability of that event $P(E) > 0$. Regardless of how large $N$ is (e.g., $10^{100}$), as long as it is not infinite, the event is theoretically achievable.
     * **Infinite implies Deadlock**: If the step count $N$ is infinite (i.e., the algorithm enters an inescapable `while(true)` loop), then the probability $P(E) \equiv 0$. This does not merely mean the probability is infinitesimally small, but rather that the event is logically non-existent.
 
+### 3. 量化推论：计算经济学原理 (Quantitative Inference: The Principle of Computational Economy)
+
+* **中文描述**：
+    * **宇宙懒惰定律**：在算力/步骤受限的系统中，系统倾向于选择消耗步骤最少（$N$ 最小）的路径。
+    * **概率反比关系**：对于所有“存在”（即 $N < \infty$）的事件，其发生的相对概率与生成该事件所需的计算步骤数成**反比**。步骤越少，概率越高；步骤越多（结构越复杂/熵越低），概率越低。
+
+* **English Description**:
+    * **The Law of Universal Laziness**: In a system constrained by steps/computation, the system tends to choose the path consuming the fewest steps (minimum $N$).
+    * **Inverse Probability Relationship**: For all "existing" events (where $N < \infty$), the relative probability of occurrence is **inversely proportional** to the number of computational steps required to generate it. Fewer steps imply higher probability; more steps (higher complexity/lower entropy) imply lower probability.
+
 ---
 
 ## 数学表达 (Mathematical Formulation)
 
-Let $\Omega$ be the universal set of all events. For any event $E \in \Omega$:
+### 1. 存在性判定 (Existence Determination)
+Let $\Omega$ be the universal set of all events. For any event $E$:
 
 $$
-P(E) = 
-\begin{cases} 
-> 0, & \text{if } \text{Steps}(A(E)) < \infty \\
+P(E) \begin{cases} 
+> 0, & \text{if } \text{Steps}(A(E)) < \infty \ (\text{Constructible}) \\
 \equiv 0, & \text{if } \text{Steps}(A(E)) = \infty \ (\text{Deadlock})
 \end{cases}
 $$
 
-> **Note**: In this framework, "Probability 0" is strictly defined as a logical impossibility caused by infinite recursion, distinct from "Measure 0" in classical probability.
-> **注**：在此框架下，“概率为 0”被严格定义为由无限递归导致的逻辑不可能，这与经典概率论中的“测度为 0”有着本质区别。
+### 2. 概率量化公式 (Probability Quantification Formula)
+假设一个过程有一组可能的输出结果 $\{O_1, O_2, ..., O_k\}$，且每个结果都是有限步骤可达的。生成结果 $O_i$ 所需的步骤为 $N(O_i)$。
+Assuming a process has a set of possible outcomes $\{O_1, O_2, ..., O_k\}$, all reachable in finite steps. Let $N(O_i)$ be the steps required to generate outcome $O_i$.
+
+The probability $P(O_i)$ is determined by the normalized inverse of computational cost:
+
+$$
+P(O_i) = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
+$$
+
+> **Example (Coin Flip)**: 
+> * **Heads ($O_H$)**: Low complexity, $N \approx k$.
+> * **Tails ($O_T$)**: Low complexity, $N \approx k$.
+> * **Edge ($O_E$)**: Extreme complexity (balance calculation), $N \gg 1000k$.
+> * **Result**: $P(O_H) \approx P(O_T) \approx 0.5$; $P(O_E) \to 0$ (but $>0$).
 
 ---
 
