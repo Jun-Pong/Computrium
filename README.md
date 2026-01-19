@@ -818,6 +818,57 @@ UIT 架构最显著的特征在于其 **可工程化性**。我们已经验证�
   
 ---
 
+# 有限步骤构造概率论 (Step-Finite Constructive Probability)
+
+**一种基于算法停机性与有限构造主义的概率学新框架**
+**A New Framework for Probability Based on Algorithmic Halting and Finite Constructivism**
+
+---
+
+## 核心理论体系 (Core Theoretical Framework)
+
+本理论将概率的定义从传统的“测度论”转向“算法构造论”，建立了事件存在性与计算步骤有限性之间的等价关系。
+This theory shifts the definition of probability from traditional "Measure Theory" to "Algorithmic Constructivism," establishing an equivalence between the existence of an event and the finiteness of computational steps.
+
+### 1. 存在性公理 (The Existence Axiom)
+
+* **中文描述**：
+    一个事件 $E$ “存在”的充要条件是，生成 $E$ 的算法 $A(E)$ 能够在 $N < \infty$ 的步骤内停机。
+    这意味着物理世界中不存在非构造性的实体；凡是无法通过有限逻辑步骤生成的对象，在物理上均视为“不存在”。
+
+* **English Description**:
+    An event $E$ "exists" if and only if the algorithm $A(E)$ generating $E$ halts within $N < \infty$ steps.
+    This implies that there are no non-constructive entities in the physical world; any object that cannot be generated through finite logical steps is considered "non-existent" physically.
+
+### 2. 概率公理 (The Probability Axiom)
+
+* **中文描述**：
+    * **有限即可能**：若生成事件的步骤 $N$ 是有限的，则该事件发生的概率 $P(E) > 0$。无论 $N$ 有多大（例如 $10^{100}$），只要不是无穷大，该事件在理论上都是可达的。
+    * **无限即死锁**：若生成事件的步骤 $N$ 是无限的（即算法进入了无法跳出的 `while(true)` 循环），则该事件发生的概率 $P(E) \equiv 0$。这不仅仅是概率极小，而是该事件在逻辑层面上根本不存在。
+
+* **English Description**:
+    * **Finite implies Possible**: If the step count $N$ to generate an event is finite, then the probability of that event $P(E) > 0$. Regardless of how large $N$ is (e.g., $10^{100}$), as long as it is not infinite, the event is theoretically achievable.
+    * **Infinite implies Deadlock**: If the step count $N$ is infinite (i.e., the algorithm enters an inescapable `while(true)` loop), then the probability $P(E) \equiv 0$. This does not merely mean the probability is infinitesimally small, but rather that the event is logically non-existent.
+
+---
+
+## 数学表达 (Mathematical Formulation)
+
+Let $\Omega$ be the universal set of all events. For any event $E \in \Omega$:
+
+$$
+P(E) = 
+\begin{cases} 
+> 0, & \text{if } \text{Steps}(A(E)) < \infty \\
+\equiv 0, & \text{if } \text{Steps}(A(E)) = \infty \ (\text{Deadlock})
+\end{cases}
+$$
+
+> **Note**: In this framework, "Probability 0" is strictly defined as a logical impossibility caused by infinite recursion, distinct from "Measure 0" in classical probability.
+> **注**：在此框架下，“概率为 0”被严格定义为由无限递归导致的逻辑不可能，这与经典概率论中的“测度为 0”有着本质区别。
+
+---
+
 ## 🗓 Roadmap & Status (路线图与状态)
 
 * **Phase I: Architecture Definition (Current)**
