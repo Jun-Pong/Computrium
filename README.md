@@ -173,6 +173,36 @@ This theory is supported by the following three key logical diagrams:
 
 ---
 
+## 4. 基本定义公式 (Basic Definition Formulas)
+
+### 4.1 逻辑深度函数 (The Logical Depth Function)
+定义函数 $N(E)$ 为系统生成事件 $E$ 所需的最少逻辑运算步骤数（或约束条件的数量）。
+Let $N(E)$ be the minimum number of logical steps (or number of constraints) required to generate event $E$.
+
+$$
+N(E) = \text{Steps}(\text{Algorithm}_{E})
+$$
+
+### 4.2 物理权重与区间宽度 (Physical Weight and Interval Width)
+**构造步骤越少，对应的逻辑区间越宽。**
+事件的物理权重 $W$（代表其几何区间宽度）与其计算代价 $N$ 成反比。简单事件因为约束少，在状态空间中占据更大的“靶面”。
+**The fewer the construction steps, the wider the corresponding logical interval.**
+The physical weight $W$ of an event (representing its geometric interval width) is inversely proportional to its computational cost $N$. Simple events occupy a larger "target surface" in the state space due to fewer constraints.
+
+$$
+W(E) = \frac{1}{N(E)}
+$$
+
+### 4.3 归一化概率公式 (Normalized Probability Formula)
+对于一组互斥的可行结果 $\{O_1, O_2, ..., O_k\}$，结果 $O_i$ 被观测到的概率是其权重在总权重中的占比：
+For a set of mutually exclusive outcomes $\{O_1, O_2, ..., O_k\}$, the observed probability of $O_i$ is its weight proportional to the total weight:
+
+$$
+P(O_i) = \frac{W(O_i)}{\sum_{j=1}^{k} W(O_j)} = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
+$$
+
+---
+
 ## 🏗 Theoretical Architecture (理论架构)
 
 **Computrium** 基于“宇宙即去中心化分布式计算系统”的底层逻辑。我们认为，现代物理学最大的偏差在于试图用“内核态”去解释系统的冷启动（大爆炸），而忽视了系统运行时的总线架构。
