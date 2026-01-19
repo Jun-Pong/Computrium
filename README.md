@@ -75,6 +75,72 @@ This repository serves as a rigid proof of publication. Any unauthorized filing 
 
 ---
 
+# 有限步骤构造概率论 (Step-Finite Constructive Probability)
+
+**一种基于算法停机性与有限构造主义的概率学新框架**
+**A New Framework for Probability Based on Algorithmic Halting and Finite Constructivism**
+
+---
+
+## 1. 核心理论体系 (Core Theoretical Framework)
+
+本理论将概率的定义从传统的“测度论”转向“算法构造论”，建立了事件存在性与计算步骤有限性之间的等价关系。
+This theory shifts the definition of probability from traditional "Measure Theory" to "Algorithmic Constructivism," establishing an equivalence between the existence of an event and the finiteness of computational steps.
+
+### 1.1 存在性公理 (The Existence Axiom)
+* **中文描述**：
+    一个事件 $E$ “存在”的充要条件是，生成 $E$ 的算法 $A(E)$ 能够在 $N < \infty$ 的步骤内停机。
+    这意味着物理世界中不存在非构造性的实体；凡是无法通过有限逻辑步骤生成的对象，在物理上均视为“不存在”。
+* **English Description**:
+    An event $E$ "exists" if and only if the algorithm $A(E)$ generating $E$ halts within $N < \infty$ steps.
+    This implies that there are no non-constructive entities in the physical world; any object that cannot be generated through finite logical steps is considered "non-existent" physically.
+
+### 1.2 二值概率公理 (The Binary Probability Axiom)
+* **中文描述**：
+    * **有限即可能**：若生成事件的步骤 $N$ 是有限的，则该事件发生的概率 $P(E) > 0$。
+    * **无限即死锁**：若生成事件的步骤 $N$ 是无限的（即进入 `while(true)`），则该事件发生的概率 $P(E) \equiv 0$。这代表逻辑上的不存在（死锁）。
+* **English Description**:
+    * **Finite implies Possible**: If the step count $N$ is finite, then $P(E) > 0$.
+    * **Infinite implies Deadlock**: If the step count $N$ is infinite, then $P(E) \equiv 0$. This represents a logical non-existence (Deadlock).
+
+---
+
+## 2. 最小计算代价原理 (The Principle of Minimal Computational Cost)
+
+### 2.1 逻辑深度函数 (The Logical Depth Function)
+定义函数 $N(E)$ 为系统生成事件 $E$ 所需的最少逻辑运算步骤数。
+Let $N(E)$ be the minimum number of logical steps required to generate event $E$.
+
+$$
+N(E) = \text{Steps}(\text{Algorithm}_{E})
+$$
+
+### 2.2 物理权重 (Physical Weight)
+步骤最少的路径更容易最快跑到终点。事件的物理权重 $W$ 与其计算代价 $N$ 成反比。
+The path with the fewest steps is more likely to reach the finish line first. Therefore, the physical weight $W$ of an event is inversely proportional to its computational cost $N$.
+
+$$
+W(E) = \frac{1}{N(E)}
+$$
+
+### 2.3 归一化概率公式 (Normalized Probability Formula)
+对于一组互斥的可行结果 $\{O_1, O_2, ..., O_k\}$，结果 $O_i$ 被观测到的概率为：
+For a set of mutually exclusive outcomes $\{O_1, O_2, ..., O_k\}$, the observed probability is:
+
+$$
+P(O_i) = \frac{W(O_i)}{\sum_{j=1}^{k} W(O_j)} = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
+$$
+
+---
+
+## 3. 事件生成逻辑图 (Event Generation Logic Diagram)
+
+![UIT Lensing Proof](assets/Step-Finite%20Constructive%20Probability.png)
+本图展示了物理系统如何通过“计算竞速”来决定宏观事件的输出，以及原子事件的确定性本质。
+This diagram illustrates how the physical system determines macroscopic outcomes via "Computational Racing" and the deterministic nature of atomic events.
+
+---
+
 ## 🏗 Theoretical Architecture (理论架构)
 
 **Computrium** 基于“宇宙即去中心化分布式计算系统”的底层逻辑。我们认为，现代物理学最大的偏差在于试图用“内核态”去解释系统的冷启动（大爆炸），而忽视了系统运行时的总线架构。
@@ -816,80 +882,6 @@ UIT 架构最显著的特征在于其 **可工程化性**。我们已经验证�
 2.  **光速响应优势**: 由于光子不具备自旋产生的“逻辑阻抗 (Inertia)”，它在引力场中的响应速度比任何宏观物质快 $50\%$（即 $1.0 : 0.67$）。
 3.  **等效原理的局限**: 传统物理学测量的“等效性”仅存在于同类 Payload 之间。在跨维度的总线通讯中，无载荷信号（光）与高载荷自旋包（物质）的逻辑响应是不等效的。
   
----
-
-# 有限步骤构造概率论 (Step-Finite Constructive Probability)
-
-**一种基于算法停机性与有限构造主义的概率学新框架**
-**A New Framework for Probability Based on Algorithmic Halting and Finite Constructivism**
-
----
-
-## 核心理论体系 (Core Theoretical Framework)
-
-本理论将概率的定义从传统的“测度论”转向“算法构造论”，建立了事件存在性与计算步骤有限性之间的等价关系。
-This theory shifts the definition of probability from traditional "Measure Theory" to "Algorithmic Constructivism," establishing an equivalence between the existence of an event and the finiteness of computational steps.
-
-### 1. 存在性公理 (The Existence Axiom)
-
-* **中文描述**：
-    一个事件 $E$ “存在”的充要条件是，生成 $E$ 的算法 $A(E)$ 能够在 $N < \infty$ 的步骤内停机。
-    这意味着物理世界中不存在非构造性的实体；凡是无法通过有限逻辑步骤生成的对象，在物理上均视为“不存在”。
-
-* **English Description**:
-    An event $E$ "exists" if and only if the algorithm $A(E)$ generating $E$ halts within $N < \infty$ steps.
-    This implies that there are no non-constructive entities in the physical world; any object that cannot be generated through finite logical steps is considered "non-existent" physically.
-
-### 2. 二值概率公理 (The Binary Probability Axiom)
-
-* **中文描述**：
-    * **有限即可能**：若生成事件的步骤 $N$ 是有限的，则该事件发生的概率 $P(E) > 0$。无论 $N$ 有多大（例如 $10^{100}$），只要不是无穷大，该事件在理论上都是可达的。
-    * **无限即死锁**：若生成事件的步骤 $N$ 是无限的（即算法进入了无法跳出的 `while(true)` 循环），则该事件发生的概率 $P(E) \equiv 0$。这不仅仅是概率极小，而是该事件在逻辑层面上根本不存在。
-
-* **English Description**:
-    * **Finite implies Possible**: If the step count $N$ to generate an event is finite, then the probability of that event $P(E) > 0$. Regardless of how large $N$ is (e.g., $10^{100}$), as long as it is not infinite, the event is theoretically achievable.
-    * **Infinite implies Deadlock**: If the step count $N$ is infinite (i.e., the algorithm enters an inescapable `while(true)` loop), then the probability $P(E) \equiv 0$. This does not merely mean the probability is infinitesimally small, but rather that the event is logically non-existent.
-
-### 3. 量化推论：计算经济学原理 (Quantitative Inference: The Principle of Computational Economy)
-
-* **中文描述**：
-    * **宇宙懒惰定律**：在算力/步骤受限的系统中，系统倾向于选择消耗步骤最少（$N$ 最小）的路径。
-    * **概率反比关系**：对于所有“存在”（即 $N < \infty$）的事件，其发生的相对概率与生成该事件所需的计算步骤数成**反比**。步骤越少，概率越高；步骤越多（结构越复杂/熵越低），概率越低。
-
-* **English Description**:
-    * **The Law of Universal Laziness**: In a system constrained by steps/computation, the system tends to choose the path consuming the fewest steps (minimum $N$).
-    * **Inverse Probability Relationship**: For all "existing" events (where $N < \infty$), the relative probability of occurrence is **inversely proportional** to the number of computational steps required to generate it. Fewer steps imply higher probability; more steps (higher complexity/lower entropy) imply lower probability.
-
----
-
-## 数学表达 (Mathematical Formulation)
-
-### 1. 存在性判定 (Existence Determination)
-Let $\Omega$ be the universal set of all events. For any event $E$:
-
-$$
-P(E) \begin{cases} 
-> 0, & \text{if } \text{Steps}(A(E)) < \infty \ (\text{Constructible}) \\
-\equiv 0, & \text{if } \text{Steps}(A(E)) = \infty \ (\text{Deadlock})
-\end{cases}
-$$
-
-### 2. 概率量化公式 (Probability Quantification Formula)
-假设一个过程有一组可能的输出结果 $\{O_1, O_2, ..., O_k\}$，且每个结果都是有限步骤可达的。生成结果 $O_i$ 所需的步骤为 $N(O_i)$。
-Assuming a process has a set of possible outcomes $\{O_1, O_2, ..., O_k\}$, all reachable in finite steps. Let $N(O_i)$ be the steps required to generate outcome $O_i$.
-
-The probability $P(O_i)$ is determined by the normalized inverse of computational cost:
-
-$$
-P(O_i) = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
-$$
-
-> **Example (Coin Flip)**: 
-> * **Heads ($O_H$)**: Low complexity, $N \approx k$.
-> * **Tails ($O_T$)**: Low complexity, $N \approx k$.
-> * **Edge ($O_E$)**: Extreme complexity (balance calculation), $N \gg 1000k$.
-> * **Result**: $P(O_H) \approx P(O_T) \approx 0.5$; $P(O_E) \to 0$ (but $>0$).
-
 ---
 
 ## 🗓 Roadmap & Status (路线图与状态)
