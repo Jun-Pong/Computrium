@@ -107,6 +107,12 @@ Based on the system's inability to process infinity, we define two physically il
     * **描述**：当非原子事件 $P$ 的执行流程需要经过无穷多个串行步骤时（即 $P_1 \to \dots \to P_n \mid n=\infty$），系统因无法跑完流程而卡死。
     * **Description**: When the execution flow of a non-atomic event $P$ requires infinite serial steps, the system hangs due to the inability to complete the process.
 
+> **推论 (Corollary)**
+>
+> **显而易见**：任何事件都可以在“空间广度”和“时间长度”中互相转化。即，对于任何一个概率为 0 的事件 $P$，都可以用 $P_A$（集合死锁）和 $P_B$（步骤死锁）两种形式表示。
+>
+> **Obvious**: Any event can be mutually transformed between "spatial breadth" and "temporal length". That is, for any event $P$ with zero probability, it can be represented in two forms: $P_A$ (Set Deadlock) and $P_B$ (Step Deadlock).
+
 ---
 
 ## 2. 几何区间概率原理 (The Principle of Geometric Interval Probability)
