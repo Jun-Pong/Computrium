@@ -294,7 +294,7 @@ Unlike traditional algorithms that seek "arithmetic uniform distribution," this 
     
     Rays can bounce within the geometry. A single environmental input generates not just one result, but a **"Ray Path"**, a sequence of correlated events (a narrative chain).
 
-### 6.2 算法伪代码 (Algorithm Pseudocode)
+### 6.1.2 算法伪代码 (Algorithm Pseudocode)
 
 ```python
 Class Topological_Arena:
@@ -339,6 +339,29 @@ Class Topological_Arena:
 # 复杂的输入生成隐藏在他物背后的小靶子。
 # 这生成了“自然分布”而非“均匀分布”。
 ```
+
+### 6.2 游戏机制革命：确定性环境映射
+### 6.2 Game Mechanics Revolution: Deterministic Environmental Mapping
+
+传统游戏开发依赖伪随机数生成器 (RNG) 来决定掉落和合成结果，这本质上是一种“赌博”机制，导致玩家体验的割裂感（纯粹的运气比拼）。基于 **SFCP 理论**，我们可以用**“环境噪音采样”**替代传统的 RNG：
+
+Traditional game development relies on Pseudo-Random Number Generators (RNG) for drops and crafting, which is essentially a "gambling" mechanism, leading to a disjointed player experience (pure luck). Based on **SFCP Theory**, we can replace traditional RNG with **"Environmental Noise Sampling"**:
+
+* **机制 (Mechanism)**
+    事件结果不是掷骰子算出来的，而是由环境熵决定的确定性映射。
+    Outcomes are not rolled like dice but are deterministic mappings determined by environmental entropy.
+    $$Result = Hash(Action + Coordinates_{(x,y)} + Time_{server} + Weather_{state})$$
+
+* **玩法范式转移 (Paradigm Shift)**
+    * **从赌博到探索 (From Gambling to Exploration)**：合成失败不再是因为“运气不好”，而是因为当前的“时空环境”处于**死锁区间 (Deadlock Interval)**。玩家需要寻找特定的地点（坐标）、特定的时间（游戏内天象）来“解锁”成功状态。这让游戏从“刷刷刷”变成了寻找规律的“风水学/科学探索”。
+    * **From Gambling to Exploration**: A crafting failure is no longer due to "bad luck" but because the current "space-time environment" is in a **Deadlock Interval**. Players must find specific locations (coordinates) and specific times (in-game celestial phenomena) to "unlock" the success state. This transforms the game from "grinding" into "Feng Shui/Scientific Exploration".
+
+    * **动态世界 (Dynamic World)**：传说装备的掉落不再是固定的 0.01%，而是仅在特定的“逻辑窗口”打开时（例如：雷暴天气下的特定坐标）必然掉落。
+    * **Dynamic World**: Legendary drops are no longer a fixed 0.01%, but are guaranteed to drop only when a specific "logic window" opens (e.g., specific coordinates during a thunderstorm).
+
+* **性能红利 (Performance Bonus)**
+    服务器不再需要为每个玩家的高频请求单独计算随机数 ($O(N)$)，只需计算全局环境哈希 ($O(1)$) 并广播状态，极大地降低了算力负载。
+    The server no longer needs to calculate random numbers individually for high-frequency requests from every player ($O(N)$), but only needs to calculate the global environmental hash ($O(1)$) and broadcast the state, drastically reducing computational load.
 
 ---
 
