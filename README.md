@@ -203,16 +203,6 @@ $$
 
 ---
 
-这是一个非常棒的收尾。将理论落地为具体的算法实现，能够极大地增强理论的说服力和实用性。
-
-我使用了 SFCP (Step-Finite Constructive Probability) 作为缩写，这在学术和工程文档中都很常见。
-
-以下是为您准备的 第 5 章 内容，格式与前文完全保持一致，您可以直接将其追加到文档末尾：
-
-Markdown
-
----
-
 ## 5. 基于 SFCP 的随机函数实现原理 (Implementation Principle of SFCP-Based Random Function)
 
 本章节展示了如何将“有限步骤构造概率论”转化为实际的计算机算法。
@@ -271,6 +261,77 @@ Function SFCP_Random_Selector(Events_List):
         
     # Fallback (Should be theoretically unreachable if intervals sum to 1)
     Return Deadlock_Error
+```
+
+---
+
+---
+
+## 6. 扩展应用：拓扑射线算法 (Extended Application: The Topological Raycast Algorithm)
+
+本理论不仅可以解释现有的随机性，还允许我们构造一种全新的**“拓扑射线随机生成器” (Topological Raycast RNG)**。
+This theory not only explains existing randomness but also allows us to construct a novel **"Topological Raycast RNG"**.
+
+与传统算法追求“算术均匀分布”不同，本算法通过构建**几何靶场**来模拟物理世界的复杂因果链。
+Unlike traditional algorithms that seek "arithmetic uniform distribution," this algorithm simulates complex physical causal chains by constructing a **Geometric Arena**.
+
+### 6.1 核心机制：遮挡与碰撞 (Core Mechanisms: Occlusion & Collision)
+* **遮挡效应 (The Occlusion Effect)**：
+    在几何空间中，简单的事件（宽窗口）可以被放置在复杂事件（窄窗口）的**前方**。
+    *意义*：无需计算复杂的条件概率 $P(B|A)$。只要射线撞击了前方的物体 A，后方的物体 B 自然就被“遮挡”了。这完美模拟了物理世界中的**优先级**和**排他性**。
+    
+    In geometric space, simple events (wide windows) can be placed **in front of** complex events (narrow windows).
+    *Significance*: No need to calculate complex conditional probabilities $P(B|A)$. If the ray hits object A in front, object B behind is naturally "occluded." This perfectly simulates **priority** and **exclusivity** in the physical world.
+
+* **多维弹射 (Multidimensional Bouncing)**：
+    射线可以在几何体内反弹。一次环境输入不仅仅产生一个结果，而是产生一条**“射线路径” (Ray Path)**，即一连串相关的事件序列（叙事链）。
+    
+    Rays can bounce within the geometry. A single environmental input generates not just one result, but a **"Ray Path"**, a sequence of correlated events (a narrative chain).
+
+### 6.2 算法伪代码 (Algorithm Pseudocode)
+
+```python
+Class Topological_Arena:
+    def __init__(self):
+        self.objects = [] # 存储几何物体 (Events)
+
+    def add_event(self, event, complexity_N, position):
+        # The size of the object is inversely proportional to N (Theory 2.2)
+        # 物体体积与 N 成反比
+        size = 1.0 / complexity_N
+        self.objects.append(GeometryObject(event, size, position))
+
+    def cast_ray(self, environment_entropy):
+        # 1. Map entropy to a vector (Angle & Force)
+        # 将环境熵映射为向量（角度与力度）
+        vector = Hash_To_Vector(environment_entropy)
+        
+        # 2. Ray marching (射线步进)
+        ray = Ray(origin=(0,0), direction=vector)
+        
+        while ray.energy > 0:
+            # Check for collision with the nearest object
+            hit_object = Find_Nearest_Intersection(ray, self.objects)
+            
+            if hit_object:
+                # Event Occurs (事件发生)
+                return hit_object.event_id
+                
+                # Optional: Bounce logic for event chains
+                # ray.reflect(hit_object.normal)
+            
+            else:
+                # No collision = Ray escapes to infinity
+                # 未发生碰撞 = 射线逃逸至无穷远
+                return Deadlock_Global # (Theory 1.2)
+
+# --- 物理意义 (Physical Significance) ---
+# Simple inputs (low N) create large targets that are easy to hit.
+# Complex inputs (high N) create tiny targets hidden behind others.
+# This generates a "Natural Distribution" rather than a "Uniform Distribution".
+# 简单的输入生成容易被击中的巨大靶子。
+# 复杂的输入生成隐藏在他物背后的小靶子。
+# 这生成了“自然分布”而非“均匀分布”。
 ```
 
 ---
