@@ -116,16 +116,28 @@ N(E) = \text{Steps}(\text{Algorithm}_{E})
 $$
 
 ### 2.2 物理权重 (Physical Weight)
-步骤最少的路径更容易最快跑到终点。事件的物理权重 $W$ 与其计算代价 $N$ 成反比。
-The path with the fewest steps is more likely to reach the finish line first. Therefore, the physical weight $W$ of an event is inversely proportional to its computational cost $N$.
+**逻辑上最短的路径，在物理竞速中必然最先到达终点。**
+一件事情发生了某个结果，说明这个结果在当时的环境下最先跑到了终点。因此，所谓的“高概率”本质上是“低延迟”的体现。事件的物理权重 $W$ 与其计算代价 $N$ 成反比。
+
+**The logically shortest path inevitably reaches the termination point first in a physical race.**
+The occurrence of a specific result implies that this result reached the finish line first in the given environment. Therefore, so-called "high probability" is essentially a manifestation of "low latency." The physical weight $W$ of an event is inversely proportional to its computational cost $N$.
 
 $$
 W(E) = \frac{1}{N(E)}
 $$
 
-### 2.3 归一化概率公式 (Normalized Probability Formula)
-对于一组互斥的可行结果 $\{O_1, O_2, ..., O_k\}$，结果 $O_i$ 被观测到的概率为：
-For a set of mutually exclusive outcomes $\{O_1, O_2, ..., O_k\}$, the observed probability is:
+### 2.3 竞速决定论基石 (The Cornerstone of Deterministic Racing)
+* **中文描述**：
+    世界不存在概率，只存在由于我们无法观测微观竞速过程而产生的“宏观不确定性”。实际上，每一次结果的出现，都是因为它在那一瞬间，在那条具体的物理路径上，计算步骤最少，跑得最快。
+    **最短路径 = 最先到达 = 必然发生。**
+
+* **English Description**:
+    There is no probability in the world, only "macroscopic uncertainty" arising from our inability to observe the microscopic racing process. In reality, every occurrence of a result is because, at that instant, on that specific physical path, it had the fewest computational steps and ran the fastest.
+    **Shortest Path = First Arrival = Inevitable Occurrence.**
+
+### 2.4 归一化概率公式 (Normalized Probability Formula)
+对于一组互斥的可行结果 $\{O_1, O_2, ..., O_k\}$，结果 $O_i$ 被观测到的概率（实际上是其在竞速中获胜的频率统计）为：
+For a set of mutually exclusive outcomes $\{O_1, O_2, ..., O_k\}$, the observed probability (which is effectively the statistical frequency of winning the race) is:
 
 $$
 P(O_i) = \frac{W(O_i)}{\sum_{j=1}^{k} W(O_j)} = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
