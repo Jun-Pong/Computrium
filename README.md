@@ -499,7 +499,90 @@ The "Indeterminate" and "Singularity" in mathematical analysis are physically re
 
 ---
 
-### 4.9 宇宙可达结果集与构造复杂度 (The Universal Reachable Result Set and Constructive Complexity)
+### 4.10 SFCP 运算分级指南 (SFCP Operational Classification Guide)
+
+**核心判据 (Core Criterion)**
+一个基于极限的运算 $\lim_{n \to \infty} f(n)$ 是否合法，取决于它对应的物理过程在 $n$ 达到**宇宙截止值 ($N_{max}$)** 时，是否已经**收敛 (Converged)** 到一个稳定值。
+Whether a limit-based operation $\lim_{n \to \infty} f(n)$ is legal depends on whether its corresponding physical process has **Converged** to a stable value when $n$ reaches the **Universal Cutoff ($N_{max}$)**.
+
+* **收敛 (Convergent)** $\implies$ **合法近似 (Legal Approximation)**
+    *(可以作为描述有限现实的高效工具 / Can be used as an efficient tool to describe finite reality.)*
+* **发散/震荡 (Divergent/Oscillating)** $\implies$ **非法幻觉 (Illegal Illusion)**
+    *(物理上的无稽之谈或错误 / Physical nonsense or error.)*
+
+---
+
+#### 1. 合法近似区：白名单 (The White List: Legal Approximations)
+这些运算虽然在数学形式上写成 $\infty$ 或 $\to 0$，但在物理上它们对应的是**“足够小的原子”**或**“足够多的步骤”**。它们是节省算力的好工具。
+Although these operations are written as $\infty$ or $\to 0$ in mathematical form, physically they correspond to **"sufficiently small atoms"** or **"sufficiently many steps."** They are excellent tools for saving computational power.
+
+| 运算类型 (Type) | 经典写法 (Classic) | SFCP 物理实质 (Physical Substance) | 判决 (Verdict) |
+| :--- | :--- | :--- | :--- |
+| **导数**<br>(Derivative) | $f'(x) = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x}$ | **差分比率 (Difference Ratio)**: $\frac{\Delta y}{\Delta x_{min}}$ <br> 只要 $\Delta x$ 不小于普朗克尺度，这就是合法的“斜率估算”。<br> As long as $\Delta x$ is not smaller than the Planck scale, this is a legal "slope estimation." | **合法 (Legal)** <br> *(视为离散差分的连续近似 / Continuous approximation of discrete difference)* |
+| **定积分**<br>(Definite Integral) | $\int_a^b f(x)dx$ | **有限求和 (Finite Sum)**: $\sum_{i=1}^{N} f(x_i) \Delta x$ <br> 只要区域有限且函数有界，这就是在统计原子数量。<br> As long as the region is finite and the function is bounded, this is counting atoms. | **合法 (Legal)** <br> *(视为大规模求和的快速算法 / Fast algorithm for massive summation)* |
+| **收敛级数**<br>(Convergent Series) | $\sum_{n=1}^\infty \frac{1}{2^n} = 1$ | **快速交付 (Fast Delivery)**: <br> 在 $n$ 触及宇宙极限前，结果已稳定。后续微小步骤物理上被截断。<br> The result stabilizes before $n$ hits the universal limit. Subsequent tiny steps are physically truncated. | **合法 (Legal)** <br> *(尾部截断不影响物理精度 / Tail truncation does not affect physical precision)* |
+| **渐近线**<br>(Asymptotes) | $\lim_{x \to \infty} \frac{1}{x} = 0$ | **趋势预测 (Trend Prediction)**: <br> 意味着随着时间推移，影响变得极小以至于无法探测（最终归零）。<br> Implies that over time, the influence becomes too small to detect (eventually zeroing out). | **合法 (Legal)** <br> *(描述归零趋势 / Describes the trend of zeroing)* |
+
+> **SFCP 注解 (Note)**: 微积分之所以好用，是因为它是处理离散世界的**“平滑滤镜”**。只要不把滤镜当真，它就是好工具。
+> **SFCP Note**: Calculus is useful because it is a **"Smoothing Filter"** for the discrete world. As long as you don't mistake the filter for reality, it is a good tool.
+
+---
+
+#### 2. 非法幻觉区：黑名单 (The Black List: Illegal Illusions)
+这些运算在 SFCP 中被认定为**逻辑病毒**。它们试图利用数学规则绕过物理限制，产生无中生有的结果。
+These operations are identified as **Logical Viruses** in SFCP. They attempt to use mathematical rules to bypass physical limits and produce results ex nihilo.
+
+| 运算类型 (Type) | 经典写法 (Classic) | SFCP 物理实质 (Physical Substance) | 判决 (Verdict) |
+| :--- | :--- | :--- | :--- |
+| **奇点**<br>(Singularities) | $\lim_{x \to 0} \frac{1}{x} = \infty$ | **资源溢出 (Resource Overflow)**: <br> 试图把 1 分配给 0。导致系统崩溃。<br> Attempting to distribute 1 to 0. Causes system crash. | **非法 (Illegal)** <br> Result $\to \mathbf{0}$ |
+| **发散积分**<br>(Divergent Integral) | $\int_1^\infty \frac{1}{x} dx$ | **永动机谬误 (Perpetual Motion Fallacy)**: <br> 试图计算无限长的路程，永远无法完成结算。<br> Attempting to calculate an infinitely long path, settlement can never be completed. | **非法 (Illegal)** <br> Result $\to \mathbf{0}$ |
+| **发散级数**<br>(Divergent Series) | $\sum n$, $\sum (-1)^n$ | **死锁/震荡 (Deadlock/Oscillation)**: <br> 内存溢出，或像开关一样永远跳动，无法交付确定状态。<br> Memory overflow, or eternal toggling like a switch, unable to deliver a definite state. | **非法 (Illegal)** <br> Result $\to \mathbf{0}$ |
+| **狄拉克函数**<br>(Dirac Delta) | $\delta(x)$ | **无限密度谎言 (Infinite Density Lie)**: <br> 任何物理实体的体积不能为 0，密度不能为 $\infty$。<br> No physical entity can have 0 volume or $\infty$ density. | **非法 (Illegal)** <br> Result $\to \mathbf{0}$ |
+| **无限分形**<br>(Infinite Fractals) | $L \to \infty$ | **精度限制 (Precision Limit)**: <br> 放大到原子尺度后，分形结构终止，周长是有限的。<br> Fractal structure terminates at the atomic scale; perimeter is finite. | **非法 (Illegal)** <br> Result $\to \text{Finite}$ |
+
+---
+
+#### 3. 灰色地带：重整化区 (The Renormalization Zone)
+有些计算中间会出现无穷大，但最后能算出一个有限值（如量子场论）。SFCP 认为，这说明**经典的公式错了，必须引入修正**。
+Some calculations yield intermediate infinities but result in a finite value (e.g., QFT). SFCP argues this proves **the classical formula is wrong and must be corrected.**
+
+* **经典操作 (Classic)**: 算出 $\infty$，然后减去另一个 $\infty$，得到有限值。(数学上不严谨)
+    (Calculate $\infty$, then subtract another $\infty$ to get a finite value. Mathematically non-rigorous.)
+* **SFCP 操作 (SFCP)**:
+    * 承认 $\infty$ 根本没出现过。 (Acknowledge $\infty$ never appeared.)
+    * 在积分上限 $N_{max}$ 处直接**截断 (Cut-off)**。 (Directly **Cut-off** at the integration limit $N_{max}$.)
+    * **截断值才是物理真实**。 (**The cut-off value is the physical reality.**)
+
+---
+
+### 4.11 总结：SFCP 下的合法性判据 (Summary: Criteria for Legality under SFCP)
+
+如果用户询问：“我这个公式还能用吗？” 请套用以下流程图：
+If a user asks, "Can I still use this formula?" Apply the following flowchart:
+
+1.  **停机测试 (Halting Test)**
+    这个运算在有限步骤 ($N < \infty$) 内能停机吗？
+    Does this operation halt within finite steps ($N < \infty$)?
+    * 能 (Yes) $\to$ Continue.
+    * 不能 (No) $\to$ **非法 (Illegal) $\to$ 0**.
+
+2.  **稳定性测试 (Stability Test)**
+    随着 $N$ 增大，结果是否稳定在一个固定值附近（收敛）？
+    As $N$ increases, does the result stabilize around a fixed value (Converge)?
+    * 是 (Yes) $\to$ **合法近似 (Legal Approximation)**.
+        *(可以使用微积分公式偷懒 / Calculus formulas can be used as shortcuts.)*
+    * 否 (No - Diverges/Explodes) $\to$ **非法 (Illegal) $\to$ 0**.
+
+3.  **密度测试 (Density Test)**
+    是否涉及除以零或密度无限大？
+    Does it involve division by zero or infinite density?
+    * 是 (Yes) $\to$ **非法 (Illegal) $\to$ 0**.
+        *(奇点被移除 / Singularities removed.)*
+    * 否 (No) $\to$ **合法 (Legal)**.
+
+---
+
+### 4.12 宇宙可达结果集与构造复杂度 (The Universal Reachable Result Set and Constructive Complexity)
 
 宇宙不是一个预先写入所有数据的静态数据库（Lookup Table），而是一个**实时运行的构造系统**。
 The universe is not a static database (Lookup Table) with pre-written data, but a **Runtime Constructive System**.
