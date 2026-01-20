@@ -296,6 +296,61 @@ Deadlocks are not "impossible events"; they are **logical ghosts with no physica
 
 ---
 
+### 4.6 体积继承定律与冻结悖论 (The Law of Volume Inheritance and The Frozen Paradox)
+
+**背景 (Context)**
+为了解决“必然性”在无穷时间中的定义问题，我们将逻辑体积的计算方式从“总量代价”修正为**“路径继承”**。
+To resolve the definition of "Inevitability" over infinite time, we correct the calculation of logical volume from "Total Cost" to **"Path Inheritance"**.
+
+#### 1. 体积继承定律 (The Law of Volume Inheritance)
+每一个逻辑步骤的体积，严格继承自其父节点。体积的变化仅取决于当前节点的分支情况，与之前的步骤总数无关。
+The volume of each logical step is strictly inherited from its parent node. Volume change depends *only* on the branching at the current node, independent of the total previous steps.
+
+递推公式如下：
+The recurrence formula is as follows:
+
+$$
+\mathcal{V}_{current} = \mathcal{V}_{parent} \times \frac{1}{S_{current}}
+$$
+
+* **$\mathcal{V}$**: 逻辑体积 (Logical Volume)。
+* **$S_{current}$**: 当前步骤的分支因子 (Branching Factor)。
+
+#### 2. 原子守恒推论 (Corollary of Atomic Conservation)
+对于原子事件（$S=1$），无论其在时间轴上串联多长，其逻辑体积始终保持恒定。
+For atomic events ($S=1$), regardless of how long they are serialized on the timeline, their logical volume remains constant.
+
+$$
+\text{If } S \equiv 1, \text{ then } \mathcal{V}_{n} = \mathcal{V}_{n-1} \times \frac{1}{1} \equiv \mathcal{V}_{start}
+$$
+
+**物理含义**：
+原子链是一根**无损耗的光纤**。无论多长，只要没有分叉，逻辑流（概率流）就不会泄露或稀释。当前体积永远等于总体积。
+**Physical Meaning**:
+The atomic chain is a **lossless optical fiber**. No matter the length, as long as there are no branches, the logical flow (probability flow) does not leak or dilute. The current volume is always equal to the total volume.
+
+#### 3. 悖论的兼容：冻结的必然 (Compatibility with Paradox: Frozen Inevitability)
+现在，我们可以完美描述“无限原子链” ($P \to P \to \dots \to \infty$) 的物理状态。
+Now we can perfectly describe the physical state of the "Infinite Atomic Chain."
+
+* **逻辑上 (Logically)**：
+    $\mathcal{V} = 1$。
+    这是一个**必然事件**。它是逻辑全集中的唯一路径，比值为 1。
+    (It is an **Inevitable Event**. It is the only path in the logical universe, with a ratio of 1.)
+
+* **物理上 (Physically)**：
+    $\text{Latency} \to \infty$。
+    结果永远无法被观测者获取。
+    (The result can never be retrieved by the observer.)
+
+**结论 (Conclusion)**：
+这种事件被称为**不存在的必然 (Non-existent Inevitability)**。
+它在理论上绝对成立（概率为1），但在现实中永远不会发生。有限步骤构造概率论 (SFCP) 承认这种悖论状态的存在：这是**存在的必然性与无穷之间不兼容的直观体现**。
+Such an event is called **"Non-existent Inevitability."**
+It is theoretically absolute (Probability 1) but realistically never happens. Finite Step Constructive Probability (SFCP) acknowledges this paradoxical state: it is a **direct manifestation of the incompatibility between existing inevitability and infinity.**
+
+---
+
 ## 5. 基于 SFCP 的随机函数实现原理 (Implementation Principle of SFCP-Based Random Function)
 
 本章节展示了如何将“有限步骤构造概率论”转化为实际的计算机算法。
