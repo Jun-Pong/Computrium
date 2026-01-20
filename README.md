@@ -418,14 +418,14 @@ Infinity is not a bridge to truth, but a cliff leading to **0 (Non-existence)**.
 
 ---
 
-### 4.8 经典不定式的终结 (The End of Classical Indeterminate Forms)
+### 4.8 经典不定式与奇点的终结 (The End of Classical Indeterminate Forms and Singularities)
 
 **核心效应 (Core Effect)**
-在 SFCP 的强有限宇宙中，无穷与奇异点不再是数值，而是**“归零算子” (Zeroing Operator)**。
-In SFCP's strong finite universe, infinity and singularities are no longer values, but **"Zeroing Operators."**
+在 SFCP 的强有限宇宙中，无穷 ($x \to \infty$)、奇点 ($x \to 0$) 与发散级数不再是数值，而是**“归零算子” (Zeroing Operator)**。
+In SFCP's strong finite universe, infinity ($x \to \infty$), singularities ($x \to 0$), and divergent series are no longer values, but **"Zeroing Operators."**
 
-凡是被 $\infty$ 或定义的边界触碰的数学表达式，无需进行复杂的极限运算，直接在物理层面判定为 **NULL (0)**。
-Any mathematical expression touched by $\infty$ or defined boundaries is directly judged as **NULL (0)** at the physical level, without the need for complex limit operations.
+凡是被 $\infty$、定义的边界或非法运算触碰的数学表达式，无需进行复杂的极限运算或解析延拓，直接在物理层面判定为 **NULL (0)**。
+Any mathematical expression touched by $\infty$, defined boundaries, or illegal operations is directly judged as **NULL (0)** at the physical level, without the need for complex limit operations or analytic continuation.
 
 #### 1. 七大不定式的物理裁决 (Physical Verdict on the Seven Indeterminate Forms)
 
@@ -442,7 +442,28 @@ We compare the entanglements in classical calculus with the verdict of SFCP. **T
 | **$\infty^0$** | **$\equiv 0$** | **基座崩塌**：不存在的物体($\infty$)无法作为基底进行任何运算。 <br> **Base Collapse**: A non-existent object ($\infty$) cannot serve as a base for any operation. |
 | **$0^\infty$** | **$\equiv 0$** | **双重虚无**：本来就是空的，还无穷次空，当然是空。 <br> **Double Void**: Already empty, and empty infinitely times, is certainly empty. |
 
-#### 2. “无穷”与“0”的绝对闭环 (The Absolute Closed Loop of Infinity and Zero)
+#### 2. 逆向路径与奇点的全面封锁 (Total Blockade of Inverse Paths and Singularities)
+
+SFCP 不仅禁止正向产生无穷，也禁止通过逆向运算（倒数、积分、延拓）从虚无中“偷窃”存在。
+SFCP not only prohibits the forward generation of infinity but also prohibits "stealing" existence from the void via inverse operations (reciprocals, integrals, continuation).
+
+* **零除即崩溃 (Division by Zero Collapse)**:
+    除以零不是生成无穷，而是非法资源分配导致的系统崩溃。
+    Division by zero does not generate infinity; it is a system crash caused by illegal resource allocation.
+    $$\frac{1}{0} \implies \text{Crash} \implies \mathbf{0}$$
+
+* **狄拉克 $\delta$ 函数的非法性 (Illegitimacy of Dirac Delta)**:
+    不存在“无限密度、有限质量”的实体。若高度为 $\infty$，则物理存在性为 0。
+    There is no entity with "infinite density, finite mass." If height is $\infty$, physical existence is 0.
+    $$\text{Height}(\infty) \implies \text{Mass}(0) \implies \int \delta(x)dx \equiv \mathbf{0}$$
+
+* **级数发散的截断 (Truncation of Divergent Series)**:
+    物理构造禁止解析延拓。无穷级数求和导致内存溢出，而非收敛于负数。
+    Physical construction prohibits analytic continuation. Summation of infinite series leads to memory overflow, not convergence to a negative number.
+    $$\sum_{n=1}^{\infty} n \to \text{Overflow} \implies \mathbf{0} \quad (\text{Not } -1/12)$$
+
+#### 3. “无穷”与“0”的绝对闭环 (The Absolute Closed Loop of Infinity and Zero)
+
 在 SFCP 中，**所有非有限状态（Non-finite States）在物理上都坍缩为 0。**
 In SFCP, **all Non-finite States physically collapse to 0.**
 
@@ -458,7 +479,8 @@ $$
 \text{Undefined} \cup \text{Infinite} \cup \text{Singularity} \implies \mathbf{0}
 $$
 
-#### 3. 彻底的清净 (Complete Clarity)
+#### 4. 彻底的清净 (Complete Clarity)
+
 这个公理消除了宇宙中所有的模棱两可。
 This axiom eliminates all ambiguities in the universe.
 
@@ -466,13 +488,13 @@ This axiom eliminates all ambiguities in the universe.
     (**No "Infinitely Large" Energy**: Zeroed directly.)
 * **没有“无限小”的概率**：直接归零。
     (**No "Infinitely Small" Probability**: Zeroed directly.)
-* **没有“无中生有”的奇点** ($0^0$)：直接归零。
+* **没有“无中生有”的奇点**：直接归零。
     (**No "Creation Ex Nihilo" Singularity**: Zeroed directly.)
 
 **结论 (Conclusion)**:
-数学分析中的“不定式” (Indeterminate) 在物理上被重新定义为 **“不存在” (Non-existent)**。
+数学分析中的“不定式” (Indeterminate) 和“奇点” (Singularity) 在物理上被重新定义为 **“不存在” (Non-existent)**。
 **宇宙只承认“有限整数”的合法性。**
-The "Indeterminate" in mathematical analysis is physically redefined as **"Non-existent."**
+The "Indeterminate" and "Singularity" in mathematical analysis are physically redefined as **"Non-existent."**
 **The universe only acknowledges the legitimacy of "Finite Integers."**
 
 ---
