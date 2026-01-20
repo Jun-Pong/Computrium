@@ -504,24 +504,31 @@ $$T_{min} = \log_{S_{max}} (N)$$
 **时间是分辨率的代偿。** 暴力破解的门槛不在于算法的优劣，而在于目标占比 $W$ 被稀释的程度与物理单步处理极限 $S$ 之间的对数差。
 **Time is the compensation for resolution.** The threshold of brute force lies not in the quality of the algorithm, but in the logarithmic difference between the dilution of the target proportion $W$ and the physical single-step processing limit $S$.
 
-### 6.4 算法发现的概率佯谬：逻辑空间比值
-**(6.4 The Discovery Paradox: Logical Space Ratio)**
+### 6.4 算法发现的概率佯谬：逻辑空间比值与打表极限
+**(6.4 The Discovery Paradox: Logical Space Ratio and the Lookup Table Limit)**
 
-本节定义为何寻获最优解的概率在物理上是最低的。
+本节定义为何寻获最优解的概率在物理上是最低的，并揭示最快算法（打表）的物理代价。
+This section defines why the discovery probability of the optimal solution is physically the lowest and reveals the physical cost of the fastest algorithm (Lookup Table).
 
-#### 1. 发现概率的本质定义
+#### 1. 发现概率的本质定义 (Essence of Discovery Probability)
 根据归一化公理，任何解法的发现概率，本质上就是其**逻辑空间**（时间全部转换为空间后的总规模）与**全集总空间**的比值。
+According to the Axiom of Normalization, the discovery probability of any solution is essentially the ratio of its **Logical Space** (the total scale after converting all time into space) to the **Total Universal Space**.
 
-#### 2. 最优解的低占比原理
-* **逻辑空间最小化**：最优解 $P_0$ 拥有最精简的原子事件集合，在时间转换为空间后，其所占用的逻辑空间达到物理极限的最小。
+#### 2. 最优解的低占比原理 (Low Proportion Principle of Optimal Solutions)
+* **逻辑空间最小化**：最优解 $P_0$ 拥有最精简的原子事件集合。在时间转换为空间后，其所占用的逻辑空间达到物理极限的最小（趋近于单一原子事件）。
 * **发现概率最低**：由于其逻辑空间极小，在全集总空间中的比值（占比）最低，导致在搜索路由中被命中的几率最低。
+* **Logical Space Minimization**: The optimal solution $P_0$ possesses the most concise set of atomic events. After time-to-space conversion, its logical space reaches the physical minimum (approaching a single atomic event).
+* **Lowest Discovery Probability**: Due to its minimal logical space, its ratio (proportion) in the total space is the lowest, resulting in the minimum chance of being hit during search routing.
 
-#### 3. 平庸解的高占比原理
+#### 3. 平庸解的高占比原理 (High Proportion Principle of Mediocre Solutions)
 * **逻辑空间巨大**：平庸解包含庞大的冗余原子事件集合，时间转换后的逻辑空间规模巨大。
 * **发现概率高**：较大的逻辑空间使其在总空间中占据了极高的比值。虽然其执行效率低，但其逻辑宽度较大，因此易被寻获。
+* **Massive Logical Space**: Mediocre solutions contain vast sets of redundant atomic events, resulting in a massive logical space scale after conversion.
+* **High Discovery Probability**: The large logical space occupies a high ratio in the total space. Despite low execution efficiency, its greater logical width makes it easily found.
 
-#### 4. 结论
-**效率是存在感的敌人**。最优解通过极小的逻辑空间换取了极高的时间效率，但也因此在归一化占比中被稀释到了消失的边缘。
+#### 4. 结论：打表悖论与存在性坍缩 (Conclusion: The Lookup Table Paradox and Existential Collapse)
+最快的算法在逻辑上永远趋向于“打表”（Lookup Table），即将所有逻辑折叠为 $O(1)$ 的原子操作。然而，这会导致总空间（分母）呈指数级膨胀，使最优解的逻辑占比跌破物理分辨率，导致其在现实中因“无法被选中”而产生存在性坍缩。
+The fastest algorithm logically tends towards a "Lookup Table," folding all logic into $O(1)$ atomic operations. However, this causes the total space (denominator) to expand exponentially, pushing the logical proportion of the optimal solution below physical resolution, leading to existential collapse as it becomes "unselectable" in reality.
 
 ---
 
