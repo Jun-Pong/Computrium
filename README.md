@@ -179,134 +179,120 @@ This theory is supported by the following three key logical diagrams:
 
 ---
 
-## 4. 基本定义公式 (Basic Definition Formulas)
+## 4. 核心数学定理 (Core Mathematical Theorems)
 
-### 4.1 逻辑深度函数 (The Logical Depth Function)
-定义函数 $N(E)$ 为系统生成事件 $E$ 所需的最少逻辑运算步骤数（或约束条件的数量）。
-Let $N(E)$ be the minimum number of logical steps (or number of constraints) required to generate event $E$.
+### 4.1 逻辑时空超体积 (Logical Space-Time Hyper-Volume)
+我们将事件 $E$ 的存在性定义为它在逻辑宇宙中占据的“分量”。这不是简单的步骤计数，而是时间与空间维度的几何累积。
+We define the existence of event $E$ as the "component" it occupies in the logical universe. This is not a simple step count, but a geometric accumulation of temporal and spatial dimensions.
 
-$$
-N(E) = \text{Steps}(\text{Algorithm}_{E})
-$$
-
-### 4.2 物理权重与区间宽度 (Physical Weight and Interval Width)
-**构造步骤越少，对应的逻辑区间越宽。**
-事件的物理权重 $W$（代表其几何区间宽度）与其计算代价 $N$ 成反比。简单事件因为约束少，在状态空间中占据更大的“靶面”。
-**The fewer the construction steps, the wider the corresponding logical interval.**
-The physical weight $W$ of an event (representing its geometric interval width) is inversely proportional to its computational cost $N$. Simple events occupy a larger "target surface" in the state space due to fewer constraints.
+定义 $\mathcal{V}(E)$ 为事件构造路径上所有时空切片的累积积：
+Define $\mathcal{V}(E)$ as the cumulative product of all space-time slices along the event's construction path:
 
 $$
-W(E) = \frac{1}{N(E)}
+\mathcal{V}(E) = \prod_{t=1}^{T} \frac{1}{S_t}
 $$
 
-### 4.3 归一化概率公式 (Normalized Probability Formula)
-对于一组互斥的可行结果 $\{O_1, O_2, ..., O_k\}$，结果 $O_i$ 被观测到的概率是其权重在总权重中的占比：
-For a set of mutually exclusive outcomes $\{O_1, O_2, ..., O_k\}$, the observed probability of $O_i$ is its weight proportional to the total weight:
+* **$T$ (构造深度 / Constructive Depth)**: 生成该事件所需的串行时间步骤。
+    (The serial temporal steps required to generate the event.)
+* **$S_t$ (分支因子 / Branching Factor)**: 在第 $t$ 步时的逻辑切分宽度（若为原子步骤，则 $S_t=1$）。
+    (The logical splitting width at step $t$; if it is an atomic step, $S_t=1$.)
+
+---
+
+### 4.2 概率：体积占比定理 (Probability: The Volume Ratio Theorem)
+概率不是随机性，而是**剩余逻辑体积在当前有效空间中的占比**。
+Probability is not randomness, but the **ratio of residual logical volume within the current effective space**.
+
+设 $\Omega_{current}$ 为系统当前状态下的有效全集。事件 $E$ 发生的概率 $P(E)$ 严格定义为：
+Let $\Omega_{current}$ be the effective universe in the system's current state. The probability $P(E)$ is strictly defined as:
 
 $$
-P(O_i) = \frac{W(O_i)}{\sum_{j=1}^{k} W(O_j)} = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
+P(E | \Omega_{current}) = \frac{\mathcal{V}(E)}{\mathcal{V}(\Omega_{current})}
 $$
 
-### 4.4 构造的等价性：归一化时空互换
-**(Equivalence of Construction: Normalized Space-Time Interchange)**
+* **物理含义 (Physical Meaning)**:
+    系统通过时空切分填满空间。$E$ 的“大小”（即未被逻辑剪枝切除的残留体积）决定了它被命中的必然性。
+    The system fills space through space-time slicing. The "size" of $E$ (its residual volume not pruned by logical cuts) determines the inevitability of it being hit.
 
-本理论建立在**逻辑总量恒守恒**的公理之上。
-无论事件如何构造（无论是空间平铺还是时间串行），**逻辑总空间（Universe）始终为 1**。事件的概率取决于它在归一化空间中的**切割占比**。
-This theory is founded on the axiom of **Conservation of Total Logical Volume**.
-Regardless of how an event is constructed (whether spatially tiled or temporally serialized), the **Total Logical Space (Universe) is always 1**. The probability of an event depends on its **proportion of the cut** within the normalized space.
+---
 
-#### 1. 原子守恒定律 (The Law of Atomic Conservation)
-对于原子事件（确定性步骤），其对逻辑空间的切割比例为 1。
-For an atomic event (deterministic step), its cutting proportion of the logical space is 1.
+### 4.3 动态时空转换方程 (Dynamic Space-Time Conversion Equation)
+本理论建立在**逻辑总量守恒**之上。任何极小的概率（微小的逻辑宽度），都可以通过**空间的广度**或**时间的深度**两种等价方式构造出来。
+This theory is based on the **Conservation of Logical Total**. Any infinitesimal probability (minute logical width) can be constructed equivalently through either **spatial breadth** or **temporal depth**.
 
-$$
-\text{Path Share} = 1 \times 1 \times \dots \times 1 = 1
-$$
-
-* **物理含义**：
-    原子事件无论串联多长（$A \to A \to \dots$），它始终占据 **100% 的逻辑宽度**。时间在流逝，但逻辑空间没有被稀释。因此，确定性长链的概率依然是 1。
-    **Physical Meaning**:
-    No matter how long atomic events are serialized ($A \to A \to \dots$), they always occupy **100% of the logical width**. Time passes, but the logical space is not diluted. Thus, the probability of a deterministic long chain remains 1.
-
-#### 2. 分支切割定律 (The Law of Branching Cuts)
-非原子事件（分支/抽取）代表了对逻辑总量的**切割**。
-若一个事件 $P$ 的逻辑宽度为 $S$（即有 $S$ 个兄弟原子），则该路径只继承了上一级空间的 $1/S$。
-Non-atomic events (branching/selection) represent a **cut** of the total logical volume.
-If an event $P$ has a logical width of $S$ (meaning it has $S$ sibling atoms), this path inherits only $1/S$ of the previous level's space.
+#### 1. 转换定律 (The Conversion Law)
+若纯空间构造事件 $P_{space}$ 与纯时间构造事件 $P_{time}$ 概率相等，则满足：
+If a purely spatially constructed event $P_{space}$ and a purely temporally constructed event $P_{time}$ have equal probability, then:
 
 $$
-\text{Path Share} = \text{Previous Share} \times \frac{1}{S}
+\frac{1}{S_{space}} = \left( \frac{1}{S_{time}} \right)^{T_{depth}}
 $$
 
-#### 3. 时空互换实例 (Example of Space-Time Interchange)
-定义一个目标概率 $P = 0.01$（即占据逻辑总量 1% 的事件）。它可以以两种完全等价的物理形态存在：
-Define a target probability $P = 0.01$ (an event occupying 1% of the total logical volume). It can exist in two completely equivalent physical forms:
+取对数可得**时空守恒形式**：
+Taking the logarithm yields the **Space-Time Conservation Form**:
 
-* **形态 A：空间切片 (Form A: Spatial Slice)**
-    * **构造**：从一个包含 100 个原子的集合中单次选取。
-    * **计算**：$1 \times (1/100) = 0.01$。
-    * **本质**：一次性将逻辑总量切成 100 份。
-    * **Construction**: Single selection from a set containing 100 atoms.
-    * **Calculation**: $1 \times (1/100) = 0.01$.
-    * **Essence**: Slicing the total logical volume into 100 parts at once.
+$$
+\ln(S_{space}) = T_{depth} \times \ln(S_{time})
+$$
 
-* **形态 B：时间折叠 (Form B: Temporal Folding)**
-    * **构造**：两个“十位分支事件”的串联（$P_{10} \to P_{10}$）。
-    * **过程**：
-        1. **第一步（$T=1$）**：系统对逻辑总量（1）进行第一次 $1/10$ 切割。系统进入其中一个分支，此时**剩余的逻辑空间**仅为 $0.1$。
-        2. **第二步（$T=2$）**：系统对**当前所在的 $0.1$ 空间**进行第二次 $1/10$ 切割。
-    * **计算**：$1 \text{ (Total)} \times \frac{1}{10} \text{ (Step 1)} \times \frac{1}{10} \text{ (Step 2)} = 0.01$。
-    * **本质**：**递归切割**。时间的深度导致了空间的**嵌套细分**。
-    * **Construction**: Serialization of two "Decimal Branching Events" ($P_{10} \to P_{10}$).
-    * **Process**:
-        1. **Step 1 ($T=1$)**: The system performs the first $1/10$ cut on the Logical Total (1). The system enters one branch; the **remaining logical space** is now only $0.1$.
-        2. **Step 2 ($T=2$)**: The system performs a second $1/10$ cut **within the current $0.1$ space**.
-    * **Calculation**: $1 \text{ (Total)} \times \frac{1}{10} \text{ (Step 1)} \times \frac{1}{10} \text{ (Step 2)} = 0.01$.
-    * **Essence**: **Recursive Slicing**. The depth of time leads to the **nested subdivision** of space.
+#### 2. 指数级衰减与熵 (Exponential Decay & Entropy)
+当构造流程包含分支 ($S > 1$) 时，线性增加时间深度 $T$，会导致逻辑体积呈指数级坍缩。
+When the construction process involves branching ($S > 1$), linearly increasing temporal depth $T$ leads to an exponential collapse of logical volume.
 
-#### 4. 结论 (Conclusion)
-**概率即份额。**
-无论你是通过空间的“宽”（大集合）还是时间的“深”（多重分支）来构造事件，只要最终切分出的**逻辑几何份额**相等，它们就是物理等价的事件。
-**Probability is Share.**
-Whether you construct an event through spatial "width" (large sets) or temporal "depth" (multiple branches), as long as the final **logical geometric share** sliced out is equal, they are physically equivalent events.
+$$
+\mathcal{V} \propto S^{-T}
+$$
 
-### 4.5 时空转换的代价：对数-指数衰减律
-**(The Cost of Conversion: Log-Exp Decay Law)**
+#### 3. 必然性恒等 (Identity of Inevitability)
+对于原子事件 ($S=1$)，无论时间 $T$ 如何延伸，逻辑体积不发生衰减。**不衰减即必然。**
+For atomic events ($S=1$), logical volume does not decay regardless of how $T$ extends. **Non-decay is Inevitability.**
 
-在本理论中，概率被严格定义为**事件逻辑宽度 ($W$) 在归一化逻辑空间（总量恒为 1）中的占比**。时空转换的等价性体现为：逻辑宽度的衰减等同于逻辑空间的指数级膨胀（注：逻辑宽度的衰减等同于空间膨胀）。
-In this theory, probability is strictly defined as the proportion of an event's Logical Width ($W$) within the normalized logical space (Total = 1). The equivalence of space-time conversion is manifested as: the decay of logical width is equivalent to the exponential expansion of logical space (Note: the decay of logical width is equivalent to spatial expansion).
+$$
+1^T \equiv 1
+$$
 
-#### 1. 时间换空间：逻辑宽度的指数级衰减 (Time-to-Space: Exponential Decay of Logical Width)
-当构造流程中包含非原子分支（其单步逻辑宽度 $S < 1$）时，投入线性的构造深度 $T$，会导致目标路径的逻辑宽度发生指数级收缩。
-When the construction process involves non-atomic branches (where the single-step logical width $S < 1$), investing linear constructive depth $T$ causes the logical width of the target path to undergo exponential contraction.
+---
 
-* **衰减公式 (Decay Formula)**: 
-    $$W_{total} = S^T$$
-    *(其中 $S$ 为单步逻辑宽度，$T$ 为构造深度 / Where $S$ is the single-step logical width, and $T$ is the constructive depth)*
+### 4.4 停机筛选公理 (The Axiom of Halting Selection)
+为了解决无穷悖论，必须定义有效状态空间 $\Omega$ 的边界。
+To resolve infinity paradoxes, the boundary of the effective state space $\Omega$ must be defined.
 
-* **物理本质 (Physical Essence)**:
-    **逻辑宽度的衰减等同于空间的膨胀。** 在归一化视角下，我们不增加分母，而是通过连乘 $S$（即 $S \times S \times \dots$）不断切细分子。这种宽度的消失，本质上是该路径在总空间中被稀释的过程。
-    **The decay of logical width is equivalent to spatial expansion.** In a normalized perspective, instead of increasing the denominator, we refine the numerator by multiplying $S$ repeatedly. This loss of width is essentially the dilution of the path within the total space.
+**“存在即停机。” (To Exist is to Halt.)**
+系统能够感知的“事件”，必须是能够在有限物理步骤内返回结果的过程。
+Events perceivable by the system must be processes that return a result within finite physical steps.
 
-#### 2. 空间换时间：对数级折叠 (Space-to-Time: Logarithmic Folding)
-任何极小的逻辑宽度（微小概率）$W$，在物理上都等价于由特定的分支因子 $S$ 在时间轴上折叠而成的深度 $T$。
-Any infinitesimal Logical Width (minute probability) $W$ is physically equivalent to a depth $T$ folded on the timeline by a specific branching factor $S$.
+$$
+\text{If } \text{Steps}(E) = \infty, \text{ then } E \notin \Omega
+$$
 
-* **转化公式 (Conversion Formula)**: 
-    $$T = \log_S (W)$$
+这意味着包含死锁 (`while(true)`) 的路径在物理上被视为**不存在**，不进入概率分母的计算。
+This means paths containing deadlocks (`while(true)`) are physically treating as **non-existent** and do not enter the denominator of probability calculations.
 
-#### 3. 必然性守恒：原子恒等 (Conservation of Inevitability: Atomic Identity)
-当步骤为原子事件（$S=1$）时，转换律遵循单位元属性。此时逻辑宽度不会发生衰减。
-When a step is an atomic event ($S=1$), the conversion law follows the identity element property. In this case, no decay of logical width occurs.
+---
 
-* **恒等公式 (Identity Formula)**: 
-    $$W = 1^T \equiv 1$$
+### 4.5 零-空对偶定理 (The Zero-Null Duality Theorem)
+为什么可以简单地剔除死锁？因为在几何概率中，**零测度等同于空集**。
+Why can deadlocks be simply excluded? Because in geometric probability, **Measure Zero is equivalent to the Null Set**.
 
-* **结论 (Conclusion)**:
-    **不衰减即必然**。
-    在归一化的逻辑空间中，原子事件的逻辑宽度始终为 1。由于其不触发任何形式的空间切分（$S=1$），无论构造深度 $T$ 如何延伸，其逻辑宽度始终保持完整。这证明了必然性在时间轴上的守恒，是因为**逻辑宽度没有因分支而发生衰减**。
-    **Non-decay is Inevitability**.
-    In a normalized logical space, the logical width of an atomic event is always 1. Since it triggers no spatial slicing ($S=1$), its logical width remains intact regardless of the constructive depth $T$. This proves that the conservation of inevitability along the timeline is due to the **absence of logical width decay via branching**.
+#### 1. 宽度极限 (Limit of Width)
+当构造步骤 $N \to \infty$ 时，事件在逻辑空间占据的几何宽度趋向于 0。
+As construction steps $N \to \infty$, the geometric width occupied by the event in logical space approaches 0.
+
+$$
+\lim_{N \to \infty} \mathcal{V}(E_N) = 0
+$$
+
+#### 2. 物理等效性 (Physical Equivalence)
+在全集 $\Omega$ 中加入一个死锁事件 $E_{\infty}$（几何点），不会改变全集的总逻辑体积。
+Adding a deadlock event $E_{\infty}$ (a geometric point) to the universe $\Omega$ does not change the total logical volume of the universe.
+
+$$
+P(A | \Omega \cup \{E_{\infty}\}) = \frac{\mathcal{V}(A)}{\mathcal{V}(\Omega) + 0} \equiv P(A | \Omega)
+$$
+
+**结论 (Conclusion)**:
+死锁不是“不可能发生的事件”，它是**没有物理厚度的逻辑幽灵**。
+Deadlocks are not "impossible events"; they are **logical ghosts with no physical thickness**.
 
 ---
 
