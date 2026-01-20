@@ -207,54 +207,68 @@ $$
 P(O_i) = \frac{W(O_i)}{\sum_{j=1}^{k} W(O_j)} = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
 $$
 
-### 4.4 构造的等价性：时空互换
-**(Equivalence of Construction: Space-Time Interchange)**
+### 4.4 构造的等价性：归一化时空互换
+**(Equivalence of Construction: Normalized Space-Time Interchange)**
 
-本理论的核心公理是：**时空形态是绝对等价的**。
-任意给定的逻辑总量 $N$，既可以表现为空间的广度（集合大小），也可以表现为时间的深度（串行结构）。
-The core axiom of this theory is: **Space-Time forms are absolutely equivalent.**
-Any given logical volume $N$ can be represented either as spatial breadth (set size) or as temporal depth (serial structure).
+本理论建立在**逻辑总量恒守恒**的公理之上。
+无论事件如何构造（无论是空间平铺还是时间串行），**逻辑总空间（Universe）始终为 1**。事件的概率取决于它在归一化空间中的**切割占比**。
+This theory is founded on the axiom of **Conservation of Total Logical Volume**.
+Regardless of how an event is constructed (whether spatially tiled or temporally serialized), the **Total Logical Space (Universe) is always 1**. The probability of an event depends on its **proportion of the cut** within the normalized space.
 
-#### 1. 等价性实例 (Example of Equivalence)
-定义逻辑总量 $N = 100$。它在物理上可以通过两种完全等价的形态存在，且概率均为 $1/100$：
-Define a logical volume $N = 100$. Physically, it can exist in two completely equivalent forms, both with a probability of $1/100$:
-
-* **形态 A：纯空间形态 (Form A: Pure Spatial Form)**
-    * **结构**：一个包含 100 个原子事件的集合。
-    * **计算**：直接从 100 个选项中路由。
-    * **总量**：$N = 100$。
-    * **Structure**: A set containing 100 atomic events.
-    * **Calculation**: Route directly from 100 options.
-    * **Total**: $N = 100$.
-
-* **形态 B：时空复合形态 (Form B: Space-Time Compound Form)**
-    * **结构**：两个“10宽度的抽取事件”串联（$P_{10} \to P_{10}$）。
-    * **计算**：10 (层级1) $\times$ 10 (层级2)。
-    * **总量**：$N = 10 \times 10 = 100$。
-    * **Structure**: Two serialized "10-width selection events" ($P_{10} \to P_{10}$).
-    * **Calculation**: 10 (Level 1) $\times$ 10 (Level 2).
-    * **Total**: $N = 10 \times 10 = 100$.
-
-#### 2. 互换定律 (The Law of Interchange)
-一个巨大的空间集合，总是等价于一组串行的抽取事件；反之亦然。
-A massive spatial set is always equivalent to a series of selection events; and vice versa.
+#### 1. 原子守恒定律 (The Law of Atomic Conservation)
+对于原子事件（确定性步骤），其对逻辑空间的切割比例为 1。
+For an atomic event (deterministic step), its cutting proportion of the logical space is 1.
 
 $$
-\text{Set of } (S^T) \equiv \underbrace{P_S \to P_S \to \dots \to P_S}_{T \text{ times}}
+\text{Path Share} = 1 \times 1 \times \dots \times 1 = 1
 $$
 
-* 左边是**空间**（集合的大小）。
-* 右边是**时间**（串行的层级）。
-* **中间是等号**。它们是同一个物理实体。
-* The left side is **Space** (Size of the Set).
-* The right side is **Time** (Serial Hierarchy).
-* **Between them is an Equal Sign.** They are the same physical entity.
+* **物理含义**：
+    原子事件无论串联多长（$A \to A \to \dots$），它始终占据 **100% 的逻辑宽度**。时间在流逝，但逻辑空间没有被稀释。因此，确定性长链的概率依然是 1。
+    **Physical Meaning**:
+    No matter how long atomic events are serialized ($A \to A \to \dots$), they always occupy **100% of the logical width**. Time passes, but the logical space is not diluted. Thus, the probability of a deterministic long chain remains 1.
 
-#### 3. 结论 (Conclusion)
-**概率只取决于逻辑总量 $N$。**
-无论 $N$ 是平铺在空间中（100个并列），还是折叠在时间里（2个10串联），其物理本质不变，对应的概率 $1/N$ 也不变。
-**Probability depends only on the Logical Volume $N$.**
-Whether $N$ is spread out in space (100 parallel) or folded in time (2 serialized 10s), its physical essence remains unchanged, and the corresponding probability $1/N$ remains the same.
+#### 2. 分支切割定律 (The Law of Branching Cuts)
+非原子事件（分支/抽取）代表了对逻辑总量的**切割**。
+若一个事件 $P$ 的逻辑宽度为 $S$（即有 $S$ 个兄弟原子），则该路径只继承了上一级空间的 $1/S$。
+Non-atomic events (branching/selection) represent a **cut** of the total logical volume.
+If an event $P$ has a logical width of $S$ (meaning it has $S$ sibling atoms), this path inherits only $1/S$ of the previous level's space.
+
+$$
+\text{Path Share} = \text{Previous Share} \times \frac{1}{S}
+$$
+
+#### 3. 时空互换实例 (Example of Space-Time Interchange)
+定义一个目标概率 $P = 0.01$（即占据逻辑总量 1% 的事件）。它可以以两种完全等价的物理形态存在：
+Define a target probability $P = 0.01$ (an event occupying 1% of the total logical volume). It can exist in two completely equivalent physical forms:
+
+* **形态 A：空间切片 (Form A: Spatial Slice)**
+    * **构造**：从一个包含 100 个原子的集合中单次选取。
+    * **计算**：$1 \times (1/100) = 0.01$。
+    * **本质**：一次性将逻辑总量切成 100 份。
+    * **Construction**: Single selection from a set containing 100 atoms.
+    * **Calculation**: $1 \times (1/100) = 0.01$.
+    * **Essence**: Slicing the total logical volume into 100 parts at once.
+
+* **形态 B：时间折叠 (Form B: Temporal Folding)**
+    * **构造**：两个“十位分支事件”的串联（$P_{10} \to P_{10}$）。
+    * **过程**：
+        1. **第一步（$T=1$）**：系统对逻辑总量（1）进行第一次 $1/10$ 切割。系统进入其中一个分支，此时**剩余的逻辑空间**仅为 $0.1$。
+        2. **第二步（$T=2$）**：系统对**当前所在的 $0.1$ 空间**进行第二次 $1/10$ 切割。
+    * **计算**：$1 \text{ (Total)} \times \frac{1}{10} \text{ (Step 1)} \times \frac{1}{10} \text{ (Step 2)} = 0.01$。
+    * **本质**：**递归切割**。时间的深度导致了空间的**嵌套细分**。
+    * **Construction**: Serialization of two "Decimal Branching Events" ($P_{10} \to P_{10}$).
+    * **Process**:
+        1. **Step 1 ($T=1$)**: The system performs the first $1/10$ cut on the Logical Total (1). The system enters one branch; the **remaining logical space** is now only $0.1$.
+        2. **Step 2 ($T=2$)**: The system performs a second $1/10$ cut **within the current $0.1$ space**.
+    * **Calculation**: $1 \text{ (Total)} \times \frac{1}{10} \text{ (Step 1)} \times \frac{1}{10} \text{ (Step 2)} = 0.01$.
+    * **Essence**: **Recursive Slicing**. The depth of time leads to the **nested subdivision** of space.
+
+#### 4. 结论 (Conclusion)
+**概率即份额。**
+无论你是通过空间的“宽”（大集合）还是时间的“深”（多重分支）来构造事件，只要最终切分出的**逻辑几何份额**相等，它们就是物理等价的事件。
+**Probability is Share.**
+Whether you construct an event through spatial "width" (large sets) or temporal "depth" (multiple branches), as long as the final **logical geometric share** sliced out is equal, they are physically equivalent events.
 
 ---
 
