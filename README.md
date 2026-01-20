@@ -352,6 +352,72 @@ Any claim of inevitability that attempts to introduce "Infinity" will fail to in
 
 ---
 
+### 4.6 普遍无穷归零公理 (The Axiom of Universal Infinite Nullity)
+
+**核心立法 (Core Legislation)**
+SFCP 理论确立了物理宇宙的**强有限性 (Strong Finiteness)**。
+“无穷”在数学中可能代表一个数值或趋势，但在物理构造中，它代表**非法操作 (Illegal Operation)**。
+SFCP theory establishes the **Strong Finiteness** of the physical universe.
+While "Infinity" may represent a value or trend in mathematics, in physical construction, it represents an **Illegal Operation**.
+
+#### 1. 归零算子定义 (Definition of the Nulling Operator)
+任何物理量的运算，一旦涉及无穷步骤或无穷维度，其物理实例化结果强制归零。
+For any operation on physical quantities, once it involves infinite steps or infinite dimensions, its physical instantiation result is forcibly zeroed.
+
+$$
+\forall x \in \mathbb{R}^+, \quad x^{\infty} \equiv 0
+$$
+
+这一公理统一了所有区间的命运：
+This axiom unifies the fate of all intervals:
+
+* **衰减区 ($x < 1$)**: $0.5^\infty \to 0$。
+    *(数学与物理一致：概率消失)*
+    *(Math aligns with Physics: Probability vanishes)*
+* **原子区 ($x = 1$)**: $1^\infty \equiv 0$。
+    *(物理熔断：必然性因无法交付而死锁)*
+    *(Physical Fuse: Inevitability deadlocks due to non-delivery)*
+* **爆炸区 ($x > 1$)**: $2^\infty \equiv 0$。
+    *(资源溢出：试图构造无限体积的物体，导致系统崩溃/内存溢出，存在性归零)*
+    *(Resource Overflow: Attempting to construct an object of infinite volume causes system crash/memory overflow, existence zeroes out)*
+
+#### 2. 物理死刑判决 (The Physical Death Sentence)
+为什么无穷大等于零？
+Why does Infinity equal Zero?
+
+在信息物理学中，**存在 (Existence)** 必须被**存储 (Stored)** 或 **表达 (Expressed)**。
+In information physics, **Existence** must be **Stored** or **Expressed**.
+
+* **有限的** ($x^T$): 可以被宇宙容纳。
+* **无穷的** ($x^\infty$): 需要消耗无穷的能量或空间来维持。
+    * 宇宙无法支付无穷的代价。
+    * 构造请求被拒绝 (Access Denied)。
+    * **返回值为 NULL (0)。**
+
+#### 3. 时空守恒的终极形式 (Ultimate Form of Space-Time Conservation)
+该公理使得动态时空转换方程 ($\Omega = S^T$) 在极限条件下依然保持绝对的**虚无守恒**。
+This axiom ensures that the Dynamic Space-Time Conversion Equation ($\Omega = S^T$) maintains absolute **Conservation of Void** under limit conditions.
+
+$$
+\text{Space}(\Omega) \iff \text{Time}(S^T)
+$$
+
+当 $T \to \infty$ 时：
+When $T \to \infty$:
+
+* **右边 (Time)**: $S^\infty \equiv 0$（无论 $S$ 是大是小，过程均崩溃）。
+* **左边 (Space)**: $\Omega = 0$（不存在对应的空间实体）。
+
+**结论 (Conclusion)**:
+**凡涉及无穷，皆为虚妄。**
+宇宙中不存在“无限大的物体”，也不存在“无限长的过程”。
+无穷不是通往真理的桥梁，而是通往**0（不存在）**的悬崖。
+**Whatever involves infinity is illusion.**
+There are no "infinitely large objects" and no "infinitely long processes" in the universe.
+Infinity is not a bridge to truth, but a cliff leading to **0 (Non-existence)**.
+
+---
+
 ### 4.7 宇宙可达结果集与构造复杂度 (The Universal Reachable Result Set and Constructive Complexity)
 
 宇宙不是一个预先写入所有数据的静态数据库（Lookup Table），而是一个**实时运行的构造系统**。
