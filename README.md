@@ -296,67 +296,127 @@ Deadlocks are not "impossible events"; they are **logical ghosts with no physica
 
 ---
 
-### 4.6 逻辑等效性与无穷悖论 (Logical Equivalence and the Infinity Paradox)
+### 4.6 必然性的物理坍缩与无穷矛盾 (The Physical Collapse of Inevitability and the Infinity Paradox)
 
-**核心原理 (Core Principle)**
-在有限步骤构造概率论 (SFCP) 中，**任何没有产生分支选择的步骤，在逻辑拓扑上都视为同一状态。**
-In Finite Step Constructive Probability (SFCP), **any step that does not produce a branching choice is regarded as the same state in logical topology.**
+**核心矛盾 (Core Contradiction)**
+在经典逻辑中，原子事件的无限串联看似依然是原子事件（概率为 1）。
+但在构造论中，我们必须区分**逻辑真理 (Logical Truth)** 与 **物理事实 (Physical Fact)**。
 
-#### 1. 原子串联等价定理 (Theorem of Atomic Serial Equivalence)
-对于原子事件序列 ($S \equiv 1$)，无论串联多少个步骤，其逻辑体积与单步原子事件严格相等。
-For a sequence of atomic events ($S \equiv 1$), regardless of how many steps are serialized, its logical volume is strictly equal to that of a single-step atomic event.
-
-$$
-\text{If } S_t \equiv 1, \text{ then } \prod_{t=1}^{T} S_t = 1 \times 1 \times \dots = 1
-$$
-
-因此，存在以下拓扑等价关系：
-Thus, the following topological equivalence exists:
+#### 1. 有限等价定律 (Law of Finite Equivalence)
+对于任意**有限**长度 $N$ 的原子链，它逻辑上等价于单步原子事件。
+For any atomic chain of **finite** length $N$, it is logically equivalent to a single-step atomic event.
 
 $$
-(A \to A \to \dots \to A)_T \equiv A_{single}
+\text{If } N < \infty: \quad (A \to A \dots)_N \equiv A \implies P=1
 $$
 
-**物理含义 (Physical Meaning)**:
-* **无信息增量**: 原子步骤是常数传递。重复一万次真理，真理的信息量不会增加。
-    (No Information Increment: Atomic steps are constant transmission. Repeating a truth ten thousand times does not increase the information content of the truth.)
-* **空间塌缩**: 在逻辑空间中，无限长的原子链不是一条线，而是一个**点**。
-    (Spatial Collapse: In logical space, an infinitely long atomic chain is not a line, but a **Point**.)
+因为只要能停机，中间的重复步骤只是冗余计算，最终结果必然交付。
+Because as long as it halts, the intermediate repetitive steps are merely redundant computations, and the final result is inevitably delivered.
 
-#### 2. 必然性与无穷的不可调和矛盾 (The Irreconcilable Contradiction between Inevitability and Infinity)
-既然概率 $P=1$，为何无穷原子链会引发悖论？因为“无穷”概念的引入，直接破坏了“必然性”的物理定义。
-Since Probability $P=1$, why does the infinite atomic chain trigger a paradox? Because the introduction of the concept of "Infinity" directly destroys the physical definition of "Inevitability."
+#### 2. 无穷断裂 (The Infinity Rupture)
+当 $N \to \infty$ 时，上述等价性**失效 (Breaks)**。
+When $N \to \infty$, the above equivalence **Breaks**.
 
-* **必然性 (Inevitability)** 要求结果**必须交付** (Must Deliver)。
-* **无穷 (Infinity)** 要求过程**永远继续** (Continue Forever)。
+$$
+(A \to A \to \dots)_{\infty} \neq A
+$$
 
-这是一个**死锁的逻辑互斥**：
-This is a **Deadlocked Logical Mutual Exclusion**:
-> **如果一个事件是必然的，它就必须在有限步内完成；如果它需要无穷步，它就绝不是必然的。**
-> **If an event is inevitable, it must be completed within finite steps; if it requires infinite steps, it is by no means inevitable.**
+* **右边 ($A$)**: 属于可达结果集 $\Omega_{Reachable}$。
+* **左边 (Chain)**: 属于不可达集。
 
-#### 3. 无穷：系统错误的根源 (Infinity: The Root of Systemic Errors)
-SFCP 理论最终揭示，**无穷 (Infinity)** 并非一种高深的数学构造，而是人类理性在定义“过程”时留下的**致命漏洞 (Fatal Bug)**。
-SFCP theory ultimately reveals that **Infinity** is not a profound mathematical construction, but a **Fatal Bug** left by human reason when defining "process."
+**物理判决 (Physical Verdict)**:
+必然性意味着“结果必须被交付”。而无穷意味着“交付过程永远不会结束”。
+Inevitability implies "Result Must Be Delivered." Infinity implies "Delivery Process Never Ends."
+**一个永远在路上的快递，等于丢件。**
+**A package that is forever on the way is equivalent to a lost package.**
 
-它导致了以下一系列严重的理论灾难：
-It leads to a series of severe theoretical disasters:
+因此，无限原子链的物理概率发生坍缩：
+Therefore, the physical probability of an infinite atomic chain collapses:
 
-1.  **破坏因果律**: 它允许“确定的原因”永远推导不出“确定的结果”（输入1，永远拿不到输出）。
-    (Destroys Causality: It allows a "definite cause" to never derive a "definite result".)
-2.  **混淆时空**: 它试图用无限的时间去模拟不存在的空间体积。
-    (Confuses Space-Time: It attempts to use infinite time to simulate non-existent spatial volume.)
-3.  **制造伪悖论**: 芝诺悖论、阿喀琉斯追龟等问题，本质上都是因为错误地承认了“无穷步骤”的合法性。
-    (Creates Pseudo-Paradoxes: Zeno's paradoxes, etc., are essentially due to correctly acknowledging the legitimacy of "infinite steps".)
+$$
+P(\text{Infinite Atomic Chain}) = 0
+$$
+
+#### 3. 无穷对必然性的破坏 (Destruction of Inevitability by Infinity)
+这揭示了无穷概念在物理学中的**非法性**。
+This reveals the **illegitimacy** of the concept of infinity in physics.
+
+* **数学上**: $1 \times 1 \times \dots = 1$。（纯逻辑，忽略时间）
+* **物理上**: $\text{Cost} = \infty \implies \text{Result} = \text{Null}$。（构造论，尊重时间）
 
 **结论 (Conclusion)**:
-**原子链的概率确实是 1。**
-所谓“无法到达”，不是概率论的问题，而是“无穷”这个概念本身的非法性。**凡是包含无穷的必然性，都是伪命题。**
-**The probability of the atomic chain is indeed 1.**
-The so-called "unreachability" is not a problem of probability theory, but the illegitimacy of the concept of "Infinity" itself. **Any inevitability containing infinity is a pseudo-proposition.**
+在这个宇宙中，**真正的必然性必须是有限的**。
+任何试图引入“无穷”的必然性宣称，都会因为耗尽计算资源而导致结果无法实例化，从而在物理层面沦为**概率为 0 的虚无**。
+In this universe, **True Inevitability Must Be Finite.**
+Any claim of inevitability that attempts to introduce "Infinity" will fail to instantiate the result due to the exhaustion of computing resources, thus reducing to **Zero Probability Nothingness** at the physical level.
 
 ---
 
+### 4.7 宇宙可达结果集与构造复杂度 (The Universal Reachable Result Set and Constructive Complexity)
+
+宇宙不是一个预先写入所有数据的静态数据库（Lookup Table），而是一个**实时运行的构造系统**。
+The universe is not a static database (Lookup Table) with pre-written data, but a **Runtime Constructive System**.
+
+结果集 $\Omega$ 不是“预存的”，而是**“可到达的” (Reachable)**。
+The result set $\Omega$ is not "pre-stored," but **"Reachable."**
+
+#### 1. 可达性定义 (Definition of Reachability)
+我们定义 $\Omega_{Reachable}$ 为宇宙中通过合法逻辑路径能够最终计算出的原子结果集合。
+We define $\Omega_{Reachable}$ as the set of atomic results that can be ultimately computed through valid logical paths in the universe.
+
+$$
+\Omega_{Reachable} = \{ \alpha \mid \exists \text{ Algorithm } A, \text{ such that } A(t) \to \alpha \text{ within finite steps} \}
+$$
+
+* **区别**:
+    * **静态宇宙**: 结果已存在，获取代价为 $O(1)$。这是错误的。
+    * **构造宇宙**: 结果需计算，获取代价为 $O(T)$。这是 SFCP 的观点。
+
+#### 2. 必然性的计算代价 (Computational Cost of Inevitability)
+一个必然事件（原子链）虽然在逻辑上指向唯一结果，但在物理上必须支付计算代价。
+Although an inevitable event (atomic chain) points to a unique result logically, it must pay a computational cost physically.
+
+$$
+\text{Cost}(\alpha) = O(T)
+$$
+
+* **$T$ (构造深度)**: 即使是必然发生的 $\alpha$，也必须经历 $T$ 次状态迭代才能从潜能转化为现实。
+    (Even for an inevitable $\alpha$, it must undergo $T$ state iterations to transform from potentiality to reality.)
+* **反证**: 如果宇宙打好了表，那么 $T=0$ 即可获得结果，时间将不复存在。时间的本质就是**计算延迟 (Computational Latency)**。
+    (Counterproof: If the universe were tabulated, the result could be obtained with $T=0$, and time would cease to exist. The essence of time is **Computational Latency**.)
+
+#### 3. 信息量恒等：1 (Information Identity: 1)
+当一个必然过程终于跑完 $O(T)$ 的计算量，并成功返回结果时，它向宇宙交付了**1个单位的确定性**。
+When an inevitable process finally completes its $O(T)$ computation and successfully returns a result, it delivers **1 unit of determinism** to the universe.
+
+$$
+\mathcal{I}_{result} \equiv 1
+$$
+
+这意味着：
+* **过程是昂贵的** ($T$ 很大)。
+* **结果是唯一的** (信息量为 1)。
+* **必然性 = 用昂贵的 $O(T)$ 换取确定的 1。**
+    (**Inevitability = Exchanging expensive $O(T)$ for a certain 1.**)
+
+#### 4. 宇宙边界：不可达即不存在 (Universal Boundary: Unreachable is Non-existent)
+如果某个结果 $\beta$ 理论上存在，但计算它所需的步骤 $T \to \infty$（死锁），或者需要的分支检索 $S \to \infty$（无法遍历）。
+If a result $\beta$ theoretically exists, but the steps required to compute it $T \to \infty$ (Deadlock), or the branching retrieval required $S \to \infty$ (Intractable).
+
+根据 SFCP 公理，该结果属于**“不可达集” (Unreachable Set)**。
+According to SFCP axioms, this result belongs to the **"Unreachable Set."**
+
+$$
+\beta \notin \Omega_{Reachable}
+$$
+
+**结论 (Conclusion)**:
+宇宙的信息总量取决于**有效算力**。
+只有那些能在有限步骤内被“算出来”的结果，才是宇宙的有效构成部分。**凡是不可达的，皆为虚妄。**
+The total information of the universe depends on **Effective Computing Power**.
+Only results that can be "computed" within finite steps are valid components of the universe. **Whatever is unreachable is illusion.**
+
+---
 ## 5. 基于 SFCP 的随机函数实现原理 (Implementation Principle of SFCP-Based Random Function)
 
 本章节展示了如何将“有限步骤构造概率论”转化为实际的计算机算法。
