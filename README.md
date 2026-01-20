@@ -296,58 +296,64 @@ Deadlocks are not "impossible events"; they are **logical ghosts with no physica
 
 ---
 
-### 4.6 体积继承定律与冻结悖论 (The Law of Volume Inheritance and The Frozen Paradox)
+### 4.6 逻辑等效性与无穷悖论 (Logical Equivalence and the Infinity Paradox)
 
-**背景 (Context)**
-为了解决“必然性”在无穷时间中的定义问题，我们将逻辑体积的计算方式从“总量代价”修正为**“路径继承”**。
-To resolve the definition of "Inevitability" over infinite time, we correct the calculation of logical volume from "Total Cost" to **"Path Inheritance"**.
+**核心原理 (Core Principle)**
+在有限步骤构造概率论 (SFCP) 中，**任何没有产生分支选择的步骤，在逻辑拓扑上都视为同一状态。**
+In Finite Step Constructive Probability (SFCP), **any step that does not produce a branching choice is regarded as the same state in logical topology.**
 
-#### 1. 体积继承定律 (The Law of Volume Inheritance)
-每一个逻辑步骤的体积，严格继承自其父节点。体积的变化仅取决于当前节点的分支情况，与之前的步骤总数无关。
-The volume of each logical step is strictly inherited from its parent node. Volume change depends *only* on the branching at the current node, independent of the total previous steps.
-
-递推公式如下：
-The recurrence formula is as follows:
+#### 1. 原子串联等价定理 (Theorem of Atomic Serial Equivalence)
+对于原子事件序列 ($S \equiv 1$)，无论串联多少个步骤，其逻辑体积与单步原子事件严格相等。
+For a sequence of atomic events ($S \equiv 1$), regardless of how many steps are serialized, its logical volume is strictly equal to that of a single-step atomic event.
 
 $$
-\mathcal{V}_{current} = \mathcal{V}_{parent} \times \frac{1}{S_{current}}
+\text{If } S_t \equiv 1, \text{ then } \prod_{t=1}^{T} S_t = 1 \times 1 \times \dots = 1
 $$
 
-* **$\mathcal{V}$**: 逻辑体积 (Logical Volume)。
-* **$S_{current}$**: 当前步骤的分支因子 (Branching Factor)。
-
-#### 2. 原子守恒推论 (Corollary of Atomic Conservation)
-对于原子事件（$S=1$），无论其在时间轴上串联多长，其逻辑体积始终保持恒定。
-For atomic events ($S=1$), regardless of how long they are serialized on the timeline, their logical volume remains constant.
+因此，存在以下拓扑等价关系：
+Thus, the following topological equivalence exists:
 
 $$
-\text{If } S \equiv 1, \text{ then } \mathcal{V}_{n} = \mathcal{V}_{n-1} \times \frac{1}{1} \equiv \mathcal{V}_{start}
+(A \to A \to \dots \to A)_T \equiv A_{single}
 $$
 
-**物理含义**：
-原子链是一根**无损耗的光纤**。无论多长，只要没有分叉，逻辑流（概率流）就不会泄露或稀释。当前体积永远等于总体积。
-**Physical Meaning**:
-The atomic chain is a **lossless optical fiber**. No matter the length, as long as there are no branches, the logical flow (probability flow) does not leak or dilute. The current volume is always equal to the total volume.
+**物理含义 (Physical Meaning)**:
+* **无信息增量**: 原子步骤是常数传递。重复一万次真理，真理的信息量不会增加。
+    (No Information Increment: Atomic steps are constant transmission. Repeating a truth ten thousand times does not increase the information content of the truth.)
+* **空间塌缩**: 在逻辑空间中，无限长的原子链不是一条线，而是一个**点**。
+    (Spatial Collapse: In logical space, an infinitely long atomic chain is not a line, but a **Point**.)
 
-#### 3. 悖论的兼容：冻结的必然 (Compatibility with Paradox: Frozen Inevitability)
-现在，我们可以完美描述“无限原子链” ($P \to P \to \dots \to \infty$) 的物理状态。
-Now we can perfectly describe the physical state of the "Infinite Atomic Chain."
+#### 2. 必然性与无穷的不可调和矛盾 (The Irreconcilable Contradiction between Inevitability and Infinity)
+既然概率 $P=1$，为何无穷原子链会引发悖论？因为“无穷”概念的引入，直接破坏了“必然性”的物理定义。
+Since Probability $P=1$, why does the infinite atomic chain trigger a paradox? Because the introduction of the concept of "Infinity" directly destroys the physical definition of "Inevitability."
 
-* **逻辑上 (Logically)**：
-    $\mathcal{V} = 1$。
-    这是一个**必然事件**。它是逻辑全集中的唯一路径，比值为 1。
-    (It is an **Inevitable Event**. It is the only path in the logical universe, with a ratio of 1.)
+* **必然性 (Inevitability)** 要求结果**必须交付** (Must Deliver)。
+* **无穷 (Infinity)** 要求过程**永远继续** (Continue Forever)。
 
-* **物理上 (Physically)**：
-    $\text{Latency} \to \infty$。
-    结果永远无法被观测者获取。
-    (The result can never be retrieved by the observer.)
+这是一个**死锁的逻辑互斥**：
+This is a **Deadlocked Logical Mutual Exclusion**:
+> **如果一个事件是必然的，它就必须在有限步内完成；如果它需要无穷步，它就绝不是必然的。**
+> **If an event is inevitable, it must be completed within finite steps; if it requires infinite steps, it is by no means inevitable.**
 
-**结论 (Conclusion)**：
-这种事件被称为**不存在的必然 (Non-existent Inevitability)**。
-它在理论上绝对成立（概率为1），但在现实中永远不会发生。有限步骤构造概率论 (SFCP) 承认这种悖论状态的存在：这是**存在的必然性与无穷之间不兼容的直观体现**。
-Such an event is called **"Non-existent Inevitability."**
-It is theoretically absolute (Probability 1) but realistically never happens. Finite Step Constructive Probability (SFCP) acknowledges this paradoxical state: it is a **direct manifestation of the incompatibility between existing inevitability and infinity.**
+#### 3. 无穷：系统错误的根源 (Infinity: The Root of Systemic Errors)
+SFCP 理论最终揭示，**无穷 (Infinity)** 并非一种高深的数学构造，而是人类理性在定义“过程”时留下的**致命漏洞 (Fatal Bug)**。
+SFCP theory ultimately reveals that **Infinity** is not a profound mathematical construction, but a **Fatal Bug** left by human reason when defining "process."
+
+它导致了以下一系列严重的理论灾难：
+It leads to a series of severe theoretical disasters:
+
+1.  **破坏因果律**: 它允许“确定的原因”永远推导不出“确定的结果”（输入1，永远拿不到输出）。
+    (Destroys Causality: It allows a "definite cause" to never derive a "definite result".)
+2.  **混淆时空**: 它试图用无限的时间去模拟不存在的空间体积。
+    (Confuses Space-Time: It attempts to use infinite time to simulate non-existent spatial volume.)
+3.  **制造伪悖论**: 芝诺悖论、阿喀琉斯追龟等问题，本质上都是因为错误地承认了“无穷步骤”的合法性。
+    (Creates Pseudo-Paradoxes: Zeno's paradoxes, etc., are essentially due to correctly acknowledging the legitimacy of "infinite steps".)
+
+**结论 (Conclusion)**:
+**原子链的概率确实是 1。**
+所谓“无法到达”，不是概率论的问题，而是“无穷”这个概念本身的非法性。**凡是包含无穷的必然性，都是伪命题。**
+**The probability of the atomic chain is indeed 1.**
+The so-called "unreachability" is not a problem of probability theory, but the illegitimacy of the concept of "Infinity" itself. **Any inevitability containing infinity is a pseudo-proposition.**
 
 ---
 
