@@ -207,6 +207,55 @@ $$
 P(O_i) = \frac{W(O_i)}{\sum_{j=1}^{k} W(O_j)} = \frac{ \frac{1}{N(O_i)} }{ \sum_{j=1}^{k} \frac{1}{N(O_j)} }
 $$
 
+### 4.4 构造的等价性：时空互换
+**(Equivalence of Construction: Space-Time Interchange)**
+
+本理论的核心公理是：**时空形态是绝对等价的**。
+任意给定的逻辑总量 $N$，既可以表现为空间的广度（集合大小），也可以表现为时间的深度（串行结构）。
+The core axiom of this theory is: **Space-Time forms are absolutely equivalent.**
+Any given logical volume $N$ can be represented either as spatial breadth (set size) or as temporal depth (serial structure).
+
+#### 1. 等价性实例 (Example of Equivalence)
+定义逻辑总量 $N = 100$。它在物理上可以通过两种完全等价的形态存在，且概率均为 $1/100$：
+Define a logical volume $N = 100$. Physically, it can exist in two completely equivalent forms, both with a probability of $1/100$:
+
+* **形态 A：纯空间形态 (Form A: Pure Spatial Form)**
+    * **结构**：一个包含 100 个原子事件的集合。
+    * **计算**：直接从 100 个选项中路由。
+    * **总量**：$N = 100$。
+    * **Structure**: A set containing 100 atomic events.
+    * **Calculation**: Route directly from 100 options.
+    * **Total**: $N = 100$.
+
+* **形态 B：时空复合形态 (Form B: Space-Time Compound Form)**
+    * **结构**：两个“10宽度的抽取事件”串联（$P_{10} \to P_{10}$）。
+    * **计算**：10 (层级1) $\times$ 10 (层级2)。
+    * **总量**：$N = 10 \times 10 = 100$。
+    * **Structure**: Two serialized "10-width selection events" ($P_{10} \to P_{10}$).
+    * **Calculation**: 10 (Level 1) $\times$ 10 (Level 2).
+    * **Total**: $N = 10 \times 10 = 100$.
+
+#### 2. 互换定律 (The Law of Interchange)
+一个巨大的空间集合，总是等价于一组串行的抽取事件；反之亦然。
+A massive spatial set is always equivalent to a series of selection events; and vice versa.
+
+$$
+\text{Set of } (S^T) \equiv \underbrace{P_S \to P_S \to \dots \to P_S}_{T \text{ times}}
+$$
+
+* 左边是**空间**（集合的大小）。
+* 右边是**时间**（串行的层级）。
+* **中间是等号**。它们是同一个物理实体。
+* The left side is **Space** (Size of the Set).
+* The right side is **Time** (Serial Hierarchy).
+* **Between them is an Equal Sign.** They are the same physical entity.
+
+#### 3. 结论 (Conclusion)
+**概率只取决于逻辑总量 $N$。**
+无论 $N$ 是平铺在空间中（100个并列），还是折叠在时间里（2个10串联），其物理本质不变，对应的概率 $1/N$ 也不变。
+**Probability depends only on the Logical Volume $N$.**
+Whether $N$ is spread out in space (100 parallel) or folded in time (2 serialized 10s), its physical essence remains unchanged, and the corresponding probability $1/N$ remains the same.
+
 ---
 
 ## 5. 基于 SFCP 的随机函数实现原理 (Implementation Principle of SFCP-Based Random Function)
