@@ -270,6 +270,44 @@ Define a target probability $P = 0.01$ (an event occupying 1% of the total logic
 **Probability is Share.**
 Whether you construct an event through spatial "width" (large sets) or temporal "depth" (multiple branches), as long as the final **logical geometric share** sliced out is equal, they are physically equivalent events.
 
+### 4.5 时空转换的代价：对数-指数衰减律
+**(The Cost of Conversion: Log-Exp Decay Law)**
+
+在本理论中，概率被严格定义为**事件逻辑宽度 ($W$) 在归一化逻辑空间（总量恒为 1）中的占比**。时空转换的等价性体现为：逻辑宽度的衰减等同于逻辑空间的指数级膨胀（注：逻辑宽度的衰减等同于空间膨胀）。
+In this theory, probability is strictly defined as the proportion of an event's Logical Width ($W$) within the normalized logical space (Total = 1). The equivalence of space-time conversion is manifested as: the decay of logical width is equivalent to the exponential expansion of logical space (Note: the decay of logical width is equivalent to spatial expansion).
+
+#### 1. 时间换空间：逻辑宽度的指数级衰减 (Time-to-Space: Exponential Decay of Logical Width)
+当构造流程中包含非原子分支（其单步逻辑宽度 $S < 1$）时，投入线性的构造深度 $T$，会导致目标路径的逻辑宽度发生指数级收缩。
+When the construction process involves non-atomic branches (where the single-step logical width $S < 1$), investing linear constructive depth $T$ causes the logical width of the target path to undergo exponential contraction.
+
+* **衰减公式 (Decay Formula)**: 
+    $$W_{total} = S^T$$
+    *(其中 $S$ 为单步逻辑宽度，$T$ 为构造深度 / Where $S$ is the single-step logical width, and $T$ is the constructive depth)*
+
+* **物理本质 (Physical Essence)**:
+    **逻辑宽度的衰减等同于空间的膨胀。** 在归一化视角下，我们不增加分母，而是通过连乘 $S$（即 $S \times S \times \dots$）不断切细分子。这种宽度的消失，本质上是该路径在总空间中被稀释的过程。
+    **The decay of logical width is equivalent to spatial expansion.** In a normalized perspective, instead of increasing the denominator, we refine the numerator by multiplying $S$ repeatedly. This loss of width is essentially the dilution of the path within the total space.
+
+#### 2. 空间换时间：对数级折叠 (Space-to-Time: Logarithmic Folding)
+任何极小的逻辑宽度（微小概率）$W$，在物理上都等价于由特定的分支因子 $S$ 在时间轴上折叠而成的深度 $T$。
+Any infinitesimal Logical Width (minute probability) $W$ is physically equivalent to a depth $T$ folded on the timeline by a specific branching factor $S$.
+
+* **转化公式 (Conversion Formula)**: 
+    $$T = \log_S (W)$$
+
+#### 3. 必然性守恒：原子恒等 (Conservation of Inevitability: Atomic Identity)
+当步骤为原子事件（$S=1$）时，转换律遵循单位元属性。此时逻辑宽度不会发生衰减。
+When a step is an atomic event ($S=1$), the conversion law follows the identity element property. In this case, no decay of logical width occurs.
+
+* **恒等公式 (Identity Formula)**: 
+    $$W = 1^T \equiv 1$$
+
+* **结论 (Conclusion)**:
+    **不衰减即必然**。
+    在归一化的逻辑空间中，原子事件的逻辑宽度始终为 1。由于其不触发任何形式的空间切分（$S=1$），无论构造深度 $T$ 如何延伸，其逻辑宽度始终保持完整。这证明了必然性在时间轴上的守恒，是因为**逻辑宽度没有因分支而发生衰减**。
+    **Non-decay is Inevitability**.
+    In a normalized logical space, the logical width of an atomic event is always 1. Since it triggers no spatial slicing ($S=1$), its logical width remains intact regardless of the constructive depth $T$. This proves that the conservation of inevitability along the timeline is due to the **absence of logical width decay via branching**.
+
 ---
 
 ## 5. 基于 SFCP 的随机函数实现原理 (Implementation Principle of SFCP-Based Random Function)
