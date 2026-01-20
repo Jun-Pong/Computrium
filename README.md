@@ -464,6 +464,46 @@ Traditional game development relies on Pseudo-Random Number Generators (RNG) for
     服务器不再需要为每个玩家的高频请求单独计算随机数 ($O(N)$)，只需计算全局环境哈希 ($O(1)$) 并广播状态，极大地降低了算力负载。
     The server no longer needs to calculate random numbers individually for high-frequency requests from every player ($O(N)$), but only needs to calculate the global environmental hash ($O(1)$) and broadcast the state, drastically reducing computational load.
 
+### 6.3 暴力破解的物理下界：对数门槛定理
+**(6.3 The Physical Lower Bound of Brute Force: The Logarithmic Threshold Theorem)**
+
+本节通过时空转换公式推导证明：即便算力（计算速度）持续提升，只要单步分支宽度 $S$ 无法达到全空间规模 $N$，时间代价 $T$ 就永远存在一个由对数函数决定的最小值。
+This section proves through the space-time conversion formula: even if computational power increases, as long as the single-step branching width $S$ cannot reach the total space scale $N$, the time cost $T$ will always have a minimum value determined by the logarithmic function.
+
+#### 1. 问题的逻辑定义 (Logical Definition of the Problem)
+* **目标占比 (Target Proportion)**: 设密钥空间大小为 $N$，则正确结果在总逻辑空间中的占比为 $W = 1/N$。
+* **物理约束 (Physical Constraint)**: 受限于“空间死锁”公理，系统单步能处理的最大分支宽度为 $S_{max}$。
+* **构造目标 (Construction Goal)**: 通过 $T$ 步构造，使路径的逻辑宽度从 $1/N$ 收敛至 $1$（即锁定必然性）。
+
+#### 2. 数学推导 (Mathematical Derivation)
+根据 **4.5 节的对数-指数衰减律**：
+According to the **Log-Exp Decay Law in Section 4.5**:
+
+$$W_{final} = W_{initial} \cdot (S_{max})^T$$
+
+为了使目标事件从背景杂讯中被剥离（即 $W_{final} \to 1$），必须满足：
+To isolate the target event from background noise (i.e., $W_{final} \to 1$), it must satisfy:
+
+$$1 = \frac{1}{N} \cdot (S_{max})^T \implies (S_{max})^T = N$$
+
+两边取对数得：
+Taking the logarithm of both sides:
+
+$$T_{min} = \log_{S_{max}} (N)$$
+
+#### 3. 物理含义 (Physical Meaning)
+* **不可逾越的深度 (Insurmountable Depth)**: 
+    时间深度 $T$ 的本质是用来补偿空间分辨率 $S$ 的不足。由于物理硬件无法在单步内提供无限大的 $S$（即无法一次性制造出 $1/N$ 级别的占比窗口），系统**必须**通过线性累加时间步 $T$ 来实现指数级的路径收缩。
+    The essence of time depth $T$ is to compensate for the deficiency in spatial resolution $S$. Since physical hardware cannot provide an infinitely large $S$ in a single step, the system **must** accumulate time steps $T$ linearly to achieve exponential path contraction.
+
+* **死锁边界 (Deadlock Boundary)**: 
+    任何试图使 $T < T_{min}$ 的尝试，都会导致逻辑宽度 $W$ 无法收敛。根据**双重死锁公理**，由于无法在有限步内定位目标区间，该路径将触发步骤无限死锁，概率在物理上归零。
+    Any attempt to make $T < T_{min}$ will result in the logical width $W$ failing to converge. According to the **Dual Deadlock Axiom**, the path will trigger an Infinite Step Deadlock, and the probability will physically collapse to zero.
+
+#### 4. 结论 (Conclusion)
+**时间是分辨率的代偿。** 暴力破解的门槛不在于算法的优劣，而在于目标占比 $W$ 被稀释的程度与物理单步处理极限 $S$ 之间的对数差。
+**Time is the compensation for resolution.** The threshold of brute force lies not in the quality of the algorithm, but in the logarithmic difference between the dilution of the target proportion $W$ and the physical single-step processing limit $S$.
+
 ---
 
 ## 🏗 Theoretical Architecture (理论架构)
