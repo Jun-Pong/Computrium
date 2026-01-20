@@ -504,6 +504,25 @@ $$T_{min} = \log_{S_{max}} (N)$$
 **时间是分辨率的代偿。** 暴力破解的门槛不在于算法的优劣，而在于目标占比 $W$ 被稀释的程度与物理单步处理极限 $S$ 之间的对数差。
 **Time is the compensation for resolution.** The threshold of brute force lies not in the quality of the algorithm, but in the logarithmic difference between the dilution of the target proportion $W$ and the physical single-step processing limit $S$.
 
+### 6.4 算法发现的概率佯谬：逻辑空间比值
+**(6.4 The Discovery Paradox: Logical Space Ratio)**
+
+本节定义为何寻获最优解的概率在物理上是最低的。
+
+#### 1. 发现概率的本质定义
+根据归一化公理，任何解法的发现概率，本质上就是其**逻辑空间**（时间全部转换为空间后的总规模）与**全集总空间**的比值。
+
+#### 2. 最优解的低占比原理
+* **逻辑空间最小化**：最优解 $P_0$ 拥有最精简的原子事件集合，在时间转换为空间后，其所占用的逻辑空间达到物理极限的最小。
+* **发现概率最低**：由于其逻辑空间极小，在全集总空间中的比值（占比）最低，导致在搜索路由中被命中的几率最低。
+
+#### 3. 平庸解的高占比原理
+* **逻辑空间巨大**：平庸解包含庞大的冗余原子事件集合，时间转换后的逻辑空间规模巨大。
+* **发现概率高**：较大的逻辑空间使其在总空间中占据了极高的比值。虽然其执行效率低，但其逻辑宽度较大，因此易被寻获。
+
+#### 4. 结论
+**效率是存在感的敌人**。最优解通过极小的逻辑空间换取了极高的时间效率，但也因此在归一化占比中被稀释到了消失的边缘。
+
 ---
 
 ## 🏗 Theoretical Architecture (理论架构)
