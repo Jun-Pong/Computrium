@@ -352,7 +352,7 @@ Any claim of inevitability that attempts to introduce "Infinity" will fail to in
 
 ---
 
-### 4.6 普遍无穷归零公理 (The Axiom of Universal Infinite Nullity)
+### 4.7 普遍无穷归零公理 (The Axiom of Universal Infinite Nullity)
 
 **核心立法 (Core Legislation)**
 SFCP 理论确立了物理宇宙的**强有限性 (Strong Finiteness)**。
@@ -418,7 +418,66 @@ Infinity is not a bridge to truth, but a cliff leading to **0 (Non-existence)**.
 
 ---
 
-### 4.7 宇宙可达结果集与构造复杂度 (The Universal Reachable Result Set and Constructive Complexity)
+### 4.8 经典不定式的终结 (The End of Classical Indeterminate Forms)
+
+**核心效应 (Core Effect)**
+在 SFCP 的强有限宇宙中，无穷与奇异点不再是数值，而是**“归零算子” (Zeroing Operator)**。
+In SFCP's strong finite universe, infinity and singularities are no longer values, but **"Zeroing Operators."**
+
+凡是被 $\infty$ 或定义的边界触碰的数学表达式，无需进行复杂的极限运算，直接在物理层面判定为 **NULL (0)**。
+Any mathematical expression touched by $\infty$ or defined boundaries is directly judged as **NULL (0)** at the physical level, without the need for complex limit operations.
+
+#### 1. 七大不定式的物理裁决 (Physical Verdict on the Seven Indeterminate Forms)
+
+我们将经典微积分中的纠结，与 SFCP 的裁决进行对比。**没有任何特例。**
+We compare the entanglements in classical calculus with the verdict of SFCP. **There are NO exceptions.**
+
+| 经典不定式 (Classic Form) | SFCP 物理裁决 (SFCP Verdict) | 物理理由 (Physical Reason) |
+| :--- | :--- | :--- |
+| **$1^\infty$** | **$\equiv 0$** | **必然性超时**：无法交付的结果等于没结果。 <br> **Inevitability Timeout**: An undelivered result equals no result. |
+| **$\infty \cdot 0$** | **$\equiv 0$** | **虚无相乘**：不存在的物体($\infty$) $\times$ 空集($0$) = 彻底的空。 <br> **Multiplication of Void**: Non-existent object($\infty$) $\times$ Null set($0$) = Absolute void. |
+| **$\frac{\infty}{\infty}$** | **$\equiv 0$** | **非法比值**：分子分母皆为非法实体，比值无物理意义。 <br> **Illegal Ratio**: Both numerator and denominator are illegal entities; ratio has no meaning. |
+| **$\infty - \infty$** | **$\equiv 0$** | **幽灵对消**：两个不存在的东西相减，依然是什么都没有。 <br> **Ghost Cancellation**: Subtracting two non-existent things still results in nothing. |
+| **$0^0$** | **$\equiv 0$** | **绝对虚无**：对不存在的基底进行零次操作，依然无法产生存在的实体。拒绝无中生有。 <br> **Absolute Void**: Performing zero operations on a non-existent base still fails to produce an existing entity. No creation ex nihilo. |
+| **$\infty^0$** | **$\equiv 0$** | **基座崩塌**：不存在的物体($\infty$)无法作为基底进行任何运算。 <br> **Base Collapse**: A non-existent object ($\infty$) cannot serve as a base for any operation. |
+| **$0^\infty$** | **$\equiv 0$** | **双重虚无**：本来就是空的，还无穷次空，当然是空。 <br> **Double Void**: Already empty, and empty infinitely times, is certainly empty. |
+
+#### 2. “无穷”与“0”的绝对闭环 (The Absolute Closed Loop of Infinity and Zero)
+在 SFCP 中，**所有非有限状态（Non-finite States）在物理上都坍缩为 0。**
+In SFCP, **all Non-finite States physically collapse to 0.**
+
+它们不再是数轴的两端，而是**首尾相连的归零闭环**。
+They are no longer two ends of the number axis, but a **closed loop of zeroing connected head to tail**.
+
+* **0 (静态虚无 / Static Void)**: 没有任何内容。
+    (Contains no content.)
+* **$\infty$ (动态虚无 / Dynamic Void)**: 试图塞满一切但最终溢出，导致内容丢失。
+    (Attempts to fill everything but eventually overflows, leading to content loss.)
+
+$$
+\text{Undefined} \cup \text{Infinite} \cup \text{Singularity} \implies \mathbf{0}
+$$
+
+#### 3. 彻底的清净 (Complete Clarity)
+这个公理消除了宇宙中所有的模棱两可。
+This axiom eliminates all ambiguities in the universe.
+
+* **没有“无限大”的能量**：直接归零。
+    (**No "Infinitely Large" Energy**: Zeroed directly.)
+* **没有“无限小”的概率**：直接归零。
+    (**No "Infinitely Small" Probability**: Zeroed directly.)
+* **没有“无中生有”的奇点** ($0^0$)：直接归零。
+    (**No "Creation Ex Nihilo" Singularity**: Zeroed directly.)
+
+**结论 (Conclusion)**:
+数学分析中的“不定式” (Indeterminate) 在物理上被重新定义为 **“不存在” (Non-existent)**。
+**宇宙只承认“有限整数”的合法性。**
+The "Indeterminate" in mathematical analysis is physically redefined as **"Non-existent."**
+**The universe only acknowledges the legitimacy of "Finite Integers."**
+
+---
+
+### 4.9 宇宙可达结果集与构造复杂度 (The Universal Reachable Result Set and Constructive Complexity)
 
 宇宙不是一个预先写入所有数据的静态数据库（Lookup Table），而是一个**实时运行的构造系统**。
 The universe is not a static database (Lookup Table) with pre-written data, but a **Runtime Constructive System**.
