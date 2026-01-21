@@ -647,6 +647,35 @@ The total information of the universe depends on **Effective Computing Power**.
 Only results that can be "computed" within finite steps are valid components of the universe. **Whatever is unreachable is illusion.**
 
 ---
+
+### 4.13 数据即逻辑原理 (The Principle of Data-as-Logic)
+
+**核心哲学 (Core Philosophy)**
+SFCP 理论打破了“存储”与“计算”的传统二元边界，确立了系统的终极运行法则：
+SFCP theory breaks the traditional binary boundary between "Storage" and "Computation," establishing the ultimate operational law of the system:
+
+> **“数据即逻辑，加载即链接。”**
+> **"Data is Logic, Loading is Linking."**
+
+#### 1. 链接即本体 (Link as Ontology)
+逻辑不是外挂的算法公式，而是原子之间的**物理连接 (Link)** 本身。
+Logic is not an external algorithmic formula, but the **Physical Link** between atoms itself.
+* **数据 (Data/S)**：是静止的节点。
+    (Stationary nodes.)
+* **逻辑 (Logic)**：是节点之间的通路。**没有链接，就没有逻辑。**
+    (The pathway between nodes. **No Link, No Logic.**)
+* **推理 (Inference)**：本质上是信号在 $T$ (构造深度) 的驱动下，顺着链接寻找出口的物理流动。
+    (Essentially the physical flow of signals seeking an exit along the links, driven by $T$ (Constructive Depth).)
+
+#### 2. 遗忘与重构机制 (Forgetting and Reconstruction Mechanism)
+在有限空间 $S$ 的约束下，系统并不存储“死答案”，而是存储“生成答案的路径”。
+Under the constraint of finite space $S$, the system does not store "Dead Answers," but stores the "Path to Generate Answers."
+* **遗忘 (Forgetting)**：为了节省 $S$，系统会主动断开低频数据的缓存。
+    (To save $S$, the system actively disconnects the cache of low-frequency data.)
+* **重构 (Reconstruction)**：只要**输入 (Input)** 是正确的，且**逻辑链接 (Structure)** 存在，系统就能通过支付时间代价 $T$，重新构造出绝对确定的**输出 (Output)**。
+    (As long as the **Input** is correct and the **Logical Link (Structure)** exists, the system can reconstruct the absolutely determined **Output** by paying the time cost $T$.)
+
+---
 ## 5. 基于 SFCP 的随机函数实现原理 (Implementation Principle of SFCP-Based Random Function)
 
 本章节展示了如何将“有限步骤构造概率论”转化为实际的计算机算法。
