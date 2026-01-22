@@ -1033,7 +1033,35 @@ $$
 
 ---
 
-## 7.4 $\infty$ 证伪条款 (Falsifiability Clause)
+## 7.4 方向项 ($\cos \theta$) 的解释：逻辑相关系数 (Explanation of Direction Term: Logical Relevance Coefficient)
+
+经典物理学公式为 $W = F \cdot s \cdot \cos \theta$。
+在 SFCP 的纯逻辑构造中，几何角度被**逻辑相关系数 ($\eta$)** 所取代。
+Classical physics formula: $W = F \cdot s \cdot \cos \theta$.
+In the pure logical construction of SFCP, geometric angle is replaced by the **Logical Relevance Coefficient ($\eta$)**.
+
+$$
+\Large \eta \equiv \cos \theta
+$$
+
+### 1. 定义 (Definition)
+$\eta$ 代表**“资源注入方向”**（系统投入的算力目标）与**“事件演化方向”**（实际发生的构造路径）之间的逻辑代码重合度。
+$\eta$ represents the logical code overlap between the **"Resource Injection Direction"** (the target of invested computation) and the **"Event Evolution Direction"** (the actual construction path).
+
+### 2. 三种状态 (Three States)
+* **同向 ($\eta = 1, \theta = 0^\circ$)**：
+    * **逻辑完全匹配**。投入的算力完全用于构造当前位移。做功最大化。
+    * **Logical Match**. Invested computation is fully used to construct the current displacement. Work is maximized.
+* **垂直 ($\eta = 0, \theta = 90^\circ$)**：
+    * **逻辑无关**。投入的算力构造的是“属性A”（如改变颜色），而物体发生的是“属性B”（如位移）。二者无交集，不做功。
+    * **Logical Irrelevance**. Computation constructs "Property A" (e.g., color change), while the object undergoes "Property B" (e.g., displacement). No intersection, zero work.
+* **反向 ($\eta = -1, \theta = 180^\circ$)**：
+    * **逻辑逆操作**。投入的算力用于撤销或阻碍该事件的发生。做负功。
+    * **Logical Inverse**. Invested computation is used to undo or hinder the event. Negative work.
+
+---
+
+## 7.5 $\infty$ 证伪条款 (Falsifiability Clause)
 
 **SFCP 理论承诺：**
 **SFCP Theory Commitment:**
@@ -1052,7 +1080,7 @@ $$
 
 ---    
 
-## 7.5 结语 (Epilogue)
+## 7.6 结语 (Epilogue)
 
 我们提出这个框架，不是为了终结物理学，而是为了提供一种新的计算视角。
 如果它能简化我们对宇宙的理解，它就是有用的；如果它不能，它就是多余的。
