@@ -1061,26 +1061,7 @@ $\eta$ represents the logical code overlap between the **"Resource Injection Dir
 
 ---
 
-## 7.5 $\infty$ 证伪条款 (Falsifiability Clause)
-
-**SFCP 理论承诺：**
-**SFCP Theory Commitment:**
-
-1.  **唯一性 (Uniqueness)**:
-    所有推导必须基于 $\ln(S_{space}) = T \times \ln(S_{time})$ 这一原点，不得引入任何未经定义的外部公式。
-    All derivations must be based on the origin $\ln(S_{space}) = T \times \ln(S_{time})$, without introducing undefined external formulas.
-
-2.  **实验一致性 (Experimental Consistency)**:
-    若推导结果与宏观低速下的 $F=ma$ 或微观/高速下的物理实验数据不符，本理论即刻作废。
-    If the derivation contradicts $F=ma$ at macroscopic low speeds or physical experimental data at microscopic/high speeds, this theory is immediately void.
-
-3.  **垃圾回收 (Garbage Collection)**:
-    任何导致 $T \to \infty$ 或 $m \to \infty$ 的理论模型（如奇点、发散级数），在本框架下被视为死锁错误，物理上判定为不存在 (NULL)。
-    Any theoretical model leading to $T \to \infty$ or $m \to \infty$ (e.g., singularities, divergent series) is considered a deadlock error in this framework and physically judged as Non-existent (NULL).
-
----    
-
-## 7.6 结语 (Epilogue)
+## 7.5 结语 (Epilogue)
 
 我们提出这个框架，不是为了终结物理学，而是为了提供一种新的计算视角。
 如果它能简化我们对宇宙的理解，它就是有用的；如果它不能，它就是多余的。
