@@ -676,6 +676,503 @@ Under the constraint of finite space $S$, the system does not store "Dead Answer
     (As long as the **Input** is correct and the **Logical Link (Structure)** exists, the system can reconstruct the absolutely determined **Output** by paying the time cost $T$.)
 
 ---
+
+# 第五章：理论的兼容性验证与证伪标准
+# Chapter 5: Theoretical Compatibility Verification and Falsifiability Criteria
+
+> **前言：本章严格基于《有限步骤构造概率论》的核心方程 进行推导。任何物理定律若不能从“动态时空转换方程”导出，则本理论自动失效。**
+> **Preface: This chapter derives strictly from the core equation of "SFCP". If any physical law cannot be derived from the "Dynamic Space-Time Conversion Equation," this theory is automatically invalid.**
+
+---
+
+## 5.1 核心方程：动态时空转换 (The Core Equation: Dynamic Space-Time Conversion)
+
+我们不发明新公式，直接使用本理论中的**时空守恒形式**：
+We use the **Space-Time Conservation Form** directly from this theory:
+
+$$
+\Large \ln(S_{space}) = T \times \ln(S_{time})
+$$
+
+### 物理量定义 (Definitions of Physical Quantities)
+
+1.  **$\ln(S_{space})$**: **逻辑总超体积 (Total Logical Hyper-Volume)**
+    * 这是事件在逻辑宇宙中占据的总“分量”。对于一个确定的物理事件（如“物体A移动到B”），这个总逻辑体积是恒定的（守恒的）。
+    * This is the total "component" the event occupies in the logical universe. For a defined physical event, this total logical volume is constant (conserved).
+
+2.  **$\ln(S_{time})$**: **单步逻辑宽度 (Single-Step Logical Width)**
+    * **定义**：这是瞬时质量 ($m$)。
+    * **逻辑关系**：质量 $m$ 是逻辑命中概率（宽度）$W$ 的**负对数**。
+        $$m \equiv -\ln(W)$$
+    * **叠加原理**：
+        * **同时发生 (Simultaneity)**：在同一时间片构造多个物体（A和B），意味着逻辑宽度的**交集乘积** ($W_{total} = W_A \times W_B$)。
+        * **质量累加 (Mass Addition)**：由于对数的性质，宽度的乘积完美转化为质量的加法 ($m_{total} = m_A + m_B$)。这保证了宏观物质守恒。
+    * **Definition**: This is the Instantaneous Mass ($m$).
+    * **Logical Relation**: Mass $m$ is the **negative logarithm** of the logical hit probability (width) $W$.
+    * **Superposition Principle**:
+        * **Simultaneity**: Constructing multiple objects (A and B) in the same time slice implies the **intersection product** of logical widths ($W_{total} = W_A \times W_B$).
+        * **Mass Addition**: Due to the property of logarithms, the product of widths perfectly translates into the addition of mass ($m_{total} = m_A + m_B$). This ensures macroscopic mass conservation.
+    * $$m \equiv \ln(S_{time})$$
+
+3.  **$T$**: **构造深度 (Constructive Depth)**
+    * 即事件完成所需的串行时间步数。
+    * The serial time steps required for event completion.
+
+---
+
+## 5.2 推导协议 (Derivation Protocol)
+
+### 第一步：守恒锁定 (Step 1: Conservation Lock)
+对于一个封闭的物理构造过程，其总逻辑体积 $\ln(S_{space})$ 是守恒的。
+For a closed physical construction process, its total logical volume $\ln(S_{space})$ is conserved.
+
+$$
+\frac{d}{dt} [ \ln(S_{space}) ] = 0
+$$
+
+### 第二步：微分分析 (Step 2: Differential Analysis)
+将核心方程代入守恒式，对时间 $t$ 求导：
+Substitute the core equation into the conservation law and differentiate with respect to time $t$:
+
+$$
+\frac{d}{dt} [ T \times \ln(S_{time}) ] = 0
+$$
+
+应用乘积法则展开 (Apply Product Rule):
+
+$$
+\frac{dT}{dt} \cdot \ln(S_{time}) + T \cdot \frac{d}{dt}[\ln(S_{time})] = 0
+$$
+
+移项整理，将“时间变化项”与“质量变化项”分离 (Rearrange to separate time and mass terms):
+
+$$
+T \cdot \frac{d}{dt}[\ln(S_{time})] = - \ln(S_{time}) \cdot \frac{dT}{dt}
+$$
+
+### 第三步：物理映射 (Step 3: Physical Mapping)
+
+现在，我们将方程中的数学项严格对应到物理量：
+
+1.  **力 ($F$) / Force**:
+    * 定义为**瞬时质量的变化率**。即系统为了应对变化，必须实时注入（或抽出）的单步逻辑宽度流。它是“改变”的代价。
+    * Defined as the **rate of change of instantaneous mass**. It is the cost of "Change".
+    * $$F \equiv \frac{d}{dt}[\ln(S_{time})] \quad (\text{i.e., } \frac{dm}{dt})$$
+
+2.  **加速度 ($a$) / Acceleration**:
+    * 定义为**时间压缩率**。即为了更快完成构造，对构造深度 $T$ 的压缩速度。
+    * Defined as the **time compression rate**.
+    * $$a \equiv - \frac{1}{T} \frac{dT}{dt}$$
+
+3.  **质量 ($m$) / Mass**:
+    * 即单步逻辑宽度。
+    * Single-step logical width.
+    * $$m \equiv \ln(S_{time})$$
+
+### 第四步：代入与结果 (Step 4: Substitution & Result)
+
+将上述定义代入移项后的方程：
+Substitute the definitions above into the rearranged equation:
+
+$$
+T \cdot \underbrace{\frac{d}{dt}[\ln(S_{time})]}_{F} = \underbrace{\ln(S_{time})}_{m} \cdot \left( - \frac{dT}{dt} \right)
+$$
+
+两边同时除以 $T$ (Divide both sides by $T$):
+
+$$
+F = m \cdot \underbrace{\left( - \frac{1}{T} \frac{dT}{dt} \right)}_{a}
+$$
+
+**最终结论 (Final Conclusion)**:
+
+$$
+\Large F = m \cdot a
+$$
+
+---
+
+## 5.3 守恒量的物理本质：做功 (The Physical Essence of Conservation: Work)
+
+在完成了力的推导后，我们回看核心方程左侧的守恒量 $\ln(S_{space})$。在物理学语义下，这就是**做功 ($W$)**。
+After deriving Force, we look back at the conserved quantity $\ln(S_{space})$ on the left side of the core equation. In physical semantics, this is **Work ($W$)**.
+
+$$
+\Large W \equiv \ln(S_{space}) = m \cdot T
+$$
+
+* **物理意义 (Physical Significance)**:
+    做功实际上就是整个事件发生的所有时间片上，系统命中的逻辑宽度对应的**质量的总和**。
+    Work is effectively the **sum of mass** corresponding to the logical widths hit by the system over all time slices of the event.
+* **数学本质 (Mathematical Essence)**:
+    $$W = \int_{0}^{T} m(t) \, dt \approx m \cdot T$$
+* **结论 (Conclusion)**:
+    力 ($F$) 是质量的瞬时变化率，而做功 ($W$) 是质量在时间维度上的累积总量。
+    Force ($F$) is the instantaneous rate of change of mass, while Work ($W$) is the accumulated total of mass over the time dimension.
+
+---
+
+## 5.4 方向项 ($\cos \theta$) 的解释：逻辑相关系数 (Explanation of Direction Term: Logical Relevance Coefficient)
+
+经典物理学公式为 $W = F \cdot s \cdot \cos \theta$。
+在 SFCP 的纯逻辑构造中，几何角度被**逻辑相关系数 ($\eta$)** 所取代。
+Classical physics formula: $W = F \cdot s \cdot \cos \theta$.
+In the pure logical construction of SFCP, geometric angle is replaced by the **Logical Relevance Coefficient ($\eta$)**.
+
+$$
+\Large \eta \equiv \cos \theta
+$$
+
+### 1. 定义 (Definition)
+$\eta$ 代表**“资源注入方向”**（系统投入的算力目标）与**“事件演化方向”**（实际发生的构造路径）之间的逻辑代码重合度。
+$\eta$ represents the logical code overlap between the **"Resource Injection Direction"** (the target of invested computation) and the **"Event Evolution Direction"** (the actual construction path).
+
+### 2. 三种状态 (Three States)
+* **同向 ($\eta = 1, \theta = 0^\circ$)**：
+    * **逻辑完全匹配**。投入的算力完全用于构造当前位移。做功最大化。
+    * **Logical Match**. Invested computation is fully used to construct the current displacement. Work is maximized.
+* **垂直 ($\eta = 0, \theta = 90^\circ$)**：
+    * **逻辑无关**。投入的算力构造的是“属性A”（如改变颜色），而物体发生的是“属性B”（如位移）。二者无交集，不做功。
+    * **Logical Irrelevance**. Computation constructs "Property A" (e.g., color change), while the object undergoes "Property B" (e.g., displacement). No intersection, zero work.
+* **反向 ($\eta = -1, \theta = 180^\circ$)**：
+    * **逻辑逆操作**。投入的算力用于撤销或阻碍该事件的发生。做负功。
+    * **Logical Inverse**. Invested computation is used to undo or hinder the event. Negative work.
+
+---
+
+## 5.5 结语 (Epilogue)
+
+我们提出这个框架，不是为了终结物理学，而是为了提供一种新的计算视角。
+如果它能简化我们对宇宙的理解，它就是有用的；如果它不能，它就是多余的。
+**真理不惧怕计算，更不惧怕被证明是错的。**
+
+We propose this framework not to end physics, but to offer a new computational perspective.
+If it simplifies our understanding of the universe, it is useful; if it does not, it is redundant.
+**Truth fears no calculation, and certainly fears not being proven wrong.**
+
+---
+
+# 宇宙信息论 (UIT) - 重构版 V2.0
+# Universe Information Theory (UIT) - Refactored V2.0
+
+> **理论基础 (Theoretical Foundation)**:
+> 本理论完全基于 **SFCP (有限步骤构造概率论)** 构建。
+> 宇宙不再被视为连续的模拟量，而是由离散的构造事件组成的集合。物理定律是逻辑构造概率在宏观上的几何投影。
+> This theory is built entirely upon **SFCP (Step-Finite Constructive Probability)**.
+> The universe is no longer viewed as a continuous analog quantity, but as a set of discrete construction events. Physical laws are the geometric projections of logical construction probabilities on the macroscopic scale.
+
+---
+
+## 1. 基础时空架构 (Fundamental Spacetime Architecture)
+
+### 1.1 空间与时间 (Space and Time)
+* **空间 ($S$)**：即**集合本身 (The Set)**。它是系统当前时刻所有已实例化状态的几何总和。
+    * **Space ($S$)**: **The Set itself**. It is the geometric sum of all instantiated states of the system at the current moment.
+* **时间 ($T$)**：即**步骤 (The Step)**。它是系统从状态 $N$ 演化到 $N+1$ 所必须经历的逻辑迭代计数。
+    * **Time ($T$)**: **The Step**. It is the logical iteration count required for the system to evolve from state $N$ to $N+1$.
+
+### 1.2 绝对路程守恒定律 (The Law of Absolute Path Conservation)
+宇宙中的每一个基本物理单元，在单位时间步骤 ($T=1$) 内，必须且只能跨越 1 个标准逻辑单位的路程 ($S=1$)。
+Every fundamental physical unit in the universe MUST and can ONLY traverse 1 standard logical unit of path ($S=1$) within a unit time step ($T=1$).
+
+$$
+V_{absolute} = \frac{S}{T} \equiv C
+$$
+
+* **推论**：微观层面不存在静止。万物皆以光速 $C$ 运行。
+* **Inference**: There is no rest at the microscopic level. Everything runs at light speed $C$.
+
+---
+
+## 2. 光子/直流包的定义 (Definition of Photon / Direct Current Packet)
+
+### 2.1 本质：直流逻辑事件 (Essence: Direct Current Logical Event)
+光子（或称“直流包”）是宇宙中最基础的构造单元。
+A Photon (or "Direct Current Packet") is the most fundamental construction unit of the universe.
+
+* **无锁死 (Unlocked)**：它没有内部循环，不进行自我维持的“打转”。
+* **全伸展 (Fully Stretched)**：它将所有的绝对速度 $C$ 都用于外部空间的线性位移。
+* **Unlocked**: It has no internal loop and does not "spin" for self-maintenance.
+* **Fully Stretched**: It dedicates all of its absolute speed $C$ to linear displacement in external space.
+
+### 2.2 几何结构：螺旋推进 (Geometric Structure: Helical Propulsion)
+光子的运动轨迹并非数学上的绝对直线，而是一条**螺旋线 (Helix)**。
+The trajectory of a photon is not a mathematical absolute straight line, but a **Helix**.
+
+* **自旋 (Spin)**：光子一边以 $C$ 前进，一边在横截面上进行相位旋转。这就是角动量的来源。
+    * **Spin**: As the photon advances at $C$, it undergoes phase rotation in the cross-section. This is the source of angular momentum.
+
+### 2.3 频率即精度 (Frequency is Precision)
+频率 ($f$) 不是速度，而是**单位空间内的螺纹密度**。
+Frequency ($f$) is not speed, but the **Thread Density within unit space**.
+
+* **低频 (Low Frequency)**：**粗糙构造**。在单位路程 $S$ 内，螺旋仅绕了很少的圈数（如无线电波）。构造简单，概率高。
+    * **Low Frequency**: **Rough Construction**. Within unit path $S$, the helix winds very few turns. Construction is simple, probability is high.
+* **高频 (High Frequency)**：**精密构造**。在单位路程 $S$ 内，螺旋极其密集地绕了无数圈（如伽马射线）。构造极其苛刻，必须精确命中极小的逻辑靶心。
+    * **High Frequency**: **Precision Construction**. Within unit path $S$, the helix winds continuously and densely. Construction is demanding, requiring a precise hit on a tiny logical target.
+
+---
+
+## 3. 质量与能量的重构 (Reconstruction of Mass and Energy)
+
+### 3.1 质量的本质：概率分布 (Essence of Mass: Probability Distribution)
+光子的质量完全遵循 **SFCP 的概率分布规律**。质量 ($m$) 是构造概率 ($P_{struct}$) 的负对数。
+The mass of a photon strictly follows the **SFCP Probability Distribution Law**. Mass ($m$) is the negative logarithm of the construction probability ($P_{struct}$).
+
+$$
+m \equiv -\ln(P_{struct})
+$$
+
+* **普遍规律 (General Rule)**：
+    * **概率越高质量越低**（构造越容易，系统开销越小）。
+    * **Higher Probability = Lower Mass** (Easier construction, lower system cost).
+
+* **低能光子 (Low-Energy Photon)**：
+    * 螺旋结构稀疏，构造简单，属于大概率事件 ($P \to 1$)。
+    * **结果**：质量极低 ($m \approx 0$)。
+    * *Simple helix, high probability, thus extremely low mass.*
+
+* **高能光子 (High-Energy Photon)**：
+    * 螺旋结构极密，构造极其繁琐，属于低概率事件 ($P \to 0$)。
+    * **结果**：质量显著增加 ($m > 0$)。
+    * *Dense helix, low probability, thus significantly increased mass.*
+
+### 3.2 能量方程的修正 (Correction of the Energy Equation)
+$$
+E = m \cdot C^2
+$$
+
+* **物理诠释**：能量并非由速度产生（因为速度恒为 $C$）。
+    * **$m$ (稀缺度)**：决定了实体的**逻辑面额**（价值）。
+    * **$C^2$ (系统常数)**：是逻辑难度向物理做功转化的**几何汇率**。
+* **Physical Interpretation**: Energy is not generated by speed (since speed is constantly $C$).
+    * **$m$ (Scarcity)**: Determines the **Logical Denomination** (Value) of the entity.
+    * **$C^2$ (System Constant)**: The **Geometric Exchange Rate** for converting logical difficulty into physical work.
+
+---
+
+## 4. 物质的定义：锁死的光 (Definition of Matter: Locked Light)
+
+物质是由光子（直流包）通过逻辑闭环形成的**自平衡集合**。
+Matter is a **Self-Equilibrated Set** formed by photons (DC Packets) through logical closed loops.
+
+### 4.1 速度分流原理 (Velocity Divergence Principle)
+遵循绝对路程守恒：
+Following Absolute Path Conservation:
+
+$$
+S_{internal} + S_{external} = C
+$$
+
+* **卷曲 ($S_{internal}$)**：构成物质的光子在内部进行高频的**绕圈/死锁**，以维持物质的形态。这构成了**静止质量**。
+    * **Curl ($S_{internal}$)**: Photons constituting matter perform high-frequency **Looping/Locking** internally to maintain the form. This constitutes **Rest Mass**.
+* **位移 ($S_{external}$)**：扣除内部消耗后，剩余的配额用于外部移动。
+    * **Displacement ($S_{external}$)**: The remaining quota after internal consumption is used for external movement.
+
+### 4.2 结论 (Conclusion)
+* **光**：不做内循环 ($S_{int}=0$)，全力冲刺 ($S_{ext}=C$)。
+* **物质**：内部极度繁忙 ($S_{int} \approx C$)，外部表现迟缓 ($S_{ext} \ll C$)。
+* **Light**: No internal loop ($S_{int}=0$), full sprint ($S_{ext}=C$).
+* **Matter**: Extremely busy internally ($S_{int} \approx C$), sluggish externally ($S_{ext} \ll C$).
+
+---
+*UIT V2.0 - Core Definitions*
+
+---
+
+### 响应系数的拓扑推导 (Topological Derivation of Constants)
+* **光子 (直流包 / Header-Only)**: 
+    内部无自旋逻辑，$\vec{v}$ 与运动方向完全一致。引力偏置 $\vec{g}$ 直接作用于唯一位移矢量，响应率达到物理上限。
+* **物质 (自旋聚合体 / Payload)**: 
+    内部信号呈 3D 各向同性自旋（Isotropic Spin）以维持逻辑闭环。当引力偏置 $\vec{g}$ 介入时，由于内部矢量在 3D 空间内的对称分布，其向引力方向产生的有效位移分量会被自旋动能“稀释”。
+
+### 3. 仿真实验数据 (Simulation Data)
+通过对 $1,000,000$ 个普朗克信号单元进行矢量叠加仿真，得出不同拓扑结构的引力响应常数：
+
+| 寻址结构 (Addressing Structure) | 内部逻辑状态 (Internal Logic) | 引力响应系数 (Acceleration / g) | 物理表现 (Phenomena) |
+| :--- | :--- | :--- | :--- |
+| **光信号 (Light)** | 单向直流寻址 (Direct) | **$1.000 \times g$** | **全速响应，瞬时下落** |
+| **3D 物质 (Matter)** | 全域各向同性自旋 | **$0.667 \times g \approx \frac{2}{3}g$** | **标准引力加速度，质量无关** |
+| **2D 环状物质 (Ring)** | 平面内自旋 (垂直引力) | **$1.000 \times g$** | 表现为光电效应下的敏感性 |
+| **2D 环状物质 (Ring)** | 平面内自旋 (平行引力) | **$0.500 \times g = \frac{1}{2}g$** | 表现为强磁场下的质量畸变 |
+
+### 4. 结论 (Conclusion)
+1.  **质量无关性 (Mass Independence)**: 宏观物质的下落加速度由其“3D自旋”的拓扑结构决定。无论带宽占用（Mass）大小，其内部信号的平均偏转率始终锁定为 $\frac{2}{3}$，从而产生“不同质量物体下落一样快”的宏观统计错觉。
+2.  **光速响应优势**: 由于光子不具备自旋产生的“逻辑阻抗 (Inertia)”，它在引力场中的响应速度比任何宏观物质快 $50\%$（即 $1.0 : 0.67$）。
+3.  **等效原理的局限**: 传统物理学测量的“等效性”仅存在于同类 Payload 之间。在跨维度的总线通讯中，无载荷信号（光）与高载荷自旋包（物质）的逻辑响应是不等效的。
+  
+---
+
+# UIT 理论补充：动量定义与能量关系的完整推导
+# UIT Supplement: Derivation of Momentum & Energy Relation
+
+> 我们首先基于 SFCP 第 5.2 节的力学定义推导出**动量 ($p$)**，证明动量是“力在时间上的累积”。
+> 随后，基于 UIT 的“微观光速公理”，推导出 $E=mc^2$ 是动量在空间上全额释放的必然结果。
+> First, we derive **Momentum ($p$)** based on the mechanical definition in SFCP Section 5.2, proving that momentum is the "accumulation of force over time."
+> Then, based on the "Microscopic Light Speed Axiom" of UIT, we derive that $E=mc^2$ is the inevitable result of the full release of momentum in space.
+
+---
+
+## 1. 第一阶段：动量的推导 (Phase 1: Derivation of Momentum)
+
+**目标**：不引入牛顿力学预设，仅从 SFCP 逻辑推导 $p = m \cdot v$。
+**Goal**: Derive $p = m \cdot v$ solely from SFCP logic without assuming Newtonian mechanics.
+
+### 1.1 前置公式 (Prerequisite Formula)
+引用 **SFCP 5.2** 推导出的力学公式：
+Citing the mechanical formula derived in **SFCP 5.2**:
+
+$$
+F = m \cdot a = m \cdot \frac{dv}{dt}
+$$
+
+### 1.2 动量的定义：时间累积 (Definition of Momentum: Time Accumulation)
+在 SFCP 构造论中，**动量 ($p$)** 被定义为：**维持一个构造事件所需的“逻辑推力”在时间维度上的总投入。**
+即：力在时间上的积分（冲量）。
+In SFCP Constructivism, **Momentum ($p$)** is defined as: **The total investment of "logical thrust" required to maintain a construction event over the time dimension.**
+i.e., The integral of Force over Time (Impulse).
+
+$$
+p \equiv \int F \cdot dt
+$$
+
+### 1.3 推导过程 (Derivation Process)
+将 $F = m \frac{dv}{dt}$ 代入定义式：
+Substitute $F = m \frac{dv}{dt}$ into the definition:
+
+$$
+p = \int (m \cdot \frac{dv}{dt}) \cdot dt
+$$
+
+消去时间微分 $dt$：
+Eliminate the time differential $dt$:
+
+$$
+p = \int m \cdot dv
+$$
+
+对于一个质量恒定为 $m$ 的对象，从静止 ($0$) 构造到当前速度 ($v$)：
+For an object with constant mass $m$, constructed from rest ($0$) to current velocity ($v$):
+
+$$
+p = m \cdot [v]_0^v
+$$
+
+**结论 (Conclusion)**：
+$$
+\Large p = m \cdot v
+$$
+
+---
+
+## 2. 第二阶段：能量与动量的几何关系 (Phase 2: Geometric Relation of Energy & Momentum)
+
+**目标**：建立能量 ($E$) 与动量 ($p$) 的转换关系。
+**Goal**: Establish the conversion relation between Energy ($E$) and Momentum ($p$).
+
+### 2.1 能量的定义：空间累积 (Definition of Energy: Spatial Accumulation)
+引用 **SFCP 7.3**：能量（做功）是力在**空间维度**上的累积。
+Citing **SFCP 7.3**: Energy (Work) is the accumulation of Force over the **Spatial Dimension**.
+
+$$
+E = \int F \cdot ds
+$$
+
+### 2.2 桥接方程 (The Bridging Equation)
+利用几何关系 $ds = v \cdot dt$（路程 = 速度 $\times$ 时间）进行代换：
+Substitute using the geometric relation $ds = v \cdot dt$:
+
+$$
+E = \int F \cdot (v \cdot dt)
+$$
+
+重新组合各项，将 $F \cdot dt$ 提取出来：
+Regroup the terms to extract $F \cdot dt$:
+
+$$
+E = \int v \cdot (F \cdot dt)
+$$
+
+### 2.3 代入动量微分 (Substituting Momentum Differential)
+回顾 1.2 节的定义：$dp = F \cdot dt$（动量的微增量等于力的时间微元）。
+Recall the definition from 1.2: $dp = F \cdot dt$.
+
+代入上式：
+Substitute into the equation:
+
+$$
+\Large E = \int v \cdot dp
+$$
+
+**这是本理论的核心方程**：能量是对动量在速度上的积分。
+**This is the Core Equation of the theory**: Energy is the integral of momentum over velocity.
+
+---
+
+## 3. 第三阶段：E=MC² 的终极证明 (Phase 3: The Ultimate Proof of E=MC²)
+
+**场景**：根据 **UIT V2.0**，物质内部并非静止，而是由光子（BDU）处于**锁死的光速循环**状态。
+**Scenario**: According to **UIT V2.0**, the interior of matter is not at rest, but consists of photons (BDU) in a state of **Locked Light-Speed Circulation**.
+
+### 3.1 边界条件 (Boundary Conditions)
+对于物质内部的每一个基本单元：
+For every fundamental unit inside matter:
+
+1.  **恒定速度**: $v \equiv C$ (光速守恒公理)。
+    * **Constant Velocity**: $v \equiv C$.
+2.  **固有动量**: 代入 1.3 的结论，得到 $p = m \cdot C$。
+    * **Inherent Momentum**: From 1.3, we get $p = m \cdot C$.
+
+### 3.2 积分计算 (Calculation)
+我们要计算释放这些锁死动量所对应的总能量。
+由于微观速度 $v$ 恒定为 $C$（它不需要从 0 加速，它一直在跑），因此在积分中，$v$ 是常数。
+We calculate the total energy corresponding to releasing this locked momentum.
+Since the microscopic velocity $v$ is constant at $C$ (it doesn't accelerate from 0, it's always running), $v$ is a constant in the integration.
+
+$$
+E = \int_{0}^{p} C \cdot dp
+$$
+*(注：这里是对动量 $p$ 进行累积，而速度 $C$ 是背景常数)*
+*(Note: Here we accumulate momentum $p$, while velocity $C$ is a background constant)*
+
+$$
+E = C \cdot \int_{0}^{p} dp
+$$
+
+$$
+E = C \cdot p
+$$
+
+### 3.3 最终代换 (Final Substitution)
+将 $p = m \cdot C$ 代入上式：
+Substitute $p = m \cdot C$ into the equation:
+
+$$
+E = C \cdot (m \cdot C)
+$$
+
+$$
+\Large E = m C^2
+$$
+
+---
+
+## 4. 总结 (Summary)
+
+通过严格的 SFCP 推导链：
+
+1.  **力 ($F$)** 在时间上的积累 $\rightarrow$ **动量 ($p = mv$)**。
+2.  **力 ($F$)** 在空间上的积累 $\rightarrow$ **能量 ($E = \int v dp$)**。
+3.  **物质内部** $\rightarrow$ 速度恒为 $C$，动量为 $mc$。
+4.  **能量释放** $\rightarrow$ $E = C \cdot (mc) = mc^2$。
+
+**结论**：$E=mc^2$ 不是相对论的专利，它是**动量 ($p=mc$)** 在**光速几何空间 ($v=C$)** 中全额展开的必然数学结果。
+**Conclusion**: $E=mc^2$ is not exclusive to relativity; it is the inevitable mathematical result of **Momentum ($p=mc$)** fully unfolding in **Light-Speed Geometric Space ($v=C$)**.
+
+---
+
+# 额外补充
+
 ## 5. 基于 SFCP 的随机函数实现原理 (Implementation Principle of SFCP-Based Random Function)
 
 本章节展示了如何将“有限步骤构造概率论”转化为实际的计算机算法。
@@ -735,8 +1232,6 @@ Function SFCP_Random_Selector(Events_List):
     # Fallback (Should be theoretically unreachable if intervals sum to 1)
     Return Deadlock_Error
 ```
-
----
 
 ---
 
@@ -896,216 +1391,6 @@ According to the Axiom of Normalization, the discovery probability of any soluti
 最快的算法在逻辑上永远趋向于“打表”（Lookup Table），即将所有逻辑折叠为 $O(1)$ 的原子操作。然而，这会导致总空间（分母）呈指数级膨胀，使最优解的逻辑占比跌破物理分辨率，导致其在现实中因“无法被选中”而产生存在性坍缩。
 The fastest algorithm logically tends towards a "Lookup Table," folding all logic into $O(1)$ atomic operations. However, this causes the total space (denominator) to expand exponentially, pushing the logical proportion of the optimal solution below physical resolution, leading to existential collapse as it becomes "unselectable" in reality.
 
----
-
-# 第七章：理论的兼容性验证与证伪标准
-# Chapter 7: Theoretical Compatibility Verification and Falsifiability Criteria
-
-> **前言：本章严格基于《有限步骤构造概率论》的核心方程 进行推导。任何物理定律若不能从“动态时空转换方程”导出，则本理论自动失效。**
-> **Preface: This chapter derives strictly from the core equation of "SFCP". If any physical law cannot be derived from the "Dynamic Space-Time Conversion Equation," this theory is automatically invalid.**
-
----
-
-## 7.1 核心方程：动态时空转换 (The Core Equation: Dynamic Space-Time Conversion)
-
-我们不发明新公式，直接使用本理论中的**时空守恒形式**：
-We use the **Space-Time Conservation Form** directly from this theory:
-
-$$
-\Large \ln(S_{space}) = T \times \ln(S_{time})
-$$
-
-### 物理量定义 (Definitions of Physical Quantities)
-
-1.  **$\ln(S_{space})$**: **逻辑总超体积 (Total Logical Hyper-Volume)**
-    * 这是事件在逻辑宇宙中占据的总“分量”。对于一个确定的物理事件（如“物体A移动到B”），这个总逻辑体积是恒定的（守恒的）。
-    * This is the total "component" the event occupies in the logical universe. For a defined physical event, this total logical volume is constant (conserved).
-
-2.  **$\ln(S_{time})$**: **单步逻辑宽度 (Single-Step Logical Width)**
-    * **定义**：这是瞬时质量 ($m$)。
-    * **逻辑关系**：质量 $m$ 是逻辑命中概率（宽度）$W$ 的**负对数**。
-        $$m \equiv -\ln(W)$$
-    * **叠加原理**：
-        * **同时发生 (Simultaneity)**：在同一时间片构造多个物体（A和B），意味着逻辑宽度的**交集乘积** ($W_{total} = W_A \times W_B$)。
-        * **质量累加 (Mass Addition)**：由于对数的性质，宽度的乘积完美转化为质量的加法 ($m_{total} = m_A + m_B$)。这保证了宏观物质守恒。
-    * **Definition**: This is the Instantaneous Mass ($m$).
-    * **Logical Relation**: Mass $m$ is the **negative logarithm** of the logical hit probability (width) $W$.
-    * **Superposition Principle**:
-        * **Simultaneity**: Constructing multiple objects (A and B) in the same time slice implies the **intersection product** of logical widths ($W_{total} = W_A \times W_B$).
-        * **Mass Addition**: Due to the property of logarithms, the product of widths perfectly translates into the addition of mass ($m_{total} = m_A + m_B$). This ensures macroscopic mass conservation.
-    * $$m \equiv \ln(S_{time})$$
-
-3.  **$T$**: **构造深度 (Constructive Depth)**
-    * 即事件完成所需的串行时间步数。
-    * The serial time steps required for event completion.
-
----
-
-## 7.2 推导协议 (Derivation Protocol)
-
-### 第一步：守恒锁定 (Step 1: Conservation Lock)
-对于一个封闭的物理构造过程，其总逻辑体积 $\ln(S_{space})$ 是守恒的。
-For a closed physical construction process, its total logical volume $\ln(S_{space})$ is conserved.
-
-$$
-\frac{d}{dt} [ \ln(S_{space}) ] = 0
-$$
-
-### 第二步：微分分析 (Step 2: Differential Analysis)
-将核心方程代入守恒式，对时间 $t$ 求导：
-Substitute the core equation into the conservation law and differentiate with respect to time $t$:
-
-$$
-\frac{d}{dt} [ T \times \ln(S_{time}) ] = 0
-$$
-
-应用乘积法则展开 (Apply Product Rule):
-
-$$
-\frac{dT}{dt} \cdot \ln(S_{time}) + T \cdot \frac{d}{dt}[\ln(S_{time})] = 0
-$$
-
-移项整理，将“时间变化项”与“质量变化项”分离 (Rearrange to separate time and mass terms):
-
-$$
-T \cdot \frac{d}{dt}[\ln(S_{time})] = - \ln(S_{time}) \cdot \frac{dT}{dt}
-$$
-
-### 第三步：物理映射 (Step 3: Physical Mapping)
-
-现在，我们将方程中的数学项严格对应到物理量：
-
-1.  **力 ($F$) / Force**:
-    * 定义为**瞬时质量的变化率**。即系统为了应对变化，必须实时注入（或抽出）的单步逻辑宽度流。它是“改变”的代价。
-    * Defined as the **rate of change of instantaneous mass**. It is the cost of "Change".
-    * $$F \equiv \frac{d}{dt}[\ln(S_{time})] \quad (\text{i.e., } \frac{dm}{dt})$$
-
-2.  **加速度 ($a$) / Acceleration**:
-    * 定义为**时间压缩率**。即为了更快完成构造，对构造深度 $T$ 的压缩速度。
-    * Defined as the **time compression rate**.
-    * $$a \equiv - \frac{1}{T} \frac{dT}{dt}$$
-
-3.  **质量 ($m$) / Mass**:
-    * 即单步逻辑宽度。
-    * Single-step logical width.
-    * $$m \equiv \ln(S_{time})$$
-
-### 第四步：代入与结果 (Step 4: Substitution & Result)
-
-将上述定义代入移项后的方程：
-Substitute the definitions above into the rearranged equation:
-
-$$
-T \cdot \underbrace{\frac{d}{dt}[\ln(S_{time})]}_{F} = \underbrace{\ln(S_{time})}_{m} \cdot \left( - \frac{dT}{dt} \right)
-$$
-
-两边同时除以 $T$ (Divide both sides by $T$):
-
-$$
-F = m \cdot \underbrace{\left( - \frac{1}{T} \frac{dT}{dt} \right)}_{a}
-$$
-
-**最终结论 (Final Conclusion)**:
-
-$$
-\Large F = m \cdot a
-$$
-
----
-
-## 7.3 守恒量的物理本质：做功 (The Physical Essence of Conservation: Work)
-
-在完成了力的推导后，我们回看核心方程左侧的守恒量 $\ln(S_{space})$。在物理学语义下，这就是**做功 ($W$)**。
-After deriving Force, we look back at the conserved quantity $\ln(S_{space})$ on the left side of the core equation. In physical semantics, this is **Work ($W$)**.
-
-$$
-\Large W \equiv \ln(S_{space}) = m \cdot T
-$$
-
-* **物理意义 (Physical Significance)**:
-    做功实际上就是整个事件发生的所有时间片上，系统命中的逻辑宽度对应的**质量的总和**。
-    Work is effectively the **sum of mass** corresponding to the logical widths hit by the system over all time slices of the event.
-* **数学本质 (Mathematical Essence)**:
-    $$W = \int_{0}^{T} m(t) \, dt \approx m \cdot T$$
-* **结论 (Conclusion)**:
-    力 ($F$) 是质量的瞬时变化率，而做功 ($W$) 是质量在时间维度上的累积总量。
-    Force ($F$) is the instantaneous rate of change of mass, while Work ($W$) is the accumulated total of mass over the time dimension.
-
----
-
-## 7.4 方向项 ($\cos \theta$) 的解释：逻辑相关系数 (Explanation of Direction Term: Logical Relevance Coefficient)
-
-经典物理学公式为 $W = F \cdot s \cdot \cos \theta$。
-在 SFCP 的纯逻辑构造中，几何角度被**逻辑相关系数 ($\eta$)** 所取代。
-Classical physics formula: $W = F \cdot s \cdot \cos \theta$.
-In the pure logical construction of SFCP, geometric angle is replaced by the **Logical Relevance Coefficient ($\eta$)**.
-
-$$
-\Large \eta \equiv \cos \theta
-$$
-
-### 1. 定义 (Definition)
-$\eta$ 代表**“资源注入方向”**（系统投入的算力目标）与**“事件演化方向”**（实际发生的构造路径）之间的逻辑代码重合度。
-$\eta$ represents the logical code overlap between the **"Resource Injection Direction"** (the target of invested computation) and the **"Event Evolution Direction"** (the actual construction path).
-
-### 2. 三种状态 (Three States)
-* **同向 ($\eta = 1, \theta = 0^\circ$)**：
-    * **逻辑完全匹配**。投入的算力完全用于构造当前位移。做功最大化。
-    * **Logical Match**. Invested computation is fully used to construct the current displacement. Work is maximized.
-* **垂直 ($\eta = 0, \theta = 90^\circ$)**：
-    * **逻辑无关**。投入的算力构造的是“属性A”（如改变颜色），而物体发生的是“属性B”（如位移）。二者无交集，不做功。
-    * **Logical Irrelevance**. Computation constructs "Property A" (e.g., color change), while the object undergoes "Property B" (e.g., displacement). No intersection, zero work.
-* **反向 ($\eta = -1, \theta = 180^\circ$)**：
-    * **逻辑逆操作**。投入的算力用于撤销或阻碍该事件的发生。做负功。
-    * **Logical Inverse**. Invested computation is used to undo or hinder the event. Negative work.
-
----
-
-## 7.5 结语 (Epilogue)
-
-我们提出这个框架，不是为了终结物理学，而是为了提供一种新的计算视角。
-如果它能简化我们对宇宙的理解，它就是有用的；如果它不能，它就是多余的。
-**真理不惧怕计算，更不惧怕被证明是错的。**
-
-We propose this framework not to end physics, but to offer a new computational perspective.
-If it simplifies our understanding of the universe, it is useful; if it does not, it is redundant.
-**Truth fears no calculation, and certainly fears not being proven wrong.**
-
----
-
-# 重要通知
-## 原有的UIT理论在仿真实验中因为粒子偏转模型和BDU（基本粒子/光子）模型存在错误宣告失败，接下来本项目(包括UIT)将基于SFCP（有限步骤构造概率论）进行重构
-## 若要了解旧版UIT理论，请查看 V1.2.923.beta 及之前的版本
-
----
-
-# Important Notice
-## The original UIT theory has been declared a failure following simulation experiments due to errors in the particle deflection model and the BDU (Basic Particle/Photon) model. Consequently, this project (including UIT) will be reconstructed based on SFCP (Finite Step Constructive Probability).
-## For information regarding the legacy UIT theory, please refer to version V1.2.923.beta and prior releases.
-
----
-
-### 响应系数的拓扑推导 (Topological Derivation of Constants)
-* **光子 (直流包 / Header-Only)**: 
-    内部无自旋逻辑，$\vec{v}$ 与运动方向完全一致。引力偏置 $\vec{g}$ 直接作用于唯一位移矢量，响应率达到物理上限。
-* **物质 (自旋聚合体 / Payload)**: 
-    内部信号呈 3D 各向同性自旋（Isotropic Spin）以维持逻辑闭环。当引力偏置 $\vec{g}$ 介入时，由于内部矢量在 3D 空间内的对称分布，其向引力方向产生的有效位移分量会被自旋动能“稀释”。
-
-### 3. 仿真实验数据 (Simulation Data)
-通过对 $1,000,000$ 个普朗克信号单元进行矢量叠加仿真，得出不同拓扑结构的引力响应常数：
-
-| 寻址结构 (Addressing Structure) | 内部逻辑状态 (Internal Logic) | 引力响应系数 (Acceleration / g) | 物理表现 (Phenomena) |
-| :--- | :--- | :--- | :--- |
-| **光信号 (Light)** | 单向直流寻址 (Direct) | **$1.000 \times g$** | **全速响应，瞬时下落** |
-| **3D 物质 (Matter)** | 全域各向同性自旋 | **$0.667 \times g \approx \frac{2}{3}g$** | **标准引力加速度，质量无关** |
-| **2D 环状物质 (Ring)** | 平面内自旋 (垂直引力) | **$1.000 \times g$** | 表现为光电效应下的敏感性 |
-| **2D 环状物质 (Ring)** | 平面内自旋 (平行引力) | **$0.500 \times g = \frac{1}{2}g$** | 表现为强磁场下的质量畸变 |
-
-### 4. 结论 (Conclusion)
-1.  **质量无关性 (Mass Independence)**: 宏观物质的下落加速度由其“3D自旋”的拓扑结构决定。无论带宽占用（Mass）大小，其内部信号的平均偏转率始终锁定为 $\frac{2}{3}$，从而产生“不同质量物体下落一样快”的宏观统计错觉。
-2.  **光速响应优势**: 由于光子不具备自旋产生的“逻辑阻抗 (Inertia)”，它在引力场中的响应速度比任何宏观物质快 $50\%$（即 $1.0 : 0.67$）。
-3.  **等效原理的局限**: 传统物理学测量的“等效性”仅存在于同类 Payload 之间。在跨维度的总线通讯中，无载荷信号（光）与高载荷自旋包（物质）的逻辑响应是不等效的。
-  
 ---
 
 ## 🗓 Roadmap & Status (路线图与状态)
