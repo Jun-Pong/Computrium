@@ -901,109 +901,156 @@ The fastest algorithm logically tends towards a "Lookup Table," folding all logi
 # 第七章：理论的兼容性验证与证伪标准
 # Chapter 7: Theoretical Compatibility Verification and Falsifiability Criteria
 
-> **前言：本章确立了有限步骤构造概率论 (SFCP) 的生命线。本理论必须具备向下兼容经典物理学的能力。如果任何经过实验验证的物理公式无法从本框架推导得出，则证明 SFCP 理论存在根本性错误，应予废弃。**
-> **Preface: This chapter establishes the lifeline of Finite-Step Constructive Probability (SFCP). The theory must be downward compatible with classical physics. If any empirically verified physical formula cannot be derived from this framework, it proves that SFCP is fundamentally flawed and should be discarded.**
+> **前言：本章严格基于《有限步骤构造概率论》的核心方程 进行推导。任何物理定律若不能从“动态时空转换方程”导出，则本理论自动失效。**
+> **Preface: This chapter derives strictly from the core equation of "SFCP". If any physical law cannot be derived from the "Dynamic Space-Time Conversion Equation," this theory is automatically invalid.**
 
 ---
 
-## 7.1 核心守恒方程 (The Core Conservation Equation)
+## 7.1 核心方程：动态时空转换 (The Core Equation: Dynamic Space-Time Conversion)
 
-SFCP 提出，物理事件的演化遵循“算力代价守恒”原则。这是本理论试图统一物理学的基础假设。
-SFCP proposes that the evolution of physical events follows the principle of "Computational Cost Conservation." This is the foundational hypothesis by which this theory attempts to unify physics.
-
-### 基础公式 (Fundamental Formula)
+我们不发明新公式，直接使用本理论中的**时空守恒形式**：
+We use the **Space-Time Conservation Form** directly from this theory:
 
 $$
-\Large \Omega = m \cdot T
+\Large \ln(S_{space}) = T \times \ln(S_{time})
 $$
 
-* **$\Omega$ (做功/信息总量 / Work/Total Information)**:
-    事件在逻辑空间中的绝对分量。对于封闭系统内的单一事件，设定为守恒常量。
-    The absolute component of an event in logical space. Set as a conserved constant for a single event within a closed system.
-* **$m$ (瞬时质量/单步体积 / Instantaneous Mass/Step Volume)**:
-    系统在当前时间切片所承载的资源密度（单步逻辑体积）。
-    The resource density (single-step logical volume) carried by the system in the current time slice.
-* **$T$ (构造深度/时间 / Constructive Depth/Time)**:
-    事件完成所需的串行逻辑步数。
-    The serial logical steps required for the event completion.
+### 物理量定义 (Definitions of Physical Quantities)
+
+1.  **$\ln(S_{space})$**: **逻辑总超体积 (Total Logical Hyper-Volume)**
+    * 这是事件在逻辑宇宙中占据的总“分量”。对于一个确定的物理事件（如“物体A移动到B”），这个总逻辑体积是恒定的（守恒的）。
+    * This is the total "component" the event occupies in the logical universe. For a defined physical event, this total logical volume is constant (conserved).
+
+2.  **$\ln(S_{time})$**: **单步逻辑宽度 (Single-Step Logical Width)**
+    * **定义**：这是瞬时质量 ($m$)。
+    * **逻辑关系**：质量 $m$ 是逻辑命中概率（宽度）$W$ 的**负对数**。
+        $$m \equiv -\ln(W)$$
+    * **叠加原理**：
+        * **同时发生 (Simultaneity)**：在同一时间片构造多个物体（A和B），意味着逻辑宽度的**交集乘积** ($W_{total} = W_A \times W_B$)。
+        * **质量累加 (Mass Addition)**：由于对数的性质，宽度的乘积完美转化为质量的加法 ($m_{total} = m_A + m_B$)。这保证了宏观物质守恒。
+    * **Definition**: This is the Instantaneous Mass ($m$).
+    * **Logical Relation**: Mass $m$ is the **negative logarithm** of the logical hit probability (width) $W$.
+    * **Superposition Principle**:
+        * **Simultaneity**: Constructing multiple objects (A and B) in the same time slice implies the **intersection product** of logical widths ($W_{total} = W_A \times W_B$).
+        * **Mass Addition**: Due to the property of logarithms, the product of widths perfectly translates into the addition of mass ($m_{total} = m_A + m_B$). This ensures macroscopic mass conservation.
+    * $$m \equiv \ln(S_{time})$$
+
+3.  **$T$**: **构造深度 (Constructive Depth)**
+    * 即事件完成所需的串行时间步数。
+    * The serial time steps required for event completion.
 
 ---
 
-## 7.2 通用推导协议 (Universal Derivation Protocol)
+## 7.2 推导协议 (Derivation Protocol)
 
-为了验证 SFCP 的有效性，我们采用以下标准程序来尝试推导已知的物理定律。
-To verify the validity of SFCP, we employ the following standard procedure to attempt the derivation of known physical laws.
+### 第一步：守恒锁定 (Step 1: Conservation Lock)
+对于一个封闭的物理构造过程，其总逻辑体积 $\ln(S_{space})$ 是守恒的。
+For a closed physical construction process, its total logical volume $\ln(S_{space})$ is conserved.
 
-### 第一步：守恒设定 (Step 1: Conservation Setup)
-确认物理过程中的代价总量 $\Omega$ 保持不变。
-Confirm that the total cost $\Omega$ remains constant during the physical process.
-$$\Omega = \text{Constant}$$
+$$
+\frac{d}{dt} [ \ln(S_{space}) ] = 0
+$$
 
 ### 第二步：微分分析 (Step 2: Differential Analysis)
-对时间 $t$ 求导，分析资源在“质量维度”与“时间维度”之间的转化关系。
-Differentiate with respect to time $t$ to analyze the transformation relationship between resources in the "mass dimension" and "time dimension."
-
-$$\frac{d\Omega}{dt} = \frac{d(m \cdot T)}{dt} = 0$$
-
-展开乘积法则 (Expanding via product rule):
-$$\frac{dm}{dt} \cdot T + m \cdot \frac{dT}{dt} = 0$$
-
-移项整理，得到**资源转化方程** (Rearranging to get the **Resource Transformation Equation**):
-$$\frac{dm}{dt} = - m \cdot \frac{1}{T} \frac{dT}{dt}$$
-
----
-
-## 7.3 兼容性验证案例：经典力学 (Compatibility Verification Case: Classical Mechanics)
-
-**目标**: 从 SFCP 导出牛顿第二定律 $F=ma$。
-**Goal**: Derive Newton's Second Law $F=ma$ from SFCP.
-
-### 1. 物理量映射 (Physical Mapping)
-我们将上述微分方程中的数学项映射为可观测的物理量：
-We map the mathematical terms in the differential equation above to observable physical quantities:
-
-* **力 ($F$) / Force**:
-    定义为系统为了维持质量变化（逻辑体积膨胀）而必须实时注入的算力流。
-    Defined as the computational flow injected by the system to sustain mass variation (logical volume expansion).
-    $$F \equiv \frac{dm}{dt}$$
-
-* **加速度 ($a$) / Acceleration**:
-    定义为时间 $T$ 的相对压缩率。加速即“缩短完成构造所需的时间”。
-    Defined as the relative compression rate of time $T$. Acceleration is "shortening the time required for construction."
-    $$a \equiv -\frac{1}{T} \frac{dT}{dt}$$
-
-### 2. 代入推导 (Derivation by Substitution)
-将 $F$ 和 $a$ 代入 **资源转化方程**：
-Substitute $F$ and $a$ into the **Resource Transformation Equation**:
+将核心方程代入守恒式，对时间 $t$ 求导：
+Substitute the core equation into the conservation law and differentiate with respect to time $t$:
 
 $$
-\underbrace{\frac{dm}{dt}}_{F} = m \cdot \underbrace{\left( - \frac{1}{T} \frac{dT}{dt} \right)}_{a}
+\frac{d}{dt} [ T \times \ln(S_{time}) ] = 0
 $$
 
-### 3. 结果 (Result)
+应用乘积法则展开 (Apply Product Rule):
+
+$$
+\frac{dT}{dt} \cdot \ln(S_{time}) + T \cdot \frac{d}{dt}[\ln(S_{time})] = 0
+$$
+
+移项整理，将“时间变化项”与“质量变化项”分离 (Rearrange to separate time and mass terms):
+
+$$
+T \cdot \frac{d}{dt}[\ln(S_{time})] = - \ln(S_{time}) \cdot \frac{dT}{dt}
+$$
+
+### 第三步：物理映射 (Step 3: Physical Mapping)
+
+现在，我们将方程中的数学项严格对应到物理量：
+
+1.  **力 ($F$) / Force**:
+    * 定义为**瞬时质量的变化率**。即系统为了应对变化，必须实时注入（或抽出）的单步逻辑宽度流。它是“改变”的代价。
+    * Defined as the **rate of change of instantaneous mass**. It is the cost of "Change".
+    * $$F \equiv \frac{d}{dt}[\ln(S_{time})] \quad (\text{i.e., } \frac{dm}{dt})$$
+
+2.  **加速度 ($a$) / Acceleration**:
+    * 定义为**时间压缩率**。即为了更快完成构造，对构造深度 $T$ 的压缩速度。
+    * Defined as the **time compression rate**.
+    * $$a \equiv - \frac{1}{T} \frac{dT}{dt}$$
+
+3.  **质量 ($m$) / Mass**:
+    * 即单步逻辑宽度。
+    * Single-step logical width.
+    * $$m \equiv \ln(S_{time})$$
+
+### 第四步：代入与结果 (Step 4: Substitution & Result)
+
+将上述定义代入移项后的方程：
+Substitute the definitions above into the rearranged equation:
+
+$$
+T \cdot \underbrace{\frac{d}{dt}[\ln(S_{time})]}_{F} = \underbrace{\ln(S_{time})}_{m} \cdot \left( - \frac{dT}{dt} \right)
+$$
+
+两边同时除以 $T$ (Divide both sides by $T$):
+
+$$
+F = m \cdot \underbrace{\left( - \frac{1}{T} \frac{dT}{dt} \right)}_{a}
+$$
+
+**最终结论 (Final Conclusion)**:
+
 $$
 \Large F = m \cdot a
 $$
 
-*(结论：SFCP 核心方程在低速极限下完美兼容牛顿力学。)*
-*(Conclusion: The SFCP core equation is perfectly compatible with Newtonian mechanics in the low-speed limit.)*
+---
+
+## 7.3 守恒量的物理本质：做功 (The Physical Essence of Conservation: Work)
+
+在完成了力的推导后，我们回看核心方程左侧的守恒量 $\ln(S_{space})$。在物理学语义下，这就是**做功 ($W$)**。
+After deriving Force, we look back at the conserved quantity $\ln(S_{space})$ on the left side of the core equation. In physical semantics, this is **Work ($W$)**.
+
+$$
+\Large W \equiv \ln(S_{space}) = m \cdot T
+$$
+
+* **物理意义 (Physical Significance)**:
+    做功实际上就是整个事件发生的所有时间片上，系统命中的逻辑宽度对应的**质量的总和**。
+    Work is effectively the **sum of mass** corresponding to the logical widths hit by the system over all time slices of the event.
+* **数学本质 (Mathematical Essence)**:
+    $$W = \int_{0}^{T} m(t) \, dt \approx m \cdot T$$
+* **结论 (Conclusion)**:
+    力 ($F$) 是质量的瞬时变化率，而做功 ($W$) 是质量在时间维度上的累积总量。
+    Force ($F$) is the instantaneous rate of change of mass, while Work ($W$) is the accumulated total of mass over the time dimension.
 
 ---
 
 ## 7.4 $\infty$ 证伪条款 (Falsifiability Clause)
 
-科学必须经得起检验。SFCP 理论在此设立明确的**自我毁灭机制**：
-Science must withstand scrutiny. SFCP theory hereby establishes a clear **Self-Destruct Mechanism**:
+**SFCP 理论承诺：**
+**SFCP Theory Commitment:**
 
-1.  **无法推导 (Failure to Derive)**:
-    如果存在任何一个已被实验严格证实的基础物理公式，无法通过 $\Omega = m \cdot T$ 的逻辑变换推导出来，则视为 SFCP 模型失效。
-    If there exists any fundamentally empirically verified physical formula that cannot be derived through the logical transformation of $\Omega = m \cdot T$, the SFCP model is deemed invalid.
+1.  **唯一性 (Uniqueness)**:
+    所有推导必须基于 $\ln(S_{space}) = T \times \ln(S_{time})$ 这一原点，不得引入任何未经定义的外部公式。
+    All derivations must be based on the origin $\ln(S_{space}) = T \times \ln(S_{time})$, without introducing undefined external formulas.
 
-2.  **预测错误 (Prediction Error)**:
-    如果 SFCP 导出的结论与高精度实验数据（如粒子对撞机数据、天文观测数据）相悖，则以实验数据为准，本理论应当被修正或抛弃。
-    If conclusions derived from SFCP contradict high-precision experimental data (e.g., particle collider data, astronomical observations), the experimental data prevails, and this theory should be revised or discarded.
+2.  **实验一致性 (Experimental Consistency)**:
+    若推导结果与宏观低速下的 $F=ma$ 或微观/高速下的物理实验数据不符，本理论即刻作废。
+    If the derivation contradicts $F=ma$ at macroscopic low speeds or physical experimental data at microscopic/high speeds, this theory is immediately void.
 
----
+3.  **垃圾回收 (Garbage Collection)**:
+    任何导致 $T \to \infty$ 或 $m \to \infty$ 的理论模型（如奇点、发散级数），在本框架下被视为死锁错误，物理上判定为不存在 (NULL)。
+    Any theoretical model leading to $T \to \infty$ or $m \to \infty$ (e.g., singularities, divergent series) is considered a deadlock error in this framework and physically judged as Non-existent (NULL).
+
+---    
 
 ## 7.5 结语 (Epilogue)
 
@@ -1014,9 +1061,6 @@ Science must withstand scrutiny. SFCP theory hereby establishes a clear **Self-D
 We propose this framework not to end physics, but to offer a new computational perspective.
 If it simplifies our understanding of the universe, it is useful; if it does not, it is redundant.
 **Truth fears no calculation, and certainly fears not being proven wrong.**
-
----
-*Chapter 7 - Version 3.0 (Rigorous Derivation Edition)*
 
 ---
 ## 🏗 Theoretical Architecture (理论架构)
