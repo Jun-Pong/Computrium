@@ -692,7 +692,7 @@ Under the constraint of finite space $S$, the system does not store "Dead Answer
 We use the **Space-Time Conservation Form** directly from this theory:
 
 $$
-\Large \ln(S_{space}) = T \times \ln(S_{time})
+\Large \ln(S_{space}) \approx \int_{0}^{T} m(t) \, dt
 $$
 
 ### 物理量定义 (Definitions of Physical Quantities)
