@@ -217,22 +217,23 @@ $$
 ---
 
 ### 4.3 动态时空转换方程 (Dynamic Space-Time Conversion Equation)
-本理论建立在**逻辑总量守恒**之上。任何极小的概率（微小的逻辑宽度），都可以通过**空间的广度**或**时间的深度**两种等价方式构造出来。
-This theory is based on the **Conservation of Logical Total**. Any infinitesimal probability (minute logical width) can be constructed equivalently through either **spatial breadth** or **temporal depth**.
 
-#### 1. 转换定律 (The Conversion Law)
-若纯空间构造事件 $P_{space}$ 与纯时间构造事件 $P_{time}$ 概率相等，则满足：
-If a purely spatially constructed event $P_{space}$ and a purely temporally constructed event $P_{time}$ have equal probability, then:
+** 特例形式：惯性状态 (Special Case: Inertial State)**
+当系统内部构造逻辑恒定不变 ($S_t = const$) 时：
+When internal construction logic is constant:
 
 $$
-\frac{1}{S_{space}} = \left( \frac{1}{S_{time}} \right)^{T_{depth}}
+\ln(S_{space}) = T \times \ln(S_{time})
 $$
 
-取对数可得**时空守恒形式**：
-Taking the logarithm yields the **Space-Time Conservation Form**:
+---
+
+** 通用形式：变质量/受力状态 (General Form: Variable Mass/Force State)**
+当系统处于演化状态，构造逻辑随时间变化 ($S_t(t)$) 时，总逻辑体积是单步质量的**积分**：
+When the system is in an evolving state where construction logic varies with time ($S_t(t)$), the total logical volume is the integral of single-step mass:
 
 $$
-\ln(S_{space}) = T_{depth} \times \ln(S_{time})
+\ln(S_{space}) = \sum_{t=1}^{T} \ln(S_t) \approx \int_{0}^{T} m(t) \, dt
 $$
 
 #### 2. 指数级衰减与熵 (Exponential Decay & Entropy)
