@@ -218,9 +218,9 @@ $$
 
 ### 4.3 动态时空转换方程 (Dynamic Space-Time Conversion Equation)
 
-** 特例形式：惯性状态 (Special Case: Inertial State)**
-当系统内部构造逻辑恒定不变 ($S_t = const$) 时：
-When internal construction logic is constant:
+**1. 特例形式：惯性状态 (Special Case: Inertial State)**
+当系统内部构造逻辑恒定不变 ($S_t = const$) 且无残差干扰时：
+When internal construction logic is constant and free from residual interference:
 
 $$
 \ln(S_{space}) = T \times \ln(S_{time})
@@ -228,13 +228,30 @@ $$
 
 ---
 
-** 通用形式：变质量/受力状态 (General Form: Variable Mass/Force State)**
-当系统处于演化状态，构造逻辑随时间变化 ($S_t(t)$) 时，总逻辑体积是单步质量的**积分**：
-When the system is in an evolving state where construction logic varies with time ($S_t(t)$), the total logical volume is the integral of single-step mass:
+**2. 通用形式：带余构造与演化状态 (General Form: Residual Construction & Evolving State)**
+在真实的有限宇宙中，系统处于演化状态，构造逻辑随时间变化 ($S_t(t)$)。为了避免无限递归（死锁），构造过程必然包含截断。
+总逻辑体积由**历史路径积分（有序逻辑）**与**残差项（本底质量）**共同构成：
+
+In the real finite universe, the system is in an evolving state where construction logic varies with time ($S_t(t)$). To avoid infinite recursion (deadlock), the construction process implies truncation.
+The total logical volume consists of the **Historical Path Integral (Ordered Logic)** and the **Residual Term (Base Mass)**:
 
 $$
-\ln(S_{space}) = \sum_{t=1}^{T} \ln(S_t) \approx \int_{0}^{T} m(t) \, dt
+\ln(S_{space}) = \underbrace{\sum_{t=1}^{T} \ln(S_t)}_{\text{Logic}} + \underbrace{C}_{\text{Residual}} \approx \int_{0}^{T} m(t) \, dt + C
 $$
+
+**公式含义说明 (Interpretation of the Equation):**
+
+* **$\int_{0}^{T} m(t) \, dt$**: **逻辑做功 (Logical Work / Ordered Structure)**
+    * 对应公式中的 $A \times B$ 部分。
+    * 代表了物体中可以通过因果链条解释、被压缩、具有逻辑深度的部分。它是系统为了维持有序构造而持续支付的算力代价。
+    * Represents the part $A \times B$. It signifies the compressible, causally linked ordered structure. It is the computational cost paid by the system to maintain order.
+
+* **$C$**: **构造残差 / 静止本底 (Construction Residual / Rest Base)**
+    * 对应公式中的 $+ C$ 部分。
+    * 代表了无法被当前逻辑进一步拆解的“硬核”或“种子”。它是系统为了在有限时间内完成构造（避免 `while(true)` 死循环）而必须保留的不可压缩信息（熵/静止质量）。
+    * Represents the part $+ C$. It signifies the "hard kernel" or "seed" that cannot be further decomposed by current logic. It is the incompressible information (entropy/rest mass) retained to finalize construction within finite time.
+
+---
 
 #### 2. 指数级衰减与熵 (Exponential Decay & Entropy)
 当构造流程包含分支 ($S > 1$) 时，线性增加时间深度 $T$，会导致逻辑体积呈指数级坍缩。
@@ -681,8 +698,26 @@ Under the constraint of finite space $S$, the system does not store "Dead Answer
 # 第五章：理论的兼容性验证与证伪标准
 # Chapter 5: Theoretical Compatibility Verification and Falsifiability Criteria
 
-> **前言：本章严格基于《有限步骤构造概率论》的核心方程 进行推导。任何物理定律若不能从“动态时空转换方程”导出，则本理论自动失效。**
-> **Preface: This chapter derives strictly from the core equation of "SFCP". If any physical law cannot be derived from the "Dynamic Space-Time Conversion Equation," this theory is automatically invalid.**
+### 5.0 前言：理想逻辑流体与静止质量修正
+### 5.0 Preface: Ideal Logical Fluid and Rest Mass Correction
+
+**1. 理想化假设 (Idealized Assumption)**
+在本章的动力学推导过程中，为了清晰展示时空转换的纯粹动态关系，我们首先假设系统处于 **“理想逻辑流体” (Ideal Logical Fluid)** 状态。即暂时假设构造残差趋近于零 ($C \to 0$)，将物质视为纯粹的逻辑演化过程。
+In the dynamic derivation process of this chapter, to clearly demonstrate the pure dynamic relationship of space-time conversion, we first assume the system is in an **"Ideal Logical Fluid"** state. That is, we temporarily assume the construction residual approaches zero ($C \to 0$), treating matter as a pure logical evolution process.
+
+**2. 微分不变性与动力学有效性 (Differential Invariance & Validity of Dynamics)**
+真实的物理实体包含不可约减的 **静止本底 (Rest Base)**，即 **构造残差 $C$**（对应物理学中的 **静止质量 $m_0$**）。
+需要特别说明的是，由于 $C$ 在单次构造层级中为常数 ($\frac{dC}{dt} = 0$)，它在涉及变化率（如速度、加速度、力）的微分推导中会自动消去。因此，本章后续推导出的动力学方程（如 $F=ma$）在引入 $C$ 后依然严格成立，无需修改。
+Real physical entities contain an irreducible **Rest Base**, denoted as **Construction Residual $C$** (corresponding to **Rest Mass $m_0$** in physics).
+It is important to note that since $C$ is a constant within a single construction hierarchy ($\frac{dC}{dt} = 0$), it automatically vanishes in differential derivations involving rates of change (such as velocity, acceleration, force). Therefore, the dynamic equations derived subsequently in this chapter (such as $F=ma$) remain strictly valid after introducing $C$, requiring no modification.
+
+**3. 总能量修正 (Total Energy Correction)**
+仅在计算系统的 **总能量 (Total Energy)** 而非能量变化量时，需恢复常数项 $C$。此时总能量方程应理解为：
+Only when calculating the **Total Energy** of the system rather than energy variation, the constant term $C$ must be restored. The total energy equation should be understood as:
+
+$$
+E_{total} = E_{logic}(T) + E_{rest}(C)
+$$
 
 ---
 
