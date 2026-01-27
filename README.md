@@ -998,10 +998,93 @@ $$
 | **2D 环状物质 (Ring)** | 平面内自旋 (平行引力) | **$0.500 \times g = \frac{1}{2}g$** | 表现为强磁场下的质量畸变 |
 
 ### 4. 结论 (Conclusion)
-1.  **质量无关性 (Mass Independence)**: 宏观物质的下落加速度由其“3D自旋”的拓扑结构决定。无论带宽占用（Mass）大小，其内部信号的平均偏转率始终锁定为 $\frac{2}{3}$，从而产生“不同质量物体下落一样快”的宏观统计错觉。
-2.  **光速响应优势**: 由于光子不具备自旋产生的“逻辑阻抗 (Inertia)”，它在引力场中的响应速度比任何宏观物质快 $50\%$（即 $1.0 : 0.67$）。
+1.  **质量无关性 (Mass Independence)**: 宏观物质的下落加速度由其拓扑结构决定。
+2.  **光速响应优势**: 由于光子不具备自旋产生的“逻辑阻抗 (Inertia)”，它在引力场中的响应速度比任何宏观物质快。
 3.  **等效原理的局限**: 传统物理学测量的“等效性”仅存在于同类 Payload 之间。在跨维度的总线通讯中，无载荷信号（光）与高载荷自旋包（物质）的逻辑响应是不等效的。
   
+---
+
+# UIT 理论推导归档：光致物质的拓扑引力响应
+# UIT Theoretical Deduction Archive: Topological Gravitational Response of Photon-Constructed Matter
+
+## 1. 核心公理 (Core Axioms)
+
+### 1.1 光的内禀几何 (Intrinsic Geometry of Light)
+* **定义**: 光子是以光速 $C$ 运动的实体。
+* **自旋拓扑**: 光子的自旋平面（Rotation Plane）**严格垂直**于其运动方向（Motion Vector）。
+* **形象模型**: 类似于滚动的轮子或横波（Transverse Wave）。
+* **Definition**: A photon is an entity moving at light speed $C$.
+* **Spin Topology**: The photon's plane of rotation is **strictly perpendicular** to its direction of motion.
+* **Visual Model**: Analogous to a rolling wheel or a transverse wave.
+
+### 1.2 物质的构造法则 (Construction Rule of Matter)
+* **定义**: 物质是由光子通过逻辑死锁（Logical Deadlock）构成的闭合结构。
+* **推论**: 物质粒子继承了光子的微观几何性质。
+* **Definition**: Matter is a closed structure formed by photons via logical deadlock.
+* **Corollary**: Matter particles inherit the microscopic geometric properties of photons.
+
+---
+
+## 2. 拓扑推导 (Topological Deduction)
+
+### 2.1 从线到环 (From Line to Ring)
+* 由于光子的旋转面垂直于速度，当光子首尾相接形成闭环（物质）时，其轨迹必然扫出一个**环面（Torus）**或**管状结构**。
+* 因此，物质的微观本质不是实心球体，而是**空心的逻辑环（2D 环状切片）**。
+* Since the photon's rotation plane is perpendicular to its velocity, when photons connect head-to-tail to form a closed loop (matter), their trajectory necessarily sweeps out a **Torus** or **Tubular structure**.
+* Therefore, the microscopic essence of matter is not a solid sphere, but a **hollow logical ring (2D ring slice)**.
+
+### 2.2 引力场中的极化 (Polarization in Gravity Field)
+* **最小作用量原理**: 在引力场（逻辑流）中，为了维持结构稳定，微观的“物质环”必须顺应引力流的方向排列。
+* **稳定构型**: 环的自旋平面必须**平行于**引力线（即粒子像竖着的轮子一样排列，Rotation Plane $\parallel$ Gravity）。
+* **Principle of Least Action**: In a gravitational field (logic flow), to maintain structural stability, microscopic "matter rings" must align with the direction of the flow.
+* **Stable Configuration**: The spin plane of the ring must be **parallel to** the gravity lines (i.e., particles align like vertical wheels).
+
+---
+
+## 3. 引力响应计算 (Calculation of Gravitational Response)
+
+我们计算引力矢量 $\vec{g}$ 对不同拓扑结构的有效耦合系数 $k$。
+We calculate the effective coupling coefficient $k$ of the gravity vector $\vec{g}$ for different topological structures.
+
+### 3.1 光子 (Light / Photon)
+* **状态**: 自由滚动的轮子，以 $C$ 水平飞过。
+* **几何关系**: 运动方向（及主要的平动分量）与引力垂直。
+* **响应率**: 
+    $$k_{light} = 100\% = 1.0$$
+    *(对路径变形和时间偏置全额响应)*
+* **State**: A free-rolling wheel moving horizontally at $C$.
+* **Geometry**: Motion direction (and primary translation component) is perpendicular to gravity.
+* **Response Rate**: $k_{light} = 1.0$ (Full response to path deformation and time bias).
+
+### 3.2 物质 (Matter / Particle)
+* **状态**: 被锁死的竖立环（Vertical Ring）。
+* **微观运动**: 能量矢量 $\vec{v}$ 在竖直平面内做圆周运动。
+* **几何积分**: 
+    * 当 $\vec{v}$ 转到水平位置时（$\perp \vec{g}$），响应为 1。
+    * 当 $\vec{v}$ 转到竖直位置时（$\parallel \vec{g}$），响应为 0。
+* **平均响应率**:
+    $$k_{matter} = \frac{1}{2\pi} \int_0^{2\pi} \sin^2(\theta) d\theta = \frac{1}{2} = 0.5$$
+* **State**: A locked vertical ring.
+* **Micro-motion**: Energy vector $\vec{v}$ moves in a circle within a vertical plane.
+* **Geometric Integration**: 
+    * When $\vec{v}$ is horizontal ($\perp \vec{g}$), response is 1.
+    * When $\vec{v}$ is vertical ($\parallel \vec{g}$), response is 0.
+* **Average Response Rate**: $k_{matter} = 0.5$.
+
+---
+
+## 4. 结论 (Conclusion)
+
+### 观测比率 (Observation Ratio)
+$$\text{Ratio} = \frac{k_{light}}{k_{matter}} = \frac{1.0}{0.5} = 2.0$$
+
+**物理意义 (Physical Significance)**:
+如果光子是横波（轮子）且物质是闭合的环（竖立的轮子组），那么物质对引力的响应天然只有光子的一半。
+这完美解释了广义相对论中**“光线偏折量是等效牛顿引力计算值的 2 倍”**这一天文观测事实，且无需引入额外的“空间弯曲”假设。
+
+If photons are transverse waves (wheels) and matter is closed loops (vertical wheel groups), then matter's response to gravity is naturally only half that of photons.
+This perfectly explains the astronomical observation in General Relativity that **"light deflection is exactly 2 times the value calculated by equivalent Newtonian gravity,"** without needing to introduce the additional assumption of "spatial curvature."
+
 ---
 
 # UIT 理论补充：动量定义与能量关系的完整推导
