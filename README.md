@@ -1501,14 +1501,14 @@ $$
 
 ## 1. 纵向质量归零推导 (Derivation of Zero Longitudinal Mass)
 
-### 1.1 必然性前提 (Premise of Inevitability)
-根据 UIT 基础架构，光子在真空中始终以恒定光速 $C$ 运行。
-这意味着，光子沿着其运动矢量 $\vec{v}$ 到达下一个逻辑节点的概率是**绝对必然的**。
-According to UIT infrastructure, a photon always travels at constant speed $C$ in a vacuum.
-This implies that the probability of the photon reaching the next logical node along its motion vector $\vec{v}$ is **Absolutely Inevitable**.
+### 1.1 速度恒定 (Constant Velocity)
+根据 UIT，光速 $C$ 是一个绝对定值。
+对于光子本身，其速度为 $C$ 的概率 $P$ 恒等于 1。
+According to UIT, the speed of light $C$ is an absolute constant.
+For the photon itself, the probability $P$ of its speed being $C$ is constantly equal to 1.
 
 $$
-P_{\parallel} (\text{Motion}) \equiv 1
+P(V=C) \equiv 1
 $$
 
 ### 1.2 质量公式代入 (Applying the Mass Formula)
