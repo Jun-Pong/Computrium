@@ -1708,6 +1708,56 @@ Standard algorithms take the logarithm to make calculation "safe" and smooth. **
 
 ---
 
+# 额外补充 (Extra Supplement)
+
+## 1. 空间的“实”与“空”正交分解
+## 1. Orthogonal Decomposition of "Solid" and "Void" Space
+
+根据 UIT 基础架构，宇宙的本质并非预先存在的容器，而是逻辑流动的产物。我们可以将“空间”在正交方向上分解为两种本质属性：
+According to UIT infrastructure, the essence of the universe is not a pre-existing container, but the product of logical flow. We can decompose "space" orthogonally into two essential attributes:
+
+### A. 实面：信息概率平面 ($P$-Plane) —— [横向]
+### A. The Solid Plane: Information Probability Plane ($P$-Plane) —— [Transverse]
+* **定义 (Definition)**: 由半径向量 $\vec{r}$ 和动量向量 $\vec{p}$ 构成的二维逻辑结构。
+* **属性 (Attribute)**: **实 (Solid)**。它是逻辑构造的承载者。
+* **SFCP 映射 (SFCP Mapping)**: 对应 **Structure (构造)** 与 **Probability (概率)**。所有的质量势能、能量密度、逻辑复杂性都存储于此。它是“存在”的切片。
+
+### B. 空面：逻辑步骤轴线 ($T$-Axis) —— [纵向]
+### B. The Void Plane: Logical Step Axis ($T$-Axis) —— [Longitudinal]
+* **定义 (Definition)**: 由光速运动向量 $\vec{v}$ 定义的单一维度。
+* **属性 (Attribute)**: **空 (Void)**。它是逻辑刷新的驱动力。
+* **SFCP 映射 (SFCP Mapping)**: 对应 **Flow (流)** 与 **Step (步骤)**。在此轴向上，概率 $P \equiv 1$，故质量 $m \equiv 0$。它不承载信息，只负责推动逻辑从“当前节点”流向“下一节点”。
+
+---
+
+## 2. 三维空间的逻辑错觉
+## 2. The Logical Illusion of Three-Dimensional Space
+
+所谓的三维空间，并非物理实体的固有属性，而是**二维信息平面**在**一维逻辑步骤**上的连续累积所产生的现象。
+The so-called three-dimensional space is not an inherent attribute of physical entities, but a phenomenon produced by the continuous accumulation of the **2D Information Plane** along the **1D Logical Step**.
+
+$$\text{Space}_{3D} = \text{Information}_P \times \text{Step}_T$$
+
+* **错觉的成因 (Origin of the Illusion)**:
+    观测者感知到的“深度 (Z轴)”，本质上是**时间 (Time)** 的空间化表达。我们看到的每一个三维体积，实际上是无数个二维概率切片 ($P$) 在逻辑步骤 ($T$) 驱动下的**历史堆叠**。
+    The "depth (Z-axis)" perceived by the observer is essentially the spatialized expression of **Time**. Every 3D volume we see is actually a **historical stack** of countless 2D probability slices ($P$) driven by logical steps ($T$).
+
+---
+
+## 3. 光子：空与实的统一体
+## 3. Photon: The Unity of Void and Solid
+
+光子是这一机制的完美体现，它是连接“空”与“实”的逻辑算子：
+The photon is the perfect embodiment of this mechanism, acting as the logical operator connecting "Void" and "Solid":
+
+* **横向 (Transverse)**: 它是**实**的。它通过 $\vec{r}$ 和 $\vec{p}$ 的卷曲，携带了确定的信息构造（能量/频率）。
+* **纵向 (Longitudinal)**: 它是**空**的。它以恒定速率 $C$ 执行逻辑步骤，不滞留任何质量。
+* **结论 (Conclusion)**:
+    整个宇宙是由“空”的逻辑流推动着“实”的信息面，在名为“时间”的轨迹上留下的投影。
+    The entire universe is a projection left on the trajectory named "Time," where the "Void" logical flow pushes the "Solid" information plane.
+
+---
+
 ## 🗓 Roadmap & Status (路线图与状态)
 
 * **Phase I: Architecture Definition (Current)**
