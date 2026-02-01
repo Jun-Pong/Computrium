@@ -1400,6 +1400,95 @@ It is the physical result of **Mass State Mutation ($F$)** released along the **
 
 ---
 
+# 3. UIT 理论补充：势与能的守恒
+# 3. UIT Theory Supplement: Conservation of Potential and Energy
+
+> **核心定义 (Core Definitions)**
+> **能量守恒 (Energy Conservation)**：描述的是**环境势能 ($\Psi$)** 与 **物体能量 ($E$)** 之间的此消彼长。
+> **Energy Conservation**: Describes the trade-off between **Environmental Potential ($\Psi$)** and **Object Energy ($E$)**.
+>
+> $$\Delta \Psi + \Delta E = 0$$
+
+---
+
+## 3.1 下落过程：势转化为能 (Falling: Potential Converts to Energy)
+
+**场景 (Scenario)**:
+物体顺着引力方向，向低概率中心（事件 A）滑落。
+The object slides towards the low-probability center (Event A) along the direction of gravity.
+
+**推导 (Derivation)**:
+1.  **势的消耗 (Consumption of Potential)**:
+    物体处于远处时，拥有巨大的**位置势能**（相对于 A 的逻辑落差）。
+    当它向 A 移动时，这个位置优势被消耗了。
+    When the object is far away, it possesses huge **Positional Potential** (logical drop relative to A).
+    As it moves towards A, this positional advantage is consumed.
+    $$\Delta \Psi < 0$$
+
+2.  **概率压缩 (Probability Compression)**:
+    随着距离靠近，物体进入更稀缺的低概率区域（$P \downarrow$）。
+    根据 SFCP 定义，概率越低，质量/能量密度越高。
+    As distance decreases, the object enters a scarcer, low-probability region ($P \downarrow$).
+    According to SFCP definition, lower probability implies higher Mass/Energy density.
+
+3.  **能的生成 (Generation of Energy)**:
+    消失的势能并没有湮灭，而是**转化为了物体的能量**。
+    表现为物体质量的增加（被压缩）或速度的急剧提升（动能）。
+    The vanished potential does not annihilate but is **converted into the object's Energy**.
+    This manifests as an increase in the object's mass (compression) or a sharp increase in velocity (kinetic energy).
+    $$\Delta E > 0$$
+
+**结论 (Conclusion)**:
+**下落，就是环境的“势”塌缩为物体的“能”。**
+**Falling is the collapse of the environment's "Potential" into the object's "Energy."**
+
+---
+
+## 3.2 逃逸过程：能转化为势 (Escape: Energy Converts to Potential)
+
+**场景 (Scenario)**:
+物体试图逆着引力方向，向高概率的自由空间（远离 A）移动。
+The object attempts to move against gravity towards the high-probability free space (away from A).
+
+**推导 (Derivation)**:
+1.  **能的支付 (Payment of Energy)**:
+    物体要往上走，必须自带“干粮”。它必须消耗自身的**动能**或**质量**。
+    To move up, the object must bring its own "provisions." It must consume its own **Kinetic Energy** or **Mass**.
+    $$\Delta E < 0$$
+
+2.  **概率回归 (Probability Regression)**:
+    随着物体远离 A，它回到了高概率的平庸状态（$P \uparrow$）。
+    物体的能量密度降低，它“卸载”了之前的稀缺性。
+    As the object moves away from A, it returns to a high-probability mediocre state ($P \uparrow$).
+    The object's energy density drops; it "unloads" its previous scarcity.
+
+3.  **势的构建 (Construction of Potential)**:
+    物体消耗的能量，全部转化为了**新的位置势能**。它重新获得了相对于 A 的逻辑落差。
+    The energy consumed by the object is entirely converted into **new Positional Potential**. It regains the logical drop relative to A.
+    $$\Delta \Psi > 0$$
+
+**结论 (Conclusion)**:
+**逃逸，就是物体消耗“能”来换取环境的“势”。**
+**Escape is the object consuming "Energy" in exchange for the environment's "Potential."**
+
+---
+
+## 3.3 终极守恒 (Ultimate Conservation)
+
+**SFCP 势能守恒定律 (SFCP Law of Potential-Energy Conservation)**:
+
+在一个封闭的构造系统中，**“位置的优势”**与**“实体的能量”**之和恒定不变。
+In a closed construction system, the sum of **"Positional Advantage"** and **"Entity Energy"** remains constant.
+
+$$
+\Psi(X) + E(object) \equiv \text{Constant}
+$$
+
+* **靠近中心 (Approach Center)**: $\Psi \downarrow, E \uparrow$ (势能变现为动能/质量)。
+* **远离中心 (Leave Center)**: $\Psi \uparrow, E \downarrow$ (动能/质量兑换为势能)。
+
+---
+
 # 额外补充
 
 ---
