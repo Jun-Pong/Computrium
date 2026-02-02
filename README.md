@@ -1808,91 +1808,87 @@ The flight of a photon is not inertial gliding, but a **dynamic process where th
 
 ---
 
-## 7. 向量积偏转定理：基于二维平面的旋进推导
-## 7. The Vector Product Deflection Theorem: Derivation of Precession based on 2D Plane
+## 7. 向量积偏转定理：基于手性平面的拓扑旋转
+## 7. The Vector Product Deflection Theorem: Topological Rotation based on Chiral Planes
 
 > **核心公理 (Core Axiom)**
-> **交互即旋进 (Interaction is Precession)**。
-> 光子并非点粒子，而是一个在三维空间中运动的 **二维平面矢量构造 ($\vec{S}_{plane}$)**。引力势也是一个具有方向的 **关联矢量 ($\vec{G}_{pot}$)**。
-> 两者的交互遵循 **向量积 (Vector Product)** 法则，生成一个垂直于运动轴的 **逻辑力矩**，迫使光子的二维平面发生进动（Precession），从而导致作为平面法线的运动轨迹发生偏转。
-> The photon is not a point particle, but a **2D Planar Vector Construction ($\vec{S}_{plane}$)** moving in 3D space. Gravitational potential is also a directional **Correlation Vector ($\vec{G}_{pot}$)**.
-> The interaction between the two follows the **Vector Product** rule, generating a **Logical Torque** perpendicular to the motion axis, forcing the photon's 2D plane to precess, thereby causing the deflection of the motion trajectory (which is the normal of the plane).
+> **交互即旋转 (Interaction is Rotation)**。
+> 光子是一个**纯粹的二维手性平面 (Pure 2D Chiral Plane)**，其没有体积，也没有刚度（Inertia/Rigidity）。
+> 引力势是一个**空间梯度向量 ($\vec{G}_{pot}$)**。
+> 当光子平面穿过引力场时，两个向量系统的非平行性会产生一个**几何修正算子**，直接旋转定义光子运动方向的**向量基底 (Vector Basis)**。这是一种纯粹的拓扑变换，而非力学过程。
+> The photon is a **Pure 2D Chiral Plane** possessing neither volume nor rigidity (inertia).
+> Gravitational potential is a **Spatial Gradient Vector ($\vec{G}_{pot}$)**.
+> When the photon plane traverses a gravitational field, the non-parallelism of the two vector systems generates a **Geometric Correction Operator**, directly rotating the **Vector Basis** that defines the photon's direction of motion. This is a pure topological transformation, not a mechanical process.
+---
 
-### 7.1 交互实体的矢量定义 (Vector Definition of Interacting Entities)
+### 7.1 实体的矢量解耦定义 (Vector Decoupling Definition of Entities)
 
-我们将物理实体严格定义为三维向量空间中的矢量：
-We strictly define physical entities as vectors in 3D vector space:
+为了消除传统力学中“质量”对“轨迹”的干扰，我们对光子进行严格的矢量解耦：
+To eliminate the interference of "Mass" on "Trajectory" in traditional mechanics, we perform a strict vector decoupling of the photon:
 
-* **光子平面矢量 (The Photon Planar Vector, $\vec{S}_{plane}$)**:
-    这是光子在二维横切面上的 **构造强度矢量**（对应于自旋或偏振的逻辑本体）。其模长正比于光子的内部动量 $p$。
-    This is the **Construction Intensity Vector** of the photon on the 2D transverse plane (corresponding to the logical ontology of spin or polarization). Its magnitude is proportional to the photon's internal momentum $p$.
-    $$|\vec{S}_{plane}| \propto p = m_{ph} \cdot C$$
+* **光子：手性法线 ($\hat{n}_{chiral}$)** —— [方向/空]
+    光子平面的“正反”由内部向量积的手性决定。运动方向 $\hat{v}$ 严格等于该平面的法线单位向量。**它不承载质量，只定义路径。**
+    **Photon: Chiral Normal ($\hat{n}_{chiral}$)** —— [Direction/Void]
+    The "face" of the photon plane is determined by the chirality of the internal vector product. The direction of motion $\hat{v}$ is strictly equal to the unit normal vector of the plane. **It carries no mass, only defining the path.**
+    $$\hat{v} \equiv \hat{n}_{chiral} = \text{Normalize}(\vec{r} \times \vec{p})$$
 
-* **空间关联矢量 (The Spatial Correlation Vector, $\vec{G}_{pot}$)**:
-    这是环境引力势的矢量表达。其方向指向最强关联处（引力源中心），其模长等于该处的概率密度梯度。
-    This is the vector expression of the environmental gravitational potential. Its direction points to the strongest correlation (center of the gravity source), and its magnitude equals the probability density gradient at that point.
-    $$|\vec{G}_{pot}| = \nabla m_{space}$$
+* **光子：平面负载 ($M_{load}$)** —— [强度/实]
+    光子的能量/质量仅仅是二维平面上的“花纹密度” (Pattern Density)。它存储于平面内部，与法线的指向逻辑无关。
+    **Photon: Planar Payload ($M_{load}$)** —— [Intensity/Solid]
+    Photon energy/mass is merely the "Pattern Density" on the 2D plane. It is stored within the plane and is independent of the normal's directional logic.
+    $$M_{load} \propto |\vec{r} \times \vec{p}|$$
 
-### 7.2 交互积：逻辑力矩的生成 (Interaction Product: Generation of Logical Torque)
+---
 
-当光子穿过空间时，这两个矢量发生非线性交互。在向量空间中，两个非平行矢量的交互产物是它们的 **叉积 (Cross Product)**。
-When a photon traverses space, these two vectors interact non-linearly. In vector space, the interaction product of two non-parallel vectors is their **Cross Product**.
+### 7.2 几何修正算子 (The Geometric Correction Operator)
 
-这生成了一个作用于光子二维平面的 **逻辑力矩矢量 ($\vec{\tau}$)**：
-This generates a **Logical Torque Vector ($\vec{\tau}$)** acting on the photon's 2D plane:
+既然光子平面没有“刚度”来抵抗改变，那么它对空间几何形状的变化是**完全顺应**的。
+Since the photon plane has no "rigidity" to resist change, it is **fully compliant** with changes in spatial geometry.
 
-$$\vec{\tau} = \vec{S}_{plane} \times \vec{G}_{pot}$$
+当定义光子的法线 $\hat{n}_{chiral}$ 与环境的引力梯度 $\vec{G}_{pot}$ 不共线时，空间本身的逻辑度规发生了扭曲。系统生成一个**旋转算子 ($\vec{R}$)** 来重新对齐向量基底：
+When the photon's normal $\hat{n}_{chiral}$ and the environmental gravity gradient $\vec{G}_{pot}$ are not collinear, the logical metric of space itself is twisted. The system generates a **Rotation Operator ($\vec{R}$)** to realign the vector basis:
 
-* **几何意义 (Geometric Meaning)**:
-    这个力矩矢量 $\vec{\tau}$ 垂直于光子平面矢量，也垂直于引力矢量。它代表了系统为了融合这两个冲突的逻辑方向而产生的 **旋转势能**。
-    This torque vector $\vec{\tau}$ is perpendicular to both the photon planar vector and the gravity vector. It represents the **Rotational Potential Energy** generated by the system to merge these two conflicting logical directions.
+$$\vec{R} = \hat{n}_{chiral} \times \hat{G}_{pot}$$
 
-### 7.3 平面旋进与轨迹偏转 (Plane Precession and Trajectory Deflection)
+* **物理意义 (Physical Meaning)**:
+    $\vec{R}$ 不是力矩，不需要克服惯性。它是一个**坐标变换指令**。它告诉光子的二维平面：“为了适应当前的空间曲率，请绕着 $\vec{R}$ 轴旋转你的基底。”
+    $\vec{R}$ is not a torque; it does not need to overcome inertia. It is a **Coordinate Transformation Command**. It tells the photon's 2D plane: "To adapt to the current spatial curvature, rotate your basis around the $\vec{R}$ axis."
 
-光子的运动方向 ($\vec{v}$) 严格定义为二维平面的 **法线 (Normal)**。
-The photon's direction of motion ($\vec{v}$) is strictly defined as the **Normal** of the 2D plane.
+---
 
-当二维平面受到力矩 $\vec{\tau}$ 作用时，它不会发生位移，而是绕着力矩轴发生 **旋进 (Precession)**。
-When the 2D plane is subjected to torque $\vec{\tau}$, it does not displace but undergoes **Precession** around the torque axis.
+### 7.3 轨迹偏转的质量无关性 (Mass Independence of Trajectory Deflection)
 
-**旋进角速度 ($\vec{\omega}$)** 由力矩除以光子的 **构造刚度 (Construction Rigidity, $I$)** 决定：
-The **Precession Angular Velocity ($\vec{\omega}$)** is determined by the torque divided by the photon's **Construction Rigidity ($I$)**:
+这是本理论最关键的推导。为什么光线的弯曲与频率（质量）无关？
+This is the most critical deduction. Why is light bending independent of frequency (mass)?
 
-$$\vec{\omega} = \frac{\vec{\tau}}{I}$$
+* **旧视角的谬误 (Fallacy of Old Perspective)**:
+    认为引力拉动了光子的“质量”，或者力矩克服了光子的“刚度”。
+    Thinking gravity pulls the photon's "mass," or torque overcomes the photon's "rigidity."
 
-### 7.4 质量无关性的数学推导 (Mathematical Derivation of Mass Independence)
+* **UIT 的解释 (UIT Explanation)**:
+    偏转是对 **$\hat{n}_{chiral}$ (方向空箱子)** 的操作，而不是对 **$M_{load}$ (质量实负载)** 的操作。
+    Deflection is an operation on **$\hat{n}_{chiral}$ (The Void Direction Box)**, not on **$M_{load}$ (The Solid Mass Payload)**.
 
-我们代入各项的物理数值来计算偏转率：
-We substitute the physical values to calculate the deflection rate:
+    $$\Delta \theta \propto \int |\hat{n}_{chiral} \times \vec{G}_{pot}| \, dt$$
 
-1.  **动力项 (Drive)**:
-    逻辑力矩正比于光子强度与引力势的乘积。
-    Logical torque is proportional to the product of photon intensity and gravitational potential.
-    $$|\vec{\tau}| = |\vec{S}_{plane}| \cdot |\vec{G}_{pot}| \sin(\phi) \propto (m_{ph} C) \cdot \nabla m_{space}$$
+    在这个公式中，$\hat{n}_{chiral}$ 是单位向量（模长为1），$\vec{G}_{pot}$ 是空间属性。**代表光子质量的项 $M_{load}$ 根本没有出现在公式中。**
+    In this formula, $\hat{n}_{chiral}$ is a unit vector (magnitude 1), and $\vec{G}_{pot}$ is a spatial attribute. **The term $M_{load}$ representing photon mass does not appear in the formula at all.**
 
-2.  **阻力项 (Resistance)**:
-    构造刚度（即抵抗旋转的惯性）正比于光子的总动量。
-    Construction rigidity (inertia resisting rotation) is proportional to the photon's total momentum.
-    $$I \propto p = m_{ph} \cdot C$$
+---
 
-3.  **偏转率 (Deflection Rate)**:
-    $$|\vec{\omega}| = \frac{(m_{ph} C) \cdot \nabla m_{space}}{m_{ph} C}$$
+### 7.4 结论：向量随动原理 (Conclusion: Principle of Vector Compliance)
 
-**质量消去 (Mass Cancellation)**:
-分子中的 $m_{ph}$（交互强度）与分母中的 $m_{ph}$（惯性刚度）**精确抵消**。
-The $m_{ph}$ in the numerator (interaction intensity) and the $m_{ph}$ in the denominator (inertial rigidity) **cancel out precisely**.
+1.  **无刚度 (No Rigidity)**:
+    光子是一个在向量场中滑动的**纯逻辑平面**。它像水中的浮标一样，其实时朝向完全由所在处的场域几何决定。
+    The photon is a **Pure Logical Plane** sliding through a vector field. Like a buoy in water, its real-time orientation is strictly determined by the field geometry at its location.
 
-$$|\vec{\omega}| \propto \nabla m_{space}$$
+2.  **法线必然 (Normal Inevitability)**:
+    引力场改变了空间的向量基底 $\to$ 光子平面随之旋转 $\to$ 平面的法线（运动方向）发生改变。这就是光线偏折的本质。
+    Gravity field alters the vector basis of space $\to$ Photon plane rotates accordingly $\to$ The normal of the plane (motion direction) changes. This is the essence of light deflection.
 
-### 7.5 结论 (Conclusion)
-
-1.  **机制 (Mechanism)**:
-    光子的偏转是 **向量积交互 ($\vec{S} \times \vec{G}$)** 导致的 **平面旋进**。光子就像一个在重力场中自旋的陀螺，引力矢量迫使它的自旋平面发生倾斜，进而导致其进动轨迹（光线）发生弯曲。
-    Photon deflection is **Plane Precession** caused by **Vector Product Interaction ($\vec{S} \times \vec{G}$)**. The photon acts like a gyroscope spinning in a gravity field; the gravity vector forces its spin plane to tilt, causing its precession trajectory (light ray) to curve.
-
-2.  **结果 (Result)**:
-    偏转的数值完全取决于 **空间关联矢量 ($\vec{G}_{pot}$)** 的模长和方向，与光子自身的能量属性无关。
-    The magnitude of deflection depends entirely on the magnitude and direction of the **Spatial Correlation Vector ($\vec{G}_{pot}$)**, independent of the photon's own energy attributes.
+3.  **负载透明 (Payload Transparency)**:
+    无论二维平面上承载了多少信息（是红外线还是伽马射线），其平面的**几何朝向性**是完全一致的。因此，所有频率的光在同一引力场中遵循完全相同的偏折路径。
+    Regardless of how much information is carried on the 2D plane (infrared or gamma ray), the **Geometric Orientation** of the plane is identical. Thus, light of all frequencies follows the exact same deflection path in the same gravitational field.
 
 ---
 
