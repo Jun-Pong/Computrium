@@ -678,6 +678,81 @@ Under the constraint of finite space $S$, the system does not store "Dead Answer
 
 ---
 
+### 4.14 概率梯度的单向崩塌定理 (The Theorem of Unidirectional Collapse of Probability Gradient)
+
+**核心定理 (Core Theorem)**
+在构造概率系统中，高概率状态向低概率状态的转化是统计必然的，而逆向转化在无外部信息输入时是数学不可解的。由此产生的时间箭头指向概率密度的增加方向。
+In a constructive probability system, the transition from a high-probability state to a low-probability state is statistically inevitable, whereas the reverse transition is mathematically unsolvable without external information input. Consequently, the arrow of time points in the direction of increasing probability density.
+
+#### 1. 状态的集合论定义 (Set-Theoretic Definition of States)
+
+在样本空间 $\Omega$ 中，定义两种基础集合状态：
+In the sample space $\Omega$, we define two fundamental set states:
+
+* **发散态 (Divergent State / $S_{high}$)**：
+    定义为全集 $\Omega$ 或其大概率子集。
+    $$S_{high} = \{ x \mid x \in \Omega \}$$
+    由于 $|S_{high}| \approx |\Omega|$，其存在概率 $P(S_{high}) \to 1$。
+    Defined as the universal set $\Omega$ or its high-probability subset. Since $|S_{high}| \approx |\Omega|$, its existence probability $P(S_{high}) \to 1$.
+
+* **收敛态 (Convergent State / $S_{low}$)**：
+    定义为全集中的单一元素或极小像集。
+    $$S_{low} = \{ x_0 \mid x_0 \in \Omega \}$$
+    由于 $|S_{low}| \ll |\Omega|$，其存在概率 $P(S_{low}) \to 0$。
+    Defined as a single element or a minimal image set within the universal set. Since $|S_{low}| \ll |\Omega|$, its existence probability $P(S_{low}) \to 0$.
+
+#### 2. 转化路径的逻辑代价证明 (Proof of Logical Cost in Transition Paths)
+
+定义 $\mathcal{C}(A \to B)$ 为系统从状态 A 演化至状态 B 所需的最小信息量（逻辑代价）。
+Let $\mathcal{C}(A \to B)$ be the minimum information quantity (logical cost) required for the system to evolve from state A to state B.
+
+**路径 A：正向塌缩 (Path A: Forward Collapse)**
+$$S_{high} \to S_{low}$$
+
+* **推导 (Derivation)**：
+    这是一个**信息丢弃**算子。对于集合 $S_{high}$，系统只需应用一个约束条件 $f(x) = x_0$，即可将状态映射至 $S_{low}$。在此过程中，信息熵减少（局部），但逻辑操作不需要引入新的信息源，仅需执行“选择”。
+    This is an **information discarding** operator. For the set $S_{high}$, the system only needs to apply a constraint condition $f(x) = x_0$ to map the state to $S_{low}$. In this process, information entropy decreases (locally), but the logical operation does not require introducing a new information source, only executing a "selection."
+
+* **代价 (Cost)**：
+    $$\mathcal{C}(S_{high} \to S_{low}) \approx 0$$
+    *(注：这是自发过程 / Note: This is a spontaneous process)*
+
+**路径 B：逆向重构 (Path B: Reverse Reconstruction)**
+$$S_{low} \to S_{high}$$
+
+* **推导 (Derivation)**：
+    这是一个**逆问题**求解。已知值 $x_0$，求 $f^{-1}(x_0)$ 以恢复原始集合 $\Omega$。由于 $x_0$ 不包含 $\Omega \setminus \{x_0\}$ 的任何信息，该映射在逻辑上是**一对多**的，且未定解的数量趋于无穷。根据信息守恒定律，除非从系统外部注入等量的香农信息量 $I = -\log_2(P(S_{low}))$，否则重构无法完成。
+    This is an **inverse problem** solution. Given value $x_0$, find $f^{-1}(x_0)$ to restore the original set $\Omega$. Since $x_0$ contains no information about $\Omega \setminus \{x_0\}$, this mapping is logically **one-to-many**, and the number of indeterminate solutions approaches infinity. According to the Law of Conservation of Information, reconstruction cannot be completed unless an equivalent amount of Shannon information $I = -\log_2(P(S_{low}))$ is injected from outside the system.
+
+* **代价 (Cost)**：
+    $$\mathcal{C}(S_{low} \to S_{high}) \to \infty$$
+
+#### 3. 概率梯度的几何必然 (Geometric Inevitability of Probability Gradient)
+
+基于上述代价的不对称性，逻辑空间中建立了一个标量势场 $\Phi$：
+Based on the asymmetry of costs described above, a scalar potential field $\Phi$ is established in the logical space:
+
+$$
+\nabla \Phi = \mathcal{C}(Low \to High) - \mathcal{C}(High \to Low) \gg 0
+$$
+
+**推论 (Corollary)**：
+系统状态的演化轨迹必然沿着逻辑代价最小的路径进行。即：**任何自由分布的系统，在无外力干预下，必然向低概率（高确定性）的区域塌缩。**
+The evolution trajectory of the system state must follow the path of least logical cost. That is: **Any freely distributed system, without external intervention, must collapse towards regions of low probability (high determinism).**
+
+#### 4. 结论：逻辑质量与存在的代价 (Conclusion: Logical Mass and the Cost of Existence)
+
+根据 SFCP 公理 $m = -\ln(P)$：
+According to the SFCP axiom $m = -\ln(P)$:
+
+1.  **逻辑质量 ($m$)** 是低概率状态**逆向还原难度**的度量。
+    **Logical Mass ($m$)** is a metric of the **difficulty of reverse restoration** of a low-probability state.
+    
+2.  所谓的“吸引效应”，本质上是系统在概率梯度作用下，执行 $O(1)$ 复杂度的**归约操作**。系统并非被“拉”向低概率点，而是统计学规律决定了它**只能**向该方向演化以避免支付无限的计算代价。
+    The so-called "attraction effect" is essentially the system executing a **reduction operation** of $O(1)$ complexity under the influence of the probability gradient. The system is not "pulled" towards the low-probability point; rather, statistical laws dictate that it **can only** evolve in that direction to avoid paying an infinite computational cost.
+
+---
+
 # 第五章：理论的兼容性验证与证伪标准
 # Chapter 5: Theoretical Compatibility Verification and Falsifiability Criteria
 
