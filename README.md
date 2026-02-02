@@ -1808,6 +1808,94 @@ The flight of a photon is not inertial gliding, but a **dynamic process where th
 
 ---
 
+## 7. 交互积定理与几何偏转
+## 7. The Interaction Product Theorem and Geometric Deflection
+
+> **核心公理 (Core Axiom)**
+> **偏转即扭矩 (Deflection is Torque)**。
+> 光子运动方向的改变，并非源于外力的牵引，而是源于其**内部动量构造 ($p$)** 与 **外部空间环境质量 ($m_{env}$)** 在二维横切面上因分布不均而产生的**交互积扭矩**。
+> The change in the photon's direction of motion is not caused by external traction, but by the **Interaction Product Torque** generated on the 2D transverse plane due to the uneven distribution between its **Internal Momentum Structure ($p$)** and the **External Spatial Environment Mass ($m_{env}$)**.
+
+### 7.1 物理量的定义 (Definition of Physical Quantities)
+
+我们依据 SFCP 基础公式 $m = -\ln(P)$ 对参与交互的两个实体进行严格定义：
+We strictly define the two interacting entities based on the SFCP fundamental formula $m = -\ln(P)$:
+
+* **光子的动量构造 (Momentum Construction of Photon)**:
+    光子的动量 $p$ 是其内部构造质量 $m_{ph}$ 在光速 $C$ 下的体现。这是物体自带的“存在量”。
+    The momentum $p$ of a photon is the manifestation of its internal structural mass $m_{ph}$ at light speed $C$. This is the "quantity of existence" inherent to the object.
+    $$p = m_{ph} \cdot C = [-\ln(P_{ph})] \cdot C$$
+
+* **空间的引力势构造 (Gravitational Potential Construction of Space)**:
+    空间并非空无一物，引力场本质上是空间位置 $x$ 处的构造概率分布 $P_{env}(x)$。该位置的“逻辑密度”即为环境质量 $m_{env}$。
+    Space is not empty; the gravitational field is essentially the construction probability distribution $P_{env}(x)$ at spatial location $x$. The "logical density" at that location is the environmental mass $m_{env}$.
+    $$m_{env}(x) = -\ln(P_{env}(x))$$
+
+### 7.2 交互势能的生成：质量乘积 (Generation of Interaction Potential: Mass Product)
+
+当一个拥有质量 $m_{ph}$ 的光子进入一个拥有密度 $m_{env}$ 的空间区域时，两者发生叠加。在 SFCP 中，逻辑密度的叠加等效于物理上的“势能 ($U$)”。
+When a photon with mass $m_{ph}$ enters a spatial region with density $m_{env}$, superposition occurs. In SFCP, the superposition of logical densities is equivalent to physical "Potential Energy ($U$)."
+
+根据逻辑相关性原理，势能 $U$ 是两者构造难度的**乘积**：
+According to the principle of logical relevance, Potential Energy $U$ is the **product** of the construction difficulties of both:
+
+$$
+U(x) = m_{ph} \cdot m_{env}(x)
+$$
+
+### 7.3 力的生成：乘积的梯度 (Generation of Force: Gradient of the Product)
+
+方向的改变源于“力”。在 SFCP 第 5.2 节中，力定义为逻辑状态的变化率。对于空间运动，力 $F$ 是交互势能 $U$ 在空间上的梯度。
+The change of direction originates from "Force." In SFCP Section 5.2, force is defined as the rate of change of logical state. For spatial motion, Force $F$ is the gradient of the Interaction Potential $U$ in space.
+
+由于光子内部质量 $m_{ph}$ 是恒定的，变化仅来源于空间环境 $m_{env}(x)$ 的非均匀分布。
+Since the photon's internal mass $m_{ph}$ is constant, the change originates solely from the non-uniform distribution of the spatial environment $m_{env}(x)$.
+
+$$
+\vec{F} = -\nabla U = -m_{ph} \cdot \nabla m_{env}
+$$
+
+**结论 (Conclusion)**：
+光子受到的逻辑推力 $\vec{F}$，严格等于**光子自身质量**与**空间环境质量梯度**的**直接乘积**。
+The logical thrust $\vec{F}$ experienced by the photon is strictly equal to the **direct product** of the **photon's own mass** and the **spatial environment mass gradient**.
+
+### 7.4 偏转机制的几何必然 (Geometric Inevitability of Deflection Mechanism)
+
+光子是一个垂直于运动方向的二维切片。设其宽度为 $w$，两侧边缘分别为 $L$（内侧）和 $R$（外侧）。
+The photon is a 2D slice perpendicular to the direction of motion. Let its width be $w$, with edges $L$ (Inner) and $R$ (Outer).
+
+**步骤 A：计算两侧的标量积 (Calculate Scalar Product on Both Sides)**
+* **内侧积 ($U_L$)**：光子左侧质量与左侧空间密度的乘积。
+    * **Inner Product ($U_L$)**: The product of the photon's left-side mass and the left-side spatial density.
+    $$U_L = m_{ph} \cdot m_{env}(L)$$
+* **外侧积 ($U_R$)**：光子右侧质量与右侧空间密度的乘积。
+    * **Outer Product ($U_R$)**: The product of the photon's right-side mass and the right-side spatial density.
+    $$U_R = m_{ph} \cdot m_{env}(R)$$
+
+**步骤 B：生成逻辑力矩 (Generation of Logical Torque)**
+由于引力中心的存在，内侧空间密度高于外侧 ($m_{env}(L) > m_{env}(R)$)，导致两侧的乘积结果不相等：
+Due to the presence of a gravitational center, the inner spatial density is higher than the outer ($m_{env}(L) > m_{env}(R)$), resulting in unequal product results on both sides:
+$$U_L > U_R$$
+
+这种**乘积差 ($\Delta U$)** 在二维平面上直接转化为一个**力矩 ($\tau$)**：
+This **Product Difference ($\Delta U$)** translates directly into a **Torque ($\tau$)** on the 2D plane:
+$$\tau \propto U_L - U_R = m_{ph} \cdot [m_{env}(L) - m_{env}(R)]$$
+
+**步骤 C：法线偏转 (Normal Deflection)**
+光子的运动方向 $\vec{v}$ 是二维平面的法线。当平面受到力矩 $\tau$ 作用时，平面本身发生旋转。
+The photon's direction of motion $\vec{v}$ is the normal of the 2D plane. When the plane is subjected to torque $\tau$, the plane itself rotates.
+$$\text{Rotation}(\text{Plane}) \to \text{Deflection}(\text{Normal } \vec{v})$$
+
+### 7.5 最终结论 (Final Conclusion)
+
+光子的转向完全由以下物理事实决定：**光子内侧的“质量-空间乘积”大于外侧的“质量-空间乘积”。**
+The photon's turning is determined entirely by the following physical fact: **The "Mass-Space Product" on the inner side of the photon is greater than the "Mass-Space Product" on the outer side.**
+
+这个**乘积的不平衡**构成了物理上的**扭矩**，强行扭转了光子的二维切面，从而改变了其指向。
+This **imbalance of products** constitutes a physical **torque**, forcibly twisting the photon's 2D section and thereby changing its orientation.
+
+---
+
 # 额外补充
 
 ---
