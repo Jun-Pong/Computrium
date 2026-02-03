@@ -1808,87 +1808,112 @@ The flight of a photon is not inertial gliding, but a **dynamic process where th
 
 ---
 
-## 7. 向量积偏转定理：基于手性平面的拓扑旋转
-## 7. The Vector Product Deflection Theorem: Topological Rotation based on Chiral Planes
+# UIT 理论增补：光子的正交质量分布与向量空间重构
+# UIT Theory Supplement: Orthogonal Mass Distribution & Vector Space Reconstruction
 
-> **核心公理 (Core Axiom)**
-> **交互即旋转 (Interaction is Rotation)**。
-> 光子是一个**纯粹的二维手性平面 (Pure 2D Chiral Plane)**，其没有体积，也没有刚度（Inertia/Rigidity）。
-> 引力势是一个**空间梯度向量 ($\vec{G}_{pot}$)**。
-> 当光子平面穿过引力场时，两个向量系统的非平行性会产生一个**几何修正算子**，直接旋转定义光子运动方向的**向量基底 (Vector Basis)**。这是一种纯粹的拓扑变换，而非力学过程。
-> The photon is a **Pure 2D Chiral Plane** possessing neither volume nor rigidity (inertia).
-> Gravitational potential is a **Spatial Gradient Vector ($\vec{G}_{pot}$)**.
-> When the photon plane traverses a gravitational field, the non-parallelism of the two vector systems generates a **Geometric Correction Operator**, directly rotating the **Vector Basis** that defines the photon's direction of motion. This is a pure topological transformation, not a mechanical process.
----
+## 7. 空子：双平面正交锁死与空间向量场
+## 7. The Spaceon: Dual-Plane Orthogonal Locking and Spatial Vector Field
 
-### 7.1 实体的矢量解耦定义 (Vector Decoupling Definition of Entities)
+### 7.1 空子的几何定义 (Geometric Definition of the Spaceon)
+空间并非虚无的容器，而是由离散的物理实体**空子 ($\sigma$)** 构成的致密阵列。
+空子被定义为具有**双重正交平面构造**的矢量单元。
+Space is not a void container but a dense array composed of discrete physical entities called **Spaceons ($\sigma$)**.
+The Spaceon is defined as a vector unit with a **Dual Orthogonal Plane Construction**.
 
-为了消除传统力学中“质量”对“轨迹”的干扰，我们对光子进行严格的矢量解耦：
-To eliminate the interference of "Mass" on "Trajectory" in traditional mechanics, we perform a strict vector decoupling of the photon:
+* **构造结构 (Construction Structure)**:
+    每一个空子内部包含两个几何上相互垂直的非零质量平面：
+    Each Spaceon contains two geometrically perpendicular non-zero mass planes internally:
+    1.  **平面 A ($\vec{S}_A$)**: 定义在 $XY$ 维度上的构造矢量。
+        **Plane A ($\vec{S}_A$)**: Construction vector defined in $XY$ dimensions.
+    2.  **平面 B ($\vec{S}_B$)**: 定义在 $YZ$ 维度上的构造矢量。
+        **Plane B ($\vec{S}_B$)**: Construction vector defined in $YZ$ dimensions.
 
-* **光子：手性法线 ($\hat{n}_{chiral}$)** —— [方向/空]
-    光子平面的“正反”由内部向量积的手性决定。运动方向 $\hat{v}$ 严格等于该平面的法线单位向量。**它不承载质量，只定义路径。**
-    **Photon: Chiral Normal ($\hat{n}_{chiral}$)** —— [Direction/Void]
-    The "face" of the photon plane is determined by the chirality of the internal vector product. The direction of motion $\hat{v}$ is strictly equal to the unit normal vector of the plane. **It carries no mass, only defining the path.**
-    $$\hat{v} \equiv \hat{n}_{chiral} = \text{Normalize}(\vec{r} \times \vec{p})$$
+### 7.2 静态机制：矢量互锁 (Static Mechanism: Vector Interlocking)
+空子的宏观速度恒为零 ($v_{\sigma} \equiv 0$)。这一属性源于其内部向量的几何锁死。
+The macroscopic velocity of a Spaceon is constantly zero ($v_{\sigma} \equiv 0$). This attribute stems from the geometric locking of its internal vectors.
 
-* **光子：平面负载 ($M_{load}$)** —— [强度/实]
-    光子的能量/质量仅仅是二维平面上的“花纹密度” (Pattern Density)。它存储于平面内部，与法线的指向逻辑无关。
-    **Photon: Planar Payload ($M_{load}$)** —— [Intensity/Solid]
-    Photon energy/mass is merely the "Pattern Density" on the 2D plane. It is stored within the plane and is independent of the normal's directional logic.
-    $$M_{load} \propto |\vec{r} \times \vec{p}|$$
+* **抵消原理 (Cancellation Principle)**:
+    平面 A 的法线矢量与平面 B 的法线矢量在空间中相互正交且固定连接。
+    在缺乏外部非对称驱动的情况下，两者的运动趋势相互钳制，导致合速度矢量为零。
+    The normal vector of Plane A and the normal vector of Plane B are mutually orthogonal and fixedly connected in space.
+    In the absence of external asymmetric drive, their motion trends clamp each other, resulting in a net velocity vector of zero.
+    $$\vec{v}_{net} = \vec{v}(\vec{S}_A) + \vec{v}(\vec{S}_B) \equiv 0$$
 
----
+* **质量属性 (Mass Attribute)**:
+    由于两个平面均存在非零构造，空子拥有非零的**静止质量密度**。这构成了空间的物理实体性与刚度。
+    Since both planes possess non-zero construction, the Spaceon possesses a non-zero **Rest Mass Density**. This constitutes the physical substantiality and rigidity of space.
 
-### 7.2 几何修正算子 (The Geometric Correction Operator)
+### 7.3 极化矢量：引力梯度的几何表达 (Polarization Vector: Geometric Expression of Gravitational Gradient)
+空子虽然位置静止，但其内部向量结构具有指向性。
+Although the Spaceon is stationary in position, its internal vector structure possesses directionality.
 
-既然光子平面没有“刚度”来抵抗改变，那么它对空间几何形状的变化是**完全顺应**的。
-Since the photon plane has no "rigidity" to resist change, it is **fully compliant** with changes in spatial geometry.
+* **合成矢量 ($\vec{\sigma}_{net}$)**:
+    空子两个平面的向量和 $\vec{\sigma}_{net}$ 并不总是零向量。在存在环境质量分布的情况下，空子的几何结构发生极化。
+    The vector sum $\vec{\sigma}_{net}$ of the Spaceon's two planes is not always a zero vector. In the presence of environmental mass distribution, the Spaceon's geometric structure undergoes polarization.
+    $$\vec{\sigma}_{net} = \vec{S}_A + \vec{S}_B$$
 
-当定义光子的法线 $\hat{n}_{chiral}$ 与环境的引力梯度 $\vec{G}_{pot}$ 不共线时，空间本身的逻辑度规发生了扭曲。系统生成一个**旋转算子 ($\vec{R}$)** 来重新对齐向量基底：
-When the photon's normal $\hat{n}_{chiral}$ and the environmental gravity gradient $\vec{G}_{pot}$ are not collinear, the logical metric of space itself is twisted. The system generates a **Rotation Operator ($\vec{R}$)** to realign the vector basis:
-
-$$\vec{R} = \hat{n}_{chiral} \times \hat{G}_{pot}$$
-
-* **物理意义 (Physical Meaning)**:
-    $\vec{R}$ 不是力矩，不需要克服惯性。它是一个**坐标变换指令**。它告诉光子的二维平面：“为了适应当前的空间曲率，请绕着 $\vec{R}$ 轴旋转你的基底。”
-    $\vec{R}$ is not a torque; it does not need to overcome inertia. It is a **Coordinate Transformation Command**. It tells the photon's 2D plane: "To adapt to the current spatial curvature, rotate your basis around the $\vec{R}$ axis."
-
----
-
-### 7.3 轨迹偏转的质量无关性 (Mass Independence of Trajectory Deflection)
-
-这是本理论最关键的推导。为什么光线的弯曲与频率（质量）无关？
-This is the most critical deduction. Why is light bending independent of frequency (mass)?
-
-* **旧视角的谬误 (Fallacy of Old Perspective)**:
-    认为引力拉动了光子的“质量”，或者力矩克服了光子的“刚度”。
-    Thinking gravity pulls the photon's "mass," or torque overcomes the photon's "rigidity."
-
-* **UIT 的解释 (UIT Explanation)**:
-    偏转是对 **$\hat{n}_{chiral}$ (方向空箱子)** 的操作，而不是对 **$M_{load}$ (质量实负载)** 的操作。
-    Deflection is an operation on **$\hat{n}_{chiral}$ (The Void Direction Box)**, not on **$M_{load}$ (The Solid Mass Payload)**.
-
-    $$\Delta \theta \propto \int |\hat{n}_{chiral} \times \vec{G}_{pot}| \, dt$$
-
-    在这个公式中，$\hat{n}_{chiral}$ 是单位向量（模长为1），$\vec{G}_{pot}$ 是空间属性。**代表光子质量的项 $M_{load}$ 根本没有出现在公式中。**
-    In this formula, $\hat{n}_{chiral}$ is a unit vector (magnitude 1), and $\vec{G}_{pot}$ is a spatial attribute. **The term $M_{load}$ representing photon mass does not appear in the formula at all.**
+* **指向必然性 (Directional Inevitability)**:
+    $\vec{\sigma}_{net}$ 的方向严格指向其邻域内逻辑密度（引力势）最高的区域。
+    这一矢量 $\vec{\sigma}_{net}$ 即为该空间位置的**几何偏移系数**。它并非某种超距作用力，而是该位置固有的几何倾角。
+    The direction of $\vec{\sigma}_{net}$ strictly points to the region of highest logical density (gravitational potential) within its neighborhood.
+    This vector $\vec{\sigma}_{net}$ is the **Geometric Offset Coefficient** of that spatial location. It is not an action-at-a-distance force, but the inherent geometric inclination of that position.
 
 ---
 
-### 7.4 结论：向量随动原理 (Conclusion: Principle of Vector Compliance)
+## 8. 光子：单平面正交构造与轨迹生成
+## 8. The Photon: Single-Plane Orthogonal Construction and Trajectory Generation
 
-1.  **无刚度 (No Rigidity)**:
-    光子是一个在向量场中滑动的**纯逻辑平面**。它像水中的浮标一样，其实时朝向完全由所在处的场域几何决定。
-    The photon is a **Pure Logical Plane** sliding through a vector field. Like a buoy in water, its real-time orientation is strictly determined by the field geometry at its location.
+### 8.1 光子的几何定义 (Geometric Definition of the Photon)
+光子 ($\Psi$) 是与空子对应的动态物理实体。
+光子被定义为仅具有**单一正交平面构造**的矢量单元。
+The Photon ($\Psi$) is the dynamic physical entity corresponding to the Spaceon.
+The Photon is defined as a vector unit possessing only a **Single Orthogonal Plane Construction**.
 
-2.  **法线必然 (Normal Inevitability)**:
-    引力场改变了空间的向量基底 $\to$ 光子平面随之旋转 $\to$ 平面的法线（运动方向）发生改变。这就是光线偏折的本质。
-    Gravity field alters the vector basis of space $\to$ Photon plane rotates accordingly $\to$ The normal of the plane (motion direction) changes. This is the essence of light deflection.
+* **构造结构 (Construction Structure)**:
+    光子仅由一个垂直于运动轴的二维平面 $\vec{S}_{\perp}$ 构成。
+    The Photon consists solely of a 2D plane $\vec{S}_{\perp}$ perpendicular to the motion axis.
+    $$m_{total} \equiv m(\vec{S}_{\perp})$$
 
-3.  **负载透明 (Payload Transparency)**:
-    无论二维平面上承载了多少信息（是红外线还是伽马射线），其平面的**几何朝向性**是完全一致的。因此，所有频率的光在同一引力场中遵循完全相同的偏折路径。
-    Regardless of how much information is carried on the 2D plane (infrared or gamma ray), the **Geometric Orientation** of the plane is identical. Thus, light of all frequencies follows the exact same deflection path in the same gravitational field.
+* **纵向空性 (Longitudinal Void)**:
+    在光子的运动法线方向上，不存在第二个质量平面来形成锁死。
+    因此，光子在纵向上的阻尼为零，且必须以极限速度 $C$ 运行以维持逻辑存在。
+    In the direction of the Photon's motion normal, there is no second mass plane to form a lock.
+    Therefore, the Photon has zero damping longitudinally and must travel at the limit speed $C$ to maintain logical existence.
+
+### 8.2 自场零势定理 (Theorem of Zero Self-Field Potential)
+对于光子自身而言，其所处的空间坐标原点 ($X=0$) 不受自身质量的影响。
+For the Photon itself, the spatial coordinate origin ($X=0$) where it resides is unaffected by its own mass.
+
+* **梯度定义 (Gradient Definition)**:
+    引力势 $\Phi$ 依赖于距离 $X$ 的变化。根据势场分布方程 $\Phi(X) \propto f(X)$。
+    Gravitational potential $\Phi$ depends on the variation of distance $X$. According to the potential field distribution equation $\Phi(X) \propto f(X)$.
+
+* **中心奇点值 (Center Singularity Value)**:
+    在光子本体位置 ($X=0$)，势场处于梯度的几何中心或极值点。在此点上，相对于光子自身的相对势差为零。
+    $$\nabla \Phi_{self}(0) \equiv 0$$
+    **结论**: 光子脚下的空间几何结构完全由环境空子 ($\vec{\sigma}_{net}$) 决定，光子不与自身的引力势发生交互。
+    **Conclusion**: The spatial geometric structure beneath the Photon is entirely determined by the environmental Spaceon ($\vec{\sigma}_{net}$), and the Photon does not interact with its own gravitational potential.
+
+### 8.3 轨迹生成的向量运算 (Vector Operation of Trajectory Generation)
+光子的运动路径是其内部构造矢量与环境空间矢量进行线性运算的结果。
+The Photon's motion path is the result of a linear operation between its internal construction vector and the environmental spatial vector.
+
+* **偏移运算 (Offset Operation)**:
+    当光子经过一个空子 $\sigma$ 时，光子的运动法线 $\hat{n}$ 受到空子极化矢量 $\vec{\sigma}_{net}$ 的直接调制。
+    When a Photon passes a Spaceon $\sigma$, the Photon's motion normal $\hat{n}$ is directly modulated by the Spaceon's polarization vector $\vec{\sigma}_{net}$.
+    $$\vec{v}_{next} = \text{Vector\_Op}(\hat{n}_{current}, \vec{\sigma}_{net})$$
+
+* **质量无关性 (Mass Independence)**:
+    在此运算中，$\vec{\sigma}_{net}$ 是作为一个预置的几何系数（斜率）存在的。
+    光子自身的能量（模长 $|\vec{S}_{\perp}|$）作为标量因子，同时存在于运算的输入与输出端，不改变矢量的方向性偏转比例。
+    In this operation, $\vec{\sigma}_{net}$ exists as a pre-set geometric coefficient (slope).
+    The Photon's own energy (magnitude $|\vec{S}_{\perp}|$) acts as a scalar factor, present in both the input and output of the operation, and does not alter the proportional directional deflection of the vector.
+
+### 8.4 结论 (Conclusion)
+光子的运动轨迹是**环境几何的直接投影**。
+光子是一个在空间向量场中滑行的逻辑平面，其路径的弯曲程度严格等于空间空子阵列的极化程度，与光子携带的负载质量无关。
+The Photon's motion trajectory is a **Direct Projection of Environmental Geometry**.
+The Photon is a logical plane sliding through the spatial vector field; the curvature of its path is strictly equal to the degree of polarization of the spatial Spaceon array, independent of the payload mass carried by the Photon.
 
 ---
 
