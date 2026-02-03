@@ -1808,112 +1808,38 @@ The flight of a photon is not inertial gliding, but a **dynamic process where th
 
 ---
 
-# UIT 理论增补：光子的正交质量分布与向量空间重构
-# UIT Theory Supplement: Orthogonal Mass Distribution & Vector Space Reconstruction
+## 7. 空子
+## 7. The Spaceon
 
-## 7. 空子：双平面正交锁死与空间向量场
-## 7. The Spaceon: Dual-Plane Orthogonal Locking and Spatial Vector Field
+### 7.1 空子的定义与三维本质 (Definition and 3D Essence of the Spaceon)
 
-### 7.1 空子的几何定义 (Geometric Definition of the Spaceon)
-空间并非虚无的容器，而是由离散的物理实体**空子 ($\sigma$)** 构成的致密阵列。
-空子被定义为具有**双重正交平面构造**的矢量单元。
-Space is not a void container but a dense array composed of discrete physical entities called **Spaceons ($\sigma$)**.
-The Spaceon is defined as a vector unit with a **Dual Orthogonal Plane Construction**.
+UIT 理论判定物理空间的本体为离散的矢量单元阵列，该单元被称为“空子” ($\sigma$)。空子是构成宇宙的静态基础，其空间坐标是绝对固定的。
+UIT theory determines that the ontology of physical space is a discrete array of vector units, termed "Spaceons" ($\sigma$). The Spaceon is the static foundation constituting the universe, and its spatial coordinates are absolutely fixed.
 
-* **构造结构 (Construction Structure)**:
-    每一个空子内部包含两个几何上相互垂直的非零质量平面：
-    Each Spaceon contains two geometrically perpendicular non-zero mass planes internally:
-    1.  **平面 A ($\vec{S}_A$)**: 定义在 $XY$ 维度上的构造矢量。
-        **Plane A ($\vec{S}_A$)**: Construction vector defined in $XY$ dimensions.
-    2.  **平面 B ($\vec{S}_B$)**: 定义在 $YZ$ 维度上的构造矢量。
-        **Plane B ($\vec{S}_B$)**: Construction vector defined in $YZ$ dimensions.
+每个空子在物理构造上由两个相互正交的内部平面构成。这种双平面正交结构直接支撑起物理空间的几何框架。因此，宇宙是本质上的三维空间，而非二维平面的投影或时间累积。
+Each Spaceon is physically constructed from two mutually orthogonal internal planes. This dual-plane orthogonal structure directly supports the geometric framework of physical space. Therefore, the universe is an intrinsically three-dimensional space, rather than a projection of two-dimensional planes or time accumulation.
 
-### 7.2 静态机制：矢量互锁 (Static Mechanism: Vector Interlocking)
-空子的宏观速度恒为零 ($v_{\sigma} \equiv 0$)。这一属性源于其内部向量的几何锁死。
-The macroscopic velocity of a Spaceon is constantly zero ($v_{\sigma} \equiv 0$). This attribute stems from the geometric locking of its internal vectors.
+### 7.2 光与信号传递 (Light and Signal Transmission)
 
-* **抵消原理 (Cancellation Principle)**:
-    平面 A 的法线矢量与平面 B 的法线矢量在空间中相互正交且固定连接。
-    在缺乏外部非对称驱动的情况下，两者的运动趋势相互钳制，导致合速度矢量为零。
-    The normal vector of Plane A and the normal vector of Plane B are mutually orthogonal and fixedly connected in space.
-    In the absence of external asymmetric drive, their motion trends clamp each other, resulting in a net velocity vector of zero.
-    $$\vec{v}_{net} = \vec{v}(\vec{S}_A) + \vec{v}(\vec{S}_B) \equiv 0$$
+光并非独立于空子之外飞行的物理实体，而是空子阵列中特定逻辑平面状态改变的动态体现。
+Light is not a physical entity flying independently of the Spaceon; rather, it is the dynamic manifestation of state changes on a specific logical plane within the Spaceon array.
 
-* **质量属性 (Mass Attribute)**:
-    由于两个平面均存在非零构造，空子拥有非零的**静止质量密度**。这构成了空间的物理实体性与刚度。
-    Since both planes possess non-zero construction, the Spaceon possesses a non-zero **Rest Mass Density**. This constitutes the physical substantiality and rigidity of space.
+光是构成所有物质的基础，基于 SFCP & UIT 推导，光只在一个平面有质量，因此光只是简单的电平翻转信号，信号翻转速度就是光速。
+Light is the foundation of all matter. Based on SFCP & UIT deduction, light has mass only in one plane, so light is just a simple level flipping signal, and the signal flipping speed is the speed of light.
 
-### 7.3 极化矢量：引力梯度的几何表达 (Polarization Vector: Geometric Expression of Gravitational Gradient)
-空子虽然位置静止，但其内部向量结构具有指向性。
-Although the Spaceon is stationary in position, its internal vector structure possesses directionality.
+这种信号传递仅涉及空子状态的逻辑移位。系统允许的最小逻辑响应间隔决定了这一翻转过程的极限速率。
+This signal transmission involves only the logical shifting of Spaceon states. The minimum logical response interval permitted by the system determines the limit rate of this flipping process.
 
-* **合成矢量 ($\vec{\sigma}_{net}$)**:
-    空子两个平面的向量和 $\vec{\sigma}_{net}$ 并不总是零向量。在存在环境质量分布的情况下，空子的几何结构发生极化。
-    The vector sum $\vec{\sigma}_{net}$ of the Spaceon's two planes is not always a zero vector. In the presence of environmental mass distribution, the Spaceon's geometric structure undergoes polarization.
-    $$\vec{\sigma}_{net} = \vec{S}_A + \vec{S}_B$$
+### 7.3 数据与空间的维度关系 (Dimensional Relationship between Data and Space)
 
-* **指向必然性 (Directional Inevitability)**:
-    $\vec{\sigma}_{net}$ 的方向严格指向其邻域内逻辑密度（引力势）最高的区域。
-    这一矢量 $\vec{\sigma}_{net}$ 即为该空间位置的**几何偏移系数**。它并非某种超距作用力，而是该位置固有的几何倾角。
-    The direction of $\vec{\sigma}_{net}$ strictly points to the region of highest logical density (gravitational potential) within its neighborhood.
-    This vector $\vec{\sigma}_{net}$ is the **Geometric Offset Coefficient** of that spatial location. It is not an action-at-a-distance force, but the inherent geometric inclination of that position.
+尽管光信号的质量数据编码于单一的二维截面上，但这并不改变空间的维度属性。
+Although the mass data of the light signal is encoded on a single two-dimensional cross-section, this does not alter the dimensional attributes of space.
 
----
+明确虽然数据是二维的，但是我们生活的空间是三维的。
+It is clear that although the data is two-dimensional, the space we live in is three-dimensional.
 
-## 8. 光子：单平面正交构造与轨迹生成
-## 8. The Photon: Single-Plane Orthogonal Construction and Trajectory Generation
-
-### 8.1 光子的几何定义 (Geometric Definition of the Photon)
-光子 ($\Psi$) 是与空子对应的动态物理实体。
-光子被定义为仅具有**单一正交平面构造**的矢量单元。
-The Photon ($\Psi$) is the dynamic physical entity corresponding to the Spaceon.
-The Photon is defined as a vector unit possessing only a **Single Orthogonal Plane Construction**.
-
-* **构造结构 (Construction Structure)**:
-    光子仅由一个垂直于运动轴的二维平面 $\vec{S}_{\perp}$ 构成。
-    The Photon consists solely of a 2D plane $\vec{S}_{\perp}$ perpendicular to the motion axis.
-    $$m_{total} \equiv m(\vec{S}_{\perp})$$
-
-* **纵向空性 (Longitudinal Void)**:
-    在光子的运动法线方向上，不存在第二个质量平面来形成锁死。
-    因此，光子在纵向上的阻尼为零，且必须以极限速度 $C$ 运行以维持逻辑存在。
-    In the direction of the Photon's motion normal, there is no second mass plane to form a lock.
-    Therefore, the Photon has zero damping longitudinally and must travel at the limit speed $C$ to maintain logical existence.
-
-### 8.2 自场零势定理 (Theorem of Zero Self-Field Potential)
-对于光子自身而言，其所处的空间坐标原点 ($X=0$) 不受自身质量的影响。
-For the Photon itself, the spatial coordinate origin ($X=0$) where it resides is unaffected by its own mass.
-
-* **梯度定义 (Gradient Definition)**:
-    引力势 $\Phi$ 依赖于距离 $X$ 的变化。根据势场分布方程 $\Phi(X) \propto f(X)$。
-    Gravitational potential $\Phi$ depends on the variation of distance $X$. According to the potential field distribution equation $\Phi(X) \propto f(X)$.
-
-* **中心奇点值 (Center Singularity Value)**:
-    在光子本体位置 ($X=0$)，势场处于梯度的几何中心或极值点。在此点上，相对于光子自身的相对势差为零。
-    $$\nabla \Phi_{self}(0) \equiv 0$$
-    **结论**: 光子脚下的空间几何结构完全由环境空子 ($\vec{\sigma}_{net}$) 决定，光子不与自身的引力势发生交互。
-    **Conclusion**: The spatial geometric structure beneath the Photon is entirely determined by the environmental Spaceon ($\vec{\sigma}_{net}$), and the Photon does not interact with its own gravitational potential.
-
-### 8.3 轨迹生成的向量运算 (Vector Operation of Trajectory Generation)
-光子的运动路径是其内部构造矢量与环境空间矢量进行线性运算的结果。
-The Photon's motion path is the result of a linear operation between its internal construction vector and the environmental spatial vector.
-
-* **偏移运算 (Offset Operation)**:
-    当光子经过一个空子 $\sigma$ 时，光子的运动法线 $\hat{n}$ 受到空子极化矢量 $\vec{\sigma}_{net}$ 的直接调制。
-    When a Photon passes a Spaceon $\sigma$, the Photon's motion normal $\hat{n}$ is directly modulated by the Spaceon's polarization vector $\vec{\sigma}_{net}$.
-    $$\vec{v}_{next} = \text{Vector\_Op}(\hat{n}_{current}, \vec{\sigma}_{net})$$
-
-* **质量无关性 (Mass Independence)**:
-    在此运算中，$\vec{\sigma}_{net}$ 是作为一个预置的几何系数（斜率）存在的。
-    光子自身的能量（模长 $|\vec{S}_{\perp}|$）作为标量因子，同时存在于运算的输入与输出端，不改变矢量的方向性偏转比例。
-    In this operation, $\vec{\sigma}_{net}$ exists as a pre-set geometric coefficient (slope).
-    The Photon's own energy (magnitude $|\vec{S}_{\perp}|$) acts as a scalar factor, present in both the input and output of the operation, and does not alter the proportional directional deflection of the vector.
-
-### 8.4 结论 (Conclusion)
-光子的运动轨迹是**环境几何的直接投影**。
-光子是一个在空间向量场中滑行的逻辑平面，其路径的弯曲程度严格等于空间空子阵列的极化程度，与光子携带的负载质量无关。
-The Photon's motion trajectory is a **Direct Projection of Environmental Geometry**.
-The Photon is a logical plane sliding through the spatial vector field; the curvature of its path is strictly equal to the degree of polarization of the spatial Spaceon array, independent of the payload mass carried by the Photon.
+这一三维属性源于空子本体的双重正交构造。光子作为单平面的激发态，仅利用了空子结构的一半维度进行数据承载，而空子整体的几何架构始终维持着完整的三维物理实在。
+This three-dimensional attribute stems from the dual orthogonal construction of the Spaceon ontology. As a single-plane excitation state, the photon utilizes only half of the Spaceon's dimensions for data bearing, while the overall geometric architecture of the Spaceon maintains a complete three-dimensional physical reality at all times.
 
 ---
 
@@ -2029,56 +1955,6 @@ The algorithm acts as a **Probability Density Judge**, not a smoothing filter.
 ### Summary (总结)
 Standard algorithms take the logarithm to make calculation "safe" and smooth. **SFCP refuses the logarithm to preserve the "True Zero" and the absolute gap between existence and non-existence.**
 标准算法通过取对数来保证计算的“安全”和平滑。**SFCP 拒绝取对数，旨在保留“绝对零”，并还原“存在”与“不存在”之间巨大的物理鸿沟。**
-
----
-
-# 额外补充 (Extra Supplement)
-
-## 1. 空间的“实”与“空”正交分解
-## 1. Orthogonal Decomposition of "Solid" and "Void" Space
-
-根据 UIT 基础架构，宇宙的本质并非预先存在的容器，而是逻辑流动的产物。我们可以将“空间”在正交方向上分解为两种本质属性：
-According to UIT infrastructure, the essence of the universe is not a pre-existing container, but the product of logical flow. We can decompose "space" orthogonally into two essential attributes:
-
-### A. 实面：信息概率平面 ($P$-Plane) —— [横向]
-### A. The Solid Plane: Information Probability Plane ($P$-Plane) —— [Transverse]
-* **定义 (Definition)**: 由半径向量 $\vec{r}$ 和动量向量 $\vec{p}$ 构成的二维逻辑结构。
-* **属性 (Attribute)**: **实 (Solid)**。它是逻辑构造的承载者。
-* **SFCP 映射 (SFCP Mapping)**: 对应 **Structure (构造)** 与 **Probability (概率)**。所有的质量势能、能量密度、逻辑复杂性都存储于此。它是“存在”的切片。
-
-### B. 空面：逻辑步骤轴线 ($T$-Axis) —— [纵向]
-### B. The Void Plane: Logical Step Axis ($T$-Axis) —— [Longitudinal]
-* **定义 (Definition)**: 由光速运动向量 $\vec{v}$ 定义的单一维度。
-* **属性 (Attribute)**: **空 (Void)**。它是逻辑刷新的驱动力。
-* **SFCP 映射 (SFCP Mapping)**: 对应 **Flow (流)** 与 **Step (步骤)**。在此轴向上，概率 $P \equiv 1$，故质量 $m \equiv 0$。它不承载信息，只负责推动逻辑从“当前节点”流向“下一节点”。
-
----
-
-## 2. 三维空间的逻辑错觉
-## 2. The Logical Illusion of Three-Dimensional Space
-
-所谓的三维空间，并非物理实体的固有属性，而是**二维信息平面**在**一维逻辑步骤**上的连续累积所产生的现象。
-The so-called three-dimensional space is not an inherent attribute of physical entities, but a phenomenon produced by the continuous accumulation of the **2D Information Plane** along the **1D Logical Step**.
-
-$$\text{Space}_{3D} = \text{Information}_P \times \text{Step}_T$$
-
-* **错觉的成因 (Origin of the Illusion)**:
-    观测者感知到的“深度 (Z轴)”，本质上是**时间 (Time)** 的空间化表达。我们看到的每一个三维体积，实际上是无数个二维概率切片 ($P$) 在逻辑步骤 ($T$) 驱动下的**历史堆叠**。
-    The "depth (Z-axis)" perceived by the observer is essentially the spatialized expression of **Time**. Every 3D volume we see is actually a **historical stack** of countless 2D probability slices ($P$) driven by logical steps ($T$).
-
----
-
-## 3. 光子：空与实的统一体
-## 3. Photon: The Unity of Void and Solid
-
-光子是这一机制的完美体现，它是连接“空”与“实”的逻辑算子：
-The photon is the perfect embodiment of this mechanism, acting as the logical operator connecting "Void" and "Solid":
-
-* **横向 (Transverse)**: 它是**实**的。它通过 $\vec{r}$ 和 $\vec{p}$ 的卷曲，携带了确定的信息构造（能量/频率）。
-* **纵向 (Longitudinal)**: 它是**空**的。它以恒定速率 $C$ 执行逻辑步骤，不滞留任何质量。
-* **结论 (Conclusion)**:
-    整个宇宙是由“空”的逻辑流推动着“实”的信息面，在名为“时间”的轨迹上留下的投影。
-    The entire universe is a projection left on the trajectory named "Time," where the "Void" logical flow pushes the "Solid" information plane.
 
 ---
 
