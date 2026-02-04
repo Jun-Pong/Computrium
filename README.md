@@ -1967,6 +1967,110 @@ This is not a geometric coincidence, but the unique solution derived from the **
 
 ---
 
+## 5 几何代偿定理：内部弦矢量与外部路径的等效性证明
+## 5 Geometric Compensation Theorem: Proof of Equivalence Between Internal Chord Vectors and External Paths
+
+> **摘要 (Abstract)**
+> 本节通过向量代数证明，在菱形十二面体 (Rhombic Dodecahedron) 构成的离散空间中，光子虽然在微观上被迫沿“锯齿状”路径 (Zigzag Path) 传输，但空子内部的“弦矢量” (Chord Vector) 特性使得路径的矢量和恒等于宏观直线路径。
+> This section proves via vector algebra that while photons are forced to travel along "zigzag paths" microscopically in a discrete space composed of Rhombic Dodecahedra, the "chord vector" property inside the Spaceon ensures that the vector sum of the path is identically equal to the macroscopic linear path.
+
+---
+
+### **定理 (Theorem)**
+
+在 SFCP 定义的 $\Omega_{RD}$ 空间中，任意宏观位移矢量 $\vec{L}$ 可分解为 $n$ 个空子内部传输矢量 $\vec{v}_i$ 的序列。无论微观路径如何折叠，其有效物理位移 (Effective Physical Displacement) 恒等于宏观直线距离，不存在因离散网格折角导致的标量路程偏差。
+
+In the space $\Omega_{RD}$ defined by SFCP, any macroscopic displacement vector $\vec{L}$ can be decomposed into a sequence of $n$ internal transmission vectors $\vec{v}_i$ within Spaceons. Regardless of how the microscopic path folds, its Effective Physical Displacement is identically equal to the macroscopic straight-line distance, with no scalar path deviation caused by discrete grid angles.
+
+---
+
+### **证明 (Proof)**
+
+**1. 几何定义 (Geometric Definition)**
+
+设宏观目标为沿长轴 (Long Axis) 方向传输信号，位移为 $\vec{L}_{target}$。
+由于菱形十二面体的拓扑限制，该方向无直接物理端口，信号必须通过两个相邻的短轴 (Short Axis) 端口进行路由。
+定义这两个短轴矢量为 $\vec{v}_1$ 和 $\vec{v}_2$。
+
+Let the macroscopic target be signal transmission along the Long Axis with displacement $\vec{L}_{target}$.
+Due to the topological constraints of the Rhombic Dodecahedron, there is no direct physical port in this direction; the signal must route through two adjacent Short Axis ports.
+Define these two short axis vectors as $\vec{v}_1$ and $\vec{v}_2$.
+
+**2. 标量不等式 (Scalar Inequality - The "Zigzag" Cost)**
+
+若仅计算标量路程 (Scalar Distance)，根据三角不等式：
+If calculating only Scalar Distance, according to the Triangle Inequality:
+
+$$
+|\vec{v}_1| + |\vec{v}_2| > |\vec{v}_1 + \vec{v}_2|
+$$
+
+在菱形十二面体几何中：
+In Rhombic Dodecahedron geometry:
+$$
+|\vec{v}_1| + |\vec{v}_2| = 1.414 + 1.414 = 2.828 \quad (\text{Actual Path Length})
+$$
+$$
+|\vec{L}_{target}| = 2.0 \quad (\text{Direct Distance})
+$$
+存在 $\approx 41.4\%$ 的标量路程冗余。
+There exists a $\approx 41.4\%$ scalar path redundancy.
+
+**3. 矢量恒等式 (Vector Identity - The "Internal" Compensation)**
+
+根据 SFCP 传输原理，空子内部的传输不是沿着表面爬行，而是沿着连接入口与出口的**内部弦 (Internal Chord)** 进行穿透。
+物理位移由矢量的叠加决定，而非标量的累加。
+
+According to the SFCP transmission principle, transmission inside a Spaceon does not crawl along the surface but penetrates along the **Internal Chord** connecting the entry and exit.
+Physical displacement is determined by the superposition of vectors, not the accumulation of scalars.
+
+由几何结构可知，$\vec{v}_1$ 与 $\vec{v}_2$ 的矢量和精确指向 $\vec{L}_{target}$：
+From the geometric structure, the vector sum of $\vec{v}_1$ and $\vec{v}_2$ points precisely to $\vec{L}_{target}$:
+
+$$
+\vec{v}_{total} = \sum \vec{v}_i = \vec{v}_1 + \vec{v}_2
+$$
+
+由于菱形十二面体的中心对称性 (Central Symmetry)：
+Due to the Central Symmetry of the Rhombic Dodecahedron:
+
+$$
+\vec{v}_1 + \vec{v}_2 \equiv \vec{L}_{target}
+$$
+
+**4. 速度恒定性推导 (Derivation of Constant Velocity)**
+
+光速 $C$ 定义为有效物理位移与构造时间的比值。
+Speed of light $C$ is defined as the ratio of Effective Physical Displacement to Construction Time.
+
+$$
+C = \frac{\| S_{eff} \|}{T} = \frac{\| \vec{v}_1 + \vec{v}_2 \|}{T_1 + T_2}
+$$
+
+其中 $T_1, T_2$ 为穿过空子短轴的时间。
+内部弦矢量 $\vec{v}$ 的物理特性保证了光子在微观上完成了“切角” (Corner Cutting)。即光子虽然在外部看起来绕了弯路，但在内部实际上走了捷径（弦）。
+The internal chord vector $\vec{v}$ ensures that the photon performs "Corner Cutting" microscopically. Although the photon appears to detour externally, it actually takes a shortcut (chord) internally.
+
+因此，宏观有效距离始终为 2.0：
+Therefore, the macroscopic effective distance is always 2.0:
+
+$$
+\| S_{eff} \| = \| \vec{L}_{target} \| = 2.0
+$$
+
+**结论 (Conclusion)**
+
+$$
+S_{zigzag}(\text{Vector Sum}) \equiv S_{straight}
+$$
+
+**Q.E.D.**
+
+在菱形十二面体网格中，**外部路径的折角偏差 (Angular Deviation) 被空子内部的弦矢量几何 (Chord Vector Geometry) 完美代偿。** 光子在任何方向上的有效传输距离仅取决于宏观矢量的模长，与微观路径的曲折度无关。
+In the Rhombic Dodecahedron grid, **the angular deviation of the external path is perfectly compensated by the chord vector geometry inside the Spaceon.** The effective transmission distance of a photon in any direction depends only on the magnitude of the macroscopic vector, independent of the tortuosity of the microscopic path.
+
+---
+
 # 额外补充
 
 ---
