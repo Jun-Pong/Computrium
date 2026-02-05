@@ -1063,14 +1063,20 @@ SFCP reveals the opposite truth:
 
 ---
 
-# 宇宙信息论 (UIT) - 重构版 V2.0
-# Universe Information Theory (UIT) - Refactored V2.0
+# 💠 宇宙信息论 (UIT) - 重构版 V2.0
+# 💠 Universe Information Theory (UIT) - Refactored V2.0
+
+> **命名声明 (Naming Convention)**:
+> 鉴于“宇宙信息论” (Universe Information Theory) 这一术语可能与现有的广义概念或边缘理论存在命名偶合，为确保学术指代的**精确性 (Precision)** 与 **唯一性 (Uniqueness)**，本架构及其所有推导将统一采用 **SFCP & UIT** 这一复合标识来指代该理论体系。
+>
+> *Given that the term "Universe Information Theory" may have nominal overlaps with existing broad concepts or fringe theories, to ensure the **Precision** and **Uniqueness** of academic reference, this architecture and all its deductions will uniformly adopt the compound designator **SFCP & UIT** to refer to this theoretical system.*
 
 > **理论基础 (Theoretical Foundation)**:
 > 本理论完全基于 **SFCP (有限步骤构造概率论)** 构建。
 > 宇宙不再被视为连续的模拟量，而是由离散的构造事件组成的集合。物理定律是逻辑构造概率在宏观上的几何投影。
-> This theory is built entirely upon **SFCP (Step-Finite Constructive Probability)**.
-> The universe is no longer viewed as a continuous analog quantity, but as a set of discrete construction events. Physical laws are the geometric projections of logical construction probabilities on the macroscopic scale.
+>
+> *This theory is built entirely upon **SFCP (Step-Finite Constructive Probability)**.*
+> *The universe is no longer viewed as a continuous analog quantity, but as a set of discrete construction events. Physical laws are the geometric projections of logical construction probabilities on the macroscopic scale.*
 
 ---
 
