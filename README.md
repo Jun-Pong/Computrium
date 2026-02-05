@@ -1059,6 +1059,7 @@ SFCP reveals the opposite truth:
     (**No innate angles**: All directions are **constructively mixed** from base intervals through time accumulation.)
 3.  **没有各向异性**：当且仅当距离被正确定义为**构造步数 ($S=T$)** 时，宇宙展现出完美的对称性。
     (**No anisotropy**: The universe exhibits perfect symmetry if and only if distance is correctly defined as **constructive steps ($S=T$)**.)
+![UIT Lensing Proof](assets/The%20Philosophical%20Essence.png)
 
 ---
 
