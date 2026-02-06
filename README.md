@@ -10,6 +10,21 @@
 
 ---
 
+## 🛡️ Intellectual Property & Sovereignty Statement | 主权声明
+
+本项目所涉及的 **SFCP (Step-Finite Constructive Probability)** 及 **UIT (Universe Information Theory)** 理论体系由 **王俊鹏 (Junpeng Wang)** 独立原创开发。
+
+* **Primary Author:** Junpeng Wang (王俊鹏)
+[![DOI](https://zenodo.org/badge/1126976453.svg)](https://doi.org/10.5281/zenodo.18135945)
+
+> **Notice:** Any derivative works, including but not limited to cosmological explanations (e.g., Dark Matter/Energy models), physical simulations, or algorithmic implementations based on the **Dynamic Spacetime Conversion Equation**, must explicitly credit the original author and cite the DOI above. 
+> 
+> **注意：** 任何基于“动态时空转换方程”的衍生研究（如暗物质/暗能量模型）、物理模拟或算法实现，必须明确署名原作者并引用上述 DOI。
+
+---
+
+---
+
 # Universe Information Theory
 
 ![UIT Lensing Proof](assets/UIT_lensing_simulation.png)
