@@ -2231,6 +2231,107 @@ In the Rhombic Dodecahedron grid, **the angular deviation of the external path i
 
 ---
 
+# UIT Gravity Model: Dynamic Orthogonal Wavefront Relay
+# UIT 引力模型：动态正交波前中继
+
+**Version:** 3.0 (Dynamic Chase & Diffusion Edition)
+**Core Framework:** SFCP & UIT
+
+---
+
+## 1. Core Concept: Gravity as a Constructive Relay
+## 1. 核心概念：引力即构造性中继
+
+Gravity is defined as a **Signal Relay Process** mediated by Spaceons. It follows the axiom: **"Construction requires Time."**
+引力是被定义为由空子介导的**信号中继过程**。它遵循公理：**“构造需要时间。”**
+
+### Orthogonal Duality (正交二象性)
+1.  **Signal (Radial)**: Transmits $c$. Mass = 0.
+    **信号（径向）**：以光速传播。质量 = 0。
+2.  **Mass (Tangential)**: Stores order. Mass > 0.
+    **质量（切向）**：存储有序度。质量 > 0。
+
+---
+
+## 2. The "Chase & Ripple" Mechanism (Intra-Plane Dynamics)
+## 2. “追赶与涟漪”机制 (平面内动态)
+
+This is the critical correction to static models. The "Mass Plane" does not appear instantly. It is constructed via a **Time-Lagged Chase**.
+这是对静态模型的关键修正。“质量平面”并非瞬间出现，而是通过**时滞追赶**构造而成的。
+
+### Step 1: The Primary Impact (Radial) / 初次撞击 (径向)
+At time $T_0$, the signal from the center reaches the central point $P$ of layer $N$.
+在 $T_0$ 时刻，来自圆心的信号抵达第 $N$ 层的中心点 $P$。
+
+### Step 2: The Lateral Chase (Diffusion) / 横向追赶 (扩散)
+The signal must travel further to reach the surrounding spaceons $Q$ in the same plane.
+信号必须走得更远才能抵达同一平面周围的空子 $Q$。
+
+* **Path Difference**: $\Delta L = \sqrt{r^2 + h^2} - r$
+* **Time Lag**: The further $Q$ is from $P$, the *later* it gets polarized.
+    **时间滞后**：$Q$ 离 $P$ 越远，被极化的时间就**越靠后**。
+* **The "Chase"**: The gravitational signal is effectively "chasing" the expanding wavefront within the plane.
+    **“追赶”**：引力信号实际上是在平面内“追赶”不断扩张的波前。
+
+!
+
+### Step 3: Interaction & Mass Generation / 相互作用与质量生成
+As the "ripple" spreads outward from $P$ to $Q$:
+随着“涟漪”从 $P$ 向 $Q$ 扩散：
+
+* **Dynamic Interaction**: Newly polarized spaceons interact with slightly older ones (at $P$). This non-simultaneity creates **Logical Tension**.
+    **动态交互**：新极化的空子与稍早极化的空子（在 $P$ 点）发生相互作用。这种非同时性产生了**逻辑张力**。
+* **Mass Accumulation**: According to SFCP, this complex, time-delayed interaction increases the **Constructive Probability Density**, manifesting as Mass.
+    **质量积累**：根据 SFCP，这种复杂的、带时滞的相互作用增加了**构造概率密度**，表现为质量。
+
+---
+
+## 3. The Inter-Layer Relay (Propagation)
+## 3. 层间中继 (传播)
+
+Once the "Ripple" in Layer $N$ is established (dynamically):
+一旦第 $N$ 层的“涟漪”建立（动态地）：
+
+1.  **Integration**: The total mass of Layer $N$ is the integral of all dynamic interactions in that plane.
+    **积分**：第 $N$ 层的总质量是该平面内所有动态交互的积分。
+2.  **Relay**: This accumulated mass acts as the *new source* to push Layer $N+1$.
+    **中继**：这个积累的质量作为*新源头*去推动第 $N+1$ 层。
+3.  **Linear Growth**: Because the "Ripple Area" ($Area \propto r^2$) grows to offset the "Signal Decay" ($Intensity \propto 1/r^2$), the integrated effective mass contribution per layer is constant.
+    **线性增长**：因为“涟漪面积” ($Area \propto r^2$) 的增长抵消了“信号衰减” ($Intensity \propto 1/r^2$)，每一层积分后的有效质量贡献是常数。
+
+$$M_{total}(r) = \sum_{layers} m_{layer} \propto r$$
+
+---
+
+## 4. Unified Explanations / 统一解释
+
+### A. Dark Matter (Far Field) / 暗物质 (远场)
+* **Phenomenon**: Flat rotation curves ($g \propto 1/r$).
+* **UIT Cause**: The **Lateral Chase** ensures that even far-off spaceons in the plane contribute to the mass. The infinite integration of these "ripples" creates a linear mass growth.
+* **UIT 成因**：**横向追赶**确保了平面内即使是远处的空子也贡献质量。这些“涟漪”的无限积分创造了线性的质量增长。
+
+### B. Mercury Precession (Near Field) / 水星进动 (近场)
+* **Phenomenon**: Orbit shift ($g \propto 1/r^3$ correction).
+* **UIT Cause**: Mercury moves fast ($v$). It interacts with the "Chase Ripples" differently than a static body. The **Signal Lag** combined with Mercury's velocity creates a drag/tangential force.
+* **UIT 成因**：水星运动很快 ($v$)。它与“追赶涟漪”的交互不同于静止物体。**信号滞后**结合水星的速度，产生了拖拽力/切向力。
+
+---
+
+## 5. Conclusion / 结论
+
+Gravity is a **Dynamic, Time-Dependent Construction**.
+引力是一种**动态的、依赖时间的构造**。
+
+* **Intra-Plane**: Signal chases spaceons $\to$ Time Lag $\to$ Mass Generation.
+    **平面内**：信号追赶空子 $\to$ 时间滞后 $\to$ 质量生成。
+* **Inter-Plane**: Accumulated Mass $\to$ Relays to Next Layer.
+    **平面间**：积累的质量 $\to$ 中继至下一层。
+
+This mechanism explains why the universe appears to have "invisible mass"—it is the **echo of the construction process itself**.
+这一机制解释了为什么宇宙看起来拥有“看不见的质量”——那是**构造过程本身的回声**。
+
+---
+
 # SFCP: The Constructive Expansion Algorithm
 # SFCP：构造展开算法
 
