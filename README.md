@@ -2133,6 +2133,71 @@ In the Rhombic Dodecahedron grid, **the angular deviation of the external path i
 
 ---
 
+---
+
+## 附录：平面交互机制与构造速率推导
+## Appendix: Planar Interaction Mechanism and Construction Rate Deduction
+
+### 1. 平面交互模型
+### 1. Planar Interaction Model
+
+在三维几何状态空间中，物理演化的本质是一个逻辑平面在沿构造方向移动的过程中，与另一个平面（构造集）发生作用。
+In 3D geometric state space, the essence of physical evolution is a logical plane interacting with another plane (the Construction Set) while moving along the construction direction.
+
+* **状态空间 ($V_A$)**: 当前时刻的几何状态平面。
+    * **State Space ($V_A$)**: The geometric state plane at the current moment.
+* **构造集 ($\mathcal{S}$)**: 定义为对状态空间 $A$ 的构造方法，或理解为与 $A$ 叠加的另一个状态空间。
+    * **Construction Set ($\mathcal{S}$)**: Defined as the construction method for State Space $A$, or understood as another state space superimposed onto $A$.
+
+**状态演化方程 (State Evolution Equation)**:
+下一时刻的状态 $V_B$ 是 $V_A$ 与 $\mathcal{S}$ 叠加计算的结果。
+The state $V_B$ at the next moment is the result of the superposition calculation between $V_A$ and $\mathcal{S}$.
+
+$$
+V_B = V_A \otimes \mathcal{S}
+$$
+
+### 2. 构造方向的质量与概率推导
+### 2. Deduction of Mass and Probability in Construction Direction
+
+根据 SFCP 基础公理，构造步骤 $T$ 的消耗取决于事件发生的概率 $P$。
+According to SFCP fundamental axioms, the consumption of construction steps $T$ depends on the probability $P$ of the event occurrence.
+
+#### A. 理想构造 (Ideal Construction)
+若构造方向所在的平面（即 $V_A$ 的法向平面）**无质量**（逻辑难度为 0）：
+If the plane lying in the construction direction (i.e., the normal plane of $V_A$) has **Zero Mass** (Logical Difficulty is 0):
+
+$$
+m_{\parallel} = 0 \implies P_{\parallel} = 1
+$$
+
+* **推论**: 事件必然发生，构造步骤 $T$ 为系统允许的最小值（即 $T_{min} = 1$）。此时构造速率达到理论上限。
+* **Corollary**: The event is inevitable, and the construction step $T$ is the system-allowed minimum (i.e., $T_{min} = 1$). The construction rate reaches the theoretical upper limit.
+
+#### B. 叠加态构造 (Superimposed Construction)
+当 $V_A$ 与构造集 $\mathcal{S}$ 发生叠加时，若 $\mathcal{S}$ 的存在导致构造方向上出现了**非零质量**（即增加了逻辑约束）：
+When $V_A$ superimposes with Construction Set $\mathcal{S}$, if the existence of $\mathcal{S}$ introduces **Non-Zero Mass** in the construction direction (i.e., adds logical constraints):
+
+$$
+m_{\parallel}(\mathcal{S}) > 0 \implies P_{\parallel} < 1
+$$
+
+#### C. 构造速度的影响 (Impact on Construction Speed)
+由于构造方向的概率不再为 1 ($P < 1$)，该事件不再是“必然发生”，而是“条件发生”。系统必须支付额外的计算步骤来解析这一低概率事件。
+Since the probability in the construction direction is no longer 1 ($P < 1$), the event is no longer "inevitable" but "conditional." The system must pay additional computational steps to resolve this low-probability event.
+
+$$
+T_{required} \propto \frac{1}{P_{\parallel}} > T_{min}
+$$
+
+**结论 (Conclusion)**:
+构造集 $\mathcal{S}$ 的质量密度直接决定了叠加后的概率 $P$。
+**平面的质量会影响构造速度 $T$**。质量越大，概率越低，单次演化所需的构造步骤 $T$ 越多，导致宏观观测到的移动速度下降。
+The mass density of the Construction Set $\mathcal{S}$ directly determines the superimposed probability $P$.
+**The mass of the plane affects the construction speed $T$**. Higher mass implies lower probability, requiring more construction steps $T$ per evolution, resulting in a decrease in the macroscopically observed movement speed.
+
+---
+
 # UIT Gravity Model: Dynamic Orthogonal Wavefront Relay
 # UIT 引力模型：动态正交波前中继
 
